@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			padding: {
+				px80: '80px',
+			},
 			colors: {
 				primary: {
 					DEFAULT: '#0B4F87',
@@ -20,11 +23,7 @@ const config: Config = {
 			fontFamily: {
 				sans: ['Plus Jakarta Sans', 'sans-serif'],
 			},
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-			},
+
 			zIndex: {
 				'full-screen-loading': '9999999999999', // > toast: 999999999999
 				'order-1': '99999999',

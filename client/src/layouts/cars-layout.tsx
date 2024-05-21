@@ -1,3 +1,8 @@
+'use client';
+
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { useHomePage } from '@/hooks/usePathName';
 import cn from '@/libs/clsxm';
 import { memo } from 'react';
 import FooterLayout from './components/footer-layout';
@@ -12,12 +17,30 @@ interface CarLayoutProps {
 }
 
 const CarLayout = ({ children, className }: CarLayoutProps) => {
+	const isHomePage = useHomePage();
+
 	return (
-		<section className={cn('flex flex-col w-full', className?.classContainer)}>
-			<HeaderLayout />
-			<main className={cn(className?.classMain)}>{children}</main>
-			<FooterLayout />
-		</section>
+		<AnimatePresence>
+			<motion.section
+				initial={{ y: -100 }}
+				animate={{ y: 0 }}
+				exit={{ y: -100 }}
+				transition={{ duration: 0.5 }}
+				className={cn('flex flex-col w-full', className?.classContainer)}
+			>
+				<HeaderLayout isHomePage={isHomePage} />
+				<main
+					className={cn(
+						'flex-1',
+						{ 'mt-12': isHomePage },
+						className?.classMain
+					)}
+				>
+					{children}
+				</main>
+				<FooterLayout />
+			</motion.section>
+		</AnimatePresence>
 	);
 };
 
