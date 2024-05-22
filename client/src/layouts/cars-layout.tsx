@@ -31,7 +31,8 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 				<HeaderLayout isHomePage={isHomePage} />
 				<main
 					className={cn(
-						'flex-1',
+						'flex-1 min-h-[calc(100vh_-_80px)]',
+						{ 'pt-px80': !isHomePage },
 						{ 'mt-12': isHomePage },
 						className?.classMain
 					)}

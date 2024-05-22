@@ -16,8 +16,8 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 	return (
 		<AnimatePresence>
 			<motion.header
-				initial={{ y: -100 }}
-				animate={{ y: 0 }}
+				// initial={{ y: -100 }}
+				// animate={{ y: 0 }}
 				transition={{ duration: 0.5 }}
 				exit={{ y: -100 }}
 				className={cn('hidden lg:block w-full top-0 left-0 right-0 z-order-1', {
@@ -57,7 +57,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							'top-12 rounded-b-lg px-6 max-w-[calc(100vw_-_160px)] absolute  -translate-x-1/2':
 								isHomePage,
 						},
-						{ 'top-0 px-px80': !isHomePage }
+						{ 'top-0 px-px80 fixed right-0 left-0': !isHomePage }
 					)}
 				>
 					<section className="flex-shrink-0">
