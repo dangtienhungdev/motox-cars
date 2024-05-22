@@ -23,7 +23,9 @@ const config: Config = {
 			fontFamily: {
 				sans: ['Plus Jakarta Sans', 'sans-serif'],
 			},
-
+			gray: {
+				DEFAULT: '#83827F',
+			},
 			zIndex: {
 				'full-screen-loading': '9999999999999', // > toast: 999999999999
 				'order-1': '99999999',
