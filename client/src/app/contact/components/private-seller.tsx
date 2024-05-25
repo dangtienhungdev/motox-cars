@@ -1,6 +1,6 @@
-import contactData from '@/data/contact';
 import Image from 'next/image';
 import SellerProfile from '~/images/seller-profile.jpg';
+import contactData from '@/data/contact';
 import { infoSeller } from '../init';
 
 const PrivateSeller = () => {

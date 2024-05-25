@@ -19,13 +19,15 @@ const config: Config = {
 				red: {
 					DEFAULT: '#D01817',
 				},
+				gray: {
+					DEFAULT: '#83827F',
+					l1: '#f8f8f8',
+				},
 			},
 			fontFamily: {
 				sans: ['Plus Jakarta Sans', 'sans-serif'],
 			},
-			gray: {
-				DEFAULT: '#83827F',
-			},
+
 			zIndex: {
 				'full-screen-loading': '9999999999999', // > toast: 999999999999
 				'order-1': '99999999',
