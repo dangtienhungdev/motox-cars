@@ -4,6 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	-webkit-font-smoothing: antialiased;
+@base {
+	* {
+		-webkit-font-smoothing: antialiased;
+		@apply scrollbar-hide;
+	}
+}
+
+*::-webkit-scrollbar {
+	width: 0px;
+}
+*::-webkit-scrollbar-button {
+	background: #ccc;
+}
+*::-webkit-scrollbar-track-piece {
+	background: #888;
 }
