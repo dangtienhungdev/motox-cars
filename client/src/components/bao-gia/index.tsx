@@ -1,6 +1,11 @@
 'use client';
 
 import {
+	PUBLIC_USER_ID,
+	TEAMPLATE_EMAIL_ID,
+	TEAMPLATE_SERVICES_EMAIL_ID,
+} from '@/configs/config';
+import {
 	Cascader,
 	CascaderProps,
 	Col,
@@ -11,11 +16,13 @@ import {
 	Radio,
 	RadioChangeEvent,
 	Row,
+	message,
 } from 'antd';
 import { memo, useState } from 'react';
 import { Option, options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
+import emailjs from '@emailjs/browser';
 import parse from 'html-react-parser';
 
 interface IBaoGiaXeProps {
@@ -25,23 +32,47 @@ interface IBaoGiaXeProps {
 }
 
 type FieldType = {
-	username?: string;
-	email?: string;
-	phone?: string;
-	address?: string;
-	hinhThucMua?: string;
-	message?: string;
-	chonXe?: string;
+	username: string;
+	email: string;
+	phone: string;
+	address: string;
+	hinhThucMua: string;
+	message: string;
+	chonXe: string;
 };
 
-const BaoGiaXe = ({ handleCancel, isModalOpen, handleOk }: IBaoGiaXeProps) => {
-	const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
+const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
+	const [isLoading, setIsLoading] = useState<boolean>(false);
+
+	const onFinish: FormProps<FieldType>['onFinish'] = async (values) => {
+		setIsLoading(true);
 		const data = {
 			...values,
+			chonXe: `${values.chonXe[0]}/ ${values.chonXe[1]}/ ${values.chonXe[2]}`,
 			hinhThucMua: value === 1 ? 'Trả hết' : 'Trả góp',
 			message: values.message || 'Không có lời nhắn',
 		};
-		console.log('🚀 ~ BaoGiaXe ~ data:', data);
+		emailjs
+			.send(
+				TEAMPLATE_SERVICES_EMAIL_ID,
+				TEAMPLATE_EMAIL_ID,
+				data,
+				PUBLIC_USER_ID
+			)
+			.then(
+				function (response) {
+					setIsLoading(false);
+					if (response.status === 200) {
+						message.success(
+							'Báo giá thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể.'
+						);
+					}
+				},
+				function () {
+					setIsLoading(false);
+					message.error('Có lỗi xảy ra, vui lòng thử lại sau!');
+				}
+			);
 	};
 
 	const [value, setValue] = useState(1);
@@ -63,9 +94,13 @@ const BaoGiaXe = ({ handleCancel, isModalOpen, handleOk }: IBaoGiaXeProps) => {
 			extra={
 				<label
 					htmlFor="submit-form"
-					className="bg-primary text-white py-3 px-5 rounded-lg cursor-pointer"
+					className="bg-primary text-white py-3 px-5 rounded-lg cursor-pointer h-[50px] min-w-[180px] flex items-center justify-center"
 				>
-					{baoGiaXeData.sendButton}
+					{isLoading ? (
+						<section className="animate-spin border-t-2 border-t-primary h-5 w-5 border-2 border-white rounded-full"></section>
+					) : (
+						baoGiaXeData.sendButton
+					)}
 				</label>
 			}
 		>
