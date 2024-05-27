@@ -1,5 +1,6 @@
 'use client';
 
+import DongXe from '@/components/dong-xe';
 import ScrollTop from '@/components/scroll-top/scroll-top';
 import contactData from '@/data/contact';
 import { motion } from 'framer-motion';
@@ -42,7 +43,13 @@ const ContactPage = () => {
 							<p className="text-gray">{contactData.introduce.desc}</p>
 						</section>
 
-						<section className=""></section>
+						<section className="pt-px80">
+							<h1 className="mb-6 text-3xl font-bold w-fit py-2 relative">
+								Các dòng xe tại Hà Thành Ford
+								<section className="absolute top-full left-0 w-1/3 h-0.5 bg-primary"></section>
+							</h1>
+							<DongXe className={{ wrapper: 'pt-10' }} />
+						</section>
 					</section>
 					<section className="hideen block lg:col-span-4">
 						<section className="flex flex-col gap-10">
