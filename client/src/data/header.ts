@@ -1,6 +1,6 @@
 const header = {
 	baogia: 'Nhận báo giá',
-	hotline: '+0946937769',
+	hotline: '083 3096 605',
 	email: 'dangtienhung.dev@gmail.com',
 	menus: {
 		home: 'Trang chủ',

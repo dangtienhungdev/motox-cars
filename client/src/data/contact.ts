@@ -8,7 +8,7 @@ const contactData = {
 	info: {
 		phone: {
 			title: 'Hot Line',
-			value: '0946937769',
+			value: '083 3096 605',
 		},
 		email: {
 			title: 'Email',

@@ -38,7 +38,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
 						<p className="flex items-center">
-							<span className="">Hot Line:</span>
+							<span className="">Hot Line: </span>
 							<span className="text-base">{header.hotline}</span>
 						</p>
 					</section>
@@ -47,8 +47,8 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
 						<p className="flex items-center">
-							<span className="">Hot Line:</span>
-							<span className="text-base">{header.hotline}</span>
+							<span className="">Email: </span>
+							<span className="text-base">{'tranxuanhieu003@gmail.com'}</span>
 						</p>
 					</section>
 				</nav>
