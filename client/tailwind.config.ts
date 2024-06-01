@@ -15,6 +15,7 @@ const config: Config = {
 			colors: {
 				primary: {
 					DEFAULT: '#0B4F87',
+					l10: '#2196F3',
 				},
 				red: {
 					DEFAULT: '#D01817',
@@ -22,6 +23,7 @@ const config: Config = {
 				gray: {
 					DEFAULT: '#83827F',
 					l1: '#f8f8f8',
+					l10: '#757575',
 				},
 			},
 			fontFamily: {
