@@ -21,17 +21,17 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 	const items: TabsProps['items'] = [
 		{
 			key: '1',
-			label: 'Giới thiệu sản phẩm',
-			children: <GioiThieu />,
+			label: <span className="text-base">Giới thiệu sản phẩm</span>,
+			children: <GioiThieu ford={ford} />,
 		},
 		{
 			key: '2',
-			label: 'Thông số kỹ thuật',
+			label: <span className="text-base">Thông số kỹ thuật</span>,
 			children: <ThongSo />,
 		},
 		{
 			key: '3',
-			label: 'Hình ảnh & Video',
+			label: <span className="text-base">Hình ảnh thực tế</span>,
 			children: <HinhAnhThucTe />,
 		},
 	];

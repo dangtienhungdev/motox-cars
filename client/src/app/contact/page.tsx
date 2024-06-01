@@ -1,12 +1,11 @@
 'use client';
 
 import DongXe from '@/components/dong-xe';
+import FormBaoGia from '@/components/form-bao-gia';
 import ScrollTop from '@/components/scroll-top/scroll-top';
 import contactData from '@/data/contact';
 import { motion } from 'framer-motion';
 import { memo } from 'react';
-import FormSeller from './components/form-seller';
-import Location from './components/location';
 import PrivateSeller from './components/private-seller';
 
 const ContactPage = () => {
@@ -51,23 +50,8 @@ const ContactPage = () => {
 							<DongXe className={{ wrapper: 'pt-10' }} />
 						</section>
 					</section>
-					<section className="hideen block lg:col-span-4">
-						<section className="flex flex-col gap-10">
-							<section className="w-full p-4 xl:p-6 rounded-md bg-gray-l1">
-								<h2 className="text-2xl font-bold mb-8 pl-2 border-l-2 border-l-primary">
-									{contactData.location.title}
-								</h2>
-								<Location />
-							</section>
 
-							<section className="w-full p-4 xl:p-6 rounded-md bg-gray-l1">
-								<h2 className="text-2xl font-bold mb-8 pl-2 border-l-2 border-l-primary">
-									{contactData.contact.title}
-								</h2>
-								<FormSeller />
-							</section>
-						</section>
-					</section>
+					<FormBaoGia />
 				</section>
 			</main>
 		</motion.section>
