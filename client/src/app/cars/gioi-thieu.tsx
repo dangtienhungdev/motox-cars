@@ -81,7 +81,9 @@ const GioiThieu = ({ ford }: any) => {
 				<section className="grid grid-cols-12 gap-4 mt-10">
 					<section className="col-span-12 lg:col-span-8">
 						<section className="flex flex-col gap-4">
-							<h1 className="">{info.des1}</h1>
+							<h1 className="text-lg font-semibold text-primary">
+								{info.des1}
+							</h1>
 							<Image src={info.image1} alt={info.des1} />
 
 							<p className="text-base">{parse(info.des2)}</p>
@@ -95,6 +97,30 @@ const GioiThieu = ({ ford }: any) => {
 									</li>
 								))}
 							</ul>
+
+							<h1 className="text-lg font-semibold text-primary">
+								{info.des4}
+							</h1>
+							<Image src={info.des5} alt={info.des1} />
+							<p className="text-base">{parse(info.des6)}</p>
+
+							<Image src={info.des7} alt={info.des7} />
+							<p className="text-base">{parse(info.des8)}</p>
+
+							<Image src={info.des9} alt={info.des9} />
+							<p className="text-base">{parse(info.des10)}</p>
+
+							<Image src={info.des11} alt={info.des11} />
+							<p className="text-base">{parse(info.des12)}</p>
+
+							<Image src={info.des13} alt={info.des13} />
+							<p className="text-base">{parse(info.des14)}</p>
+							<p className="text-base">{parse(info.des15)}</p>
+
+							<Image src={info.des16} alt={info.des16} />
+							<p className="text-base">{parse(info.des17)}</p>
+
+							<Image src={info.des18} alt={info.des18} />
 						</section>
 					</section>
 					<section className="col-span-12 lg:col-span-4">

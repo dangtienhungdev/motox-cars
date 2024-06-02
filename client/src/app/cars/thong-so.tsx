@@ -1,7 +1,7 @@
 import { memo } from 'react';
 
 const ThongSoKyThuat = () => {
-	return <div>ThongSoKyThuat</div>;
+	return <section className="">Download Pdf</section>;
 };
 
 export default memo(ThongSoKyThuat);

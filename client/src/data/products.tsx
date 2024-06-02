@@ -143,7 +143,37 @@ export const products = [
 					'Cảnh báo điểm mù, phanh khẩn cấp, duy trì làn đường, giữ khoảng cách với xe phía trước',
 					'Kết nối thông minh với điện thoại kích hoạt các tính năng cá nhân hóa điều khiển từ xa',
 				],
+				des4: /* html */ `Ngoại thất Ford Everest Titanium 2024`,
+				des5: 'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-19.jpg',
+				des6: /* html */ `Ngoại hình <span className="text-primary font-semibold text-lg">Ford Everest 2024</span> mang kiểu dáng khỏe khoắn,
+        cơ bắp đặc trưng của dòng xe Mỹ với những đường nét trau chuốt`,
+				des7: 'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-11.jpg',
+				des8: 'Nổi bật phần đầu xe là mặt ca lăng lớn kết hợp với thanh ngang lưới tản nhiệt mạ crom sang trọng kết nối 2 cụm đèn tạo hình ảnh mạnh mẽ, chắc chắn.',
+				des9: 'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-15.jpg',
+				des10: /* html */ `Hai bên mặt ca lăng <span className="text-primary font-semibold text-lg">Ford Everest 2024</span> là cụm đèn kích thước rất lớn với dải LED định
+        vị ban ngày chữ C ôm quanh phần viền đèn nổi bật, Hệ thống đèn cốt pha trang bị đèn Full LED ma trận vượt
+        qua ranh giới của công nghệ chiếu sáng. Phía trên nắp capo là những đường gân dập nổi cực kỳ cơ bắp`,
+				des11:
+					'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-20.jpg',
+				des12: /* html */ `Phần cản trước được thiết kế góc cạnh cùng các chi tiết khiến xe trở nên tinh tế hơn rất nhiều.
+        Phần cản này được trang bị 2 móc kéo bằng thép to bản cũng khiến xe thêm phần mạnh mẽ và đa dụng hơn.
+        Hai bên cản trước được trang bị đèn gầm cũng dạng LED hiện đại.`,
+				des13:
+					'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-22.jpg',
+				des14: /* html */ `Nhìn từ phần hông xe <span className="text-primary font-semibold text-lg">Ford Everest 2024</span> được thiết kế vuông vức
+        và mạnh mẽ hơn rất nhiều. Đường gân cơ bắp dập nổi kéo dài nối từ đỉnh trên phần đèn đầu xe đến phần đèn cuối xe. Phần cửa cũng được dập nổi lên cơ bắp.
+        Phần trên lốp bánh xe được trang bị ốp kim loại cũng khiến xe trở nên hầm hố và mạnh mẽ hơn.`,
+				des15: /* html */ `Các chi tiết Ốp gương, nẹp chân kính, tay nắm cửa, thanh giá nóc, viền bậc lên xuống, chữ <span className="text-primary font-semibold text-lg">Titanium</span> nhận diện phiên bản được mạ Crom sang trọng.`,
+				des16:
+					'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-18.jpg',
+				des17: /* html */ `Mâm lốp được trang bị mâm 20 inch thiết kế mới rất đẹp và sang trọng. Kích thước lốp đầy đủ là 255/55R20.
+        <span className="text-primary font-semibold text-lg">Ford Everest 2024</span> được trang bị phanh đĩa cả trước và sau và được trang bị đầy các công nghệ hiện đại nhất về phanh.`,
+				des18:
+					'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-13.jpg',
 			},
+		},
+		thon_so_ky_thuat: {
+			pdf: 'Everest',
 		},
 	},
 ];
