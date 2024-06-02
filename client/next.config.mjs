@@ -6,6 +6,14 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'fordlongbien.com',
 			},
+			{
+				protocol: 'https',
+				hostname: 'www.vdm.ford.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'picsum.photos',
+			},
 		],
 	},
 };

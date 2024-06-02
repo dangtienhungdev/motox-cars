@@ -9,4 +9,5 @@ export type TPriceListChildren = {
 	id: number;
 	title: string;
 	price: string;
+	slug?: string;
 };

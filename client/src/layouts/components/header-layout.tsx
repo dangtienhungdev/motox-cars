@@ -2,25 +2,28 @@
 
 import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
+import { memo, useState } from 'react';
 
+import BaoGiaXe from '@/components/bao-gia';
+import ScrollTop from '@/components/scroll-top/scroll-top';
 import header from '@/data/header';
 import cn from '@/libs/clsxm';
 import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import { memo } from 'react';
 import Logo from '~/images/logo.png';
 import menus from '../menus';
 
 const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
+	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
 	return (
 		<AnimatePresence>
+			<ScrollTop />
 			<motion.header
-				// initial={{ y: -100 }}
-				// animate={{ y: 0 }}
 				transition={{ duration: 0.5 }}
 				exit={{ y: -100 }}
-				className={cn('hidden lg:block w-full top-0 left-0 right-0 z-order-1', {
+				className={cn('hidden lg:block w-full top-0 left-0 right-0 z-order-7', {
 					fixed: isHomePage,
 				})}
 			>
@@ -35,7 +38,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
 						<p className="flex items-center">
-							<span className="">Hot Line:</span>
+							<span className="">Hot Line: </span>
 							<span className="text-base">{header.hotline}</span>
 						</p>
 					</section>
@@ -44,8 +47,8 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
 						<p className="flex items-center">
-							<span className="">Hot Line:</span>
-							<span className="text-base">{header.hotline}</span>
+							<span className="">Email: </span>
+							<span className="text-base">{'tranxuanhieu003@gmail.com'}</span>
 						</p>
 					</section>
 				</nav>
@@ -85,6 +88,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 					<section className="">
 						<Button
 							type="primary"
+							onClick={() => setIsModalOpen(true)}
 							className="!bg-primary text-white py-3 px-6 flex items-center gap-2 flex-shrink-0 flex-row-reverse !text-base !h-12 w-[166px]"
 							icon={<ChatBubbleIcon />}
 						>
@@ -93,6 +97,12 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 					</section>
 				</section>
 			</motion.header>
+
+			<BaoGiaXe
+				isModalOpen={isModalOpen}
+				handleOk={() => setIsModalOpen(false)}
+				handleCancel={() => setIsModalOpen(false)}
+			/>
 		</AnimatePresence>
 	);
 };

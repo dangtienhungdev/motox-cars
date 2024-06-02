@@ -1,0 +1,5 @@
+export const TEAMPLATE_EMAIL_ID = process.env
+	.NEXT_PUBLIC_TEAMPLATE_EMAIL_ID as string;
+export const TEAMPLATE_SERVICES_EMAIL_ID = process.env
+	.NEXT_PUBLIC_SERVICES_EMAIL_ID as string;
+export const PUBLIC_USER_ID = process.env.NEXT_PUBLIC_USER_ID;
