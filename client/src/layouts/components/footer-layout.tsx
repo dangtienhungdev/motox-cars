@@ -1,8 +1,8 @@
-import Location from '@/app/contact/components/location';
+import FacebookIcon from '~/socials/facebook.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import Location from '@/app/contact/components/location';
 import { memo } from 'react';
-import FacebookIcon from '~/socials/facebook.png';
 
 const FooterLayout = () => {
 	const footers = [
@@ -183,7 +183,7 @@ const FooterLayout = () => {
 	];
 
 	return (
-		<footer className="grid grid-cols-2 h-fit gap-10 lg:grid-cols-3 xl:grid-cols-4 bg-primary text-white py-10 px-px80">
+		<footer className="grid grid-cols-1 md:grid-cols-2 h-fit gap-10 lg:grid-cols-3 xl:grid-cols-4 bg-primary text-white py-10 xl:px-px80 lg:px-10 md:px-6 px-4">
 			{footers.map((footer) => (
 				<section className="flex flex-col gap-3" key={footer.id}>
 					<h2 className="text-white font-medium text-xl">{footer.title}</h2>

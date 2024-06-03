@@ -26,13 +26,13 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 			<motion.header
 				transition={{ duration: 0.5 }}
 				exit={{ y: -100 }}
-				className={cn('hidden md:block w-full top-0 left-0 right-0 z-order-7', {
+				className={cn('block w-full top-0 left-0 right-0 z-order-7', {
 					fixed: isHomePage,
 				})}
 			>
 				<nav
 					className={cn(
-						'bg-primary text-white h-12 flex justify-between items-center xl:px-px80 lg:px-10 md:px-6 px-4',
+						'bg-primary text-white h-12 hidden md:flex justify-between items-center xl:px-px80 lg:px-10 md:px-6 px-4',
 						{ hidden: !isHomePage }
 					)}
 				>

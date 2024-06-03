@@ -2,11 +2,11 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { useHomePage } from '@/hooks/usePathName';
-import cn from '@/libs/clsxm';
-import { memo } from 'react';
 import FooterLayout from './components/footer-layout';
 import HeaderLayout from './components/header-layout';
+import cn from '@/libs/clsxm';
+import { memo } from 'react';
+import { useHomePage } from '@/hooks/usePathName';
 
 interface CarLayoutProps {
 	children: React.ReactNode;
@@ -26,7 +26,10 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 				animate={{ y: 0 }}
 				exit={{ y: -100 }}
 				transition={{ duration: 0.5 }}
-				className={cn('flex flex-col w-full', className?.classContainer)}
+				className={cn(
+					'flex flex-col w-full overflow-x-hidden',
+					className?.classContainer
+				)}
 			>
 				<HeaderLayout isHomePage={isHomePage} />
 				<main

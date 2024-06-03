@@ -38,12 +38,12 @@ export default function Home() {
 				<section className="bg-[url('https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg')] bg-cover bg-center bg-no-repeat pt-[49%] w-full"></section>
 				<section className="bg-[url('https://picsum.photos/536/354')] bg-cover bg-center bg-no-repeat pt-[49%] w-full"></section>
 			</Carousel>
-			<section className="p-px80">
+			<section className="xl:p-px80 lg:p-10 md:p-6 p-4 overflow-hidden">
 				<section className="text-center flex justify-center flex-col gap-3 items-center">
 					<h2 className="text-base text-primary font-semibold w-fit text-center py-1 border-b-2 border-primary/100">
 						Các mẫu xe tại Ford Hà Thành
 					</h2>
-					<p className="text-2xl font-semibold tracking-wide">
+					<p className="md:text-2xl text-lg font-semibold tracking-wide">
 						LỰA CHỌN DÒNG XE FORD PHÙ HỢP VỚI BẠN
 					</p>
 				</section>
@@ -53,7 +53,7 @@ export default function Home() {
 
 			<Modal
 				title="ĐĂNG KÝ NHẬN BÁO GIÁ"
-				open={isModalOpen}
+				open={false}
 				onOk={handleOk}
 				width={800}
 				className="w-full max-w-[800px]"
