@@ -1,6 +1,11 @@
 'use client';
 
 import {
+	PUBLIC_USER_ID,
+	TEAMPLATE_EMAIL_ID,
+	TEAMPLATE_SERVICES_EMAIL_ID,
+} from '@/configs/config';
+import {
 	Cascader,
 	CascaderProps,
 	Col,
@@ -13,13 +18,8 @@ import {
 	Row,
 	message,
 } from 'antd';
-import { Option, options } from './init';
-import {
-	PUBLIC_USER_ID,
-	TEAMPLATE_EMAIL_ID,
-	TEAMPLATE_SERVICES_EMAIL_ID,
-} from '@/configs/config';
 import { memo, useState } from 'react';
+import { Option, options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import emailjs from '@emailjs/browser';
@@ -136,16 +136,6 @@ const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
 							<Form.Item<FieldType>
 								label={baoGiaXeData.form.email.title}
 								name="email"
-								rules={[
-									{
-										type: 'email',
-										message: baoGiaXeData.form.validate.notEmail,
-									},
-									{
-										required: true,
-										message: baoGiaXeData.form.validate.email,
-									},
-								]}
 							>
 								<Input
 									size="large"
