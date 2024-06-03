@@ -51,7 +51,7 @@ const DongXe = ({ className }: DongXeProps) => {
 	return (
 		<section
 			className={cn(
-				'pt-px80 grid lg:grid-cols-3 gap-14 grid-cols-2',
+				'pt-px80 grid lg:grid-cols-3 lg:gap-14 md:gap-8 gap-4 grid-cols-2',
 				className?.wrapper
 			)}
 		>

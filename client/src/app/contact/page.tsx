@@ -14,7 +14,7 @@ const ContactPage = () => {
 			<ScrollTop />
 
 			{/* banner */}
-			<aside className="pt-[25%] scale-100 bg-[url(https://motorx-six.vercel.app/_next/static/media/page-title.22db88fc.jpg)] bg-no-repeat bg-top bg-cover rounded-none relative">
+			<aside className="lg:pt-[25%] md:pt-[40%] scale-100 bg-[url(https://motorx-six.vercel.app/_next/static/media/page-title.22db88fc.jpg)] bg-no-repeat bg-top bg-cover rounded-none relative">
 				<section className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col w-full h-full flex-1 items-center justify-center">
 					<section>
 						<span className="text-xl font-semibold leading-6 text-white">
@@ -30,7 +30,7 @@ const ContactPage = () => {
 			</aside>
 
 			{/* seller profile */}
-			<main className="px-px80 py-px80">
+			<main className="xl:px-px80 lg:px-10 md:px-6 px-4 py-px80">
 				<PrivateSeller />
 
 				<section className="grid grid-cols-12 xl:gap-16 lg:gap-5 gap-4">

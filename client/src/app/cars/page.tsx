@@ -18,7 +18,7 @@ const CarsPage = () => {
 		};
 	});
 	return (
-		<motion.div className="w-full px-px80 py-6 h-full">
+		<motion.div className="w-full xl:px-px80 lg:px-10 md:px-6 px-4 py-6 h-full">
 			<ScrollTop />
 
 			<Tabs size="large" defaultActiveKey="5" items={items} />

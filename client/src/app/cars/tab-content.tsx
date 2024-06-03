@@ -12,7 +12,6 @@ import ThongSo from './thong-so';
 
 const TabContent = ({ data }: { data: TPriceList }) => {
 	const ford = products.find((product) => product.id === data.id);
-	console.log('🚀 ~ TabContent ~ ford:', ford);
 
 	if (!ford) {
 		return <section className="">Đang cập nhật dữ liệu...</section>;
@@ -38,7 +37,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 
 	return (
 		<section className="">
-			<section className="grid grid-cols-2 gap-10">
+			<section className="grid lg:grid-cols-2 grid-cols-1 gap-10">
 				<section className="flex flex-col gap-8">
 					<h1 className="lg:text-2xl text-lg font-semibold text-primary">
 						{ford.title}
@@ -73,14 +72,14 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 						<p className="text-base">{parse(ford.desc)}</p>
 					</section>
 				</section>
-				<section className="">
+				<section className="mb-10 lg:mb-0">
 					<section className="">
 						<Image
 							src={ford.maMauXe[0].image}
 							alt={ford.maMauXe[0].title}
 							height={370}
 							width={570}
-							className="w-[70%] mx-auto object-contain"
+							className="lg:w-[70%] md:!w-full mx-auto object-contain"
 						/>
 					</section>
 
@@ -96,7 +95,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 				</section>
 			</section>
 
-			<section className="my-10 py-10 grid-cols-5 gap-10 grid">
+			<section className="my-10 py-10 lg:grid-cols-5 gap-10 lg:grid hidden">
 				{ford.xe.map((item) => (
 					<Tooltip title={item.title} key={item.id}>
 						<section className="flex flex-col gap-4 hover:shadow transition-all duration-200 border rounded-sm overflow-hidden cursor-pointer">

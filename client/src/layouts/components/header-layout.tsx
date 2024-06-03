@@ -1,21 +1,24 @@
 'use client';
 
-import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { memo, useState } from 'react';
 
 import BaoGiaXe from '@/components/bao-gia';
-import ScrollTop from '@/components/scroll-top/scroll-top';
-import header from '@/data/header';
-import cn from '@/libs/clsxm';
 import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '~/images/logo.png';
+import ScrollTop from '@/components/scroll-top/scroll-top';
+import SidebarMobile from './sidebar-mobile';
+import cn from '@/libs/clsxm';
+import header from '@/data/header';
 import menus from '../menus';
 
 const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+	const [isOpenSidebar, setisOpenSidebar] = useState<boolean>(false);
 
 	return (
 		<AnimatePresence>
@@ -23,13 +26,13 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 			<motion.header
 				transition={{ duration: 0.5 }}
 				exit={{ y: -100 }}
-				className={cn('hidden lg:block w-full top-0 left-0 right-0 z-order-7', {
+				className={cn('hidden md:block w-full top-0 left-0 right-0 z-order-7', {
 					fixed: isHomePage,
 				})}
 			>
 				<nav
 					className={cn(
-						'bg-primary text-white h-12 flex justify-between items-center px-px80',
+						'bg-primary text-white h-12 flex justify-between items-center xl:px-px80 lg:px-10 md:px-6 px-4',
 						{ hidden: !isHomePage }
 					)}
 				>
@@ -57,13 +60,35 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 					className={cn(
 						'w-full shadow-md bg-white left-1/2 h-20 flex items-center justify-between',
 						{
-							'top-12 rounded-b-lg px-6 max-w-[calc(100vw_-_160px)] absolute  -translate-x-1/2':
+							'top-12 lg:rounded-b-lg px-6 lg:max-w-[calc(100vw_-_160px)] lg:absolute  lg:-translate-x-1/2':
 								isHomePage,
 						},
-						{ 'top-0 px-px80 fixed right-0 left-0': !isHomePage }
+						{
+							'top-0 xl:px-px80 lg:px-10 md:px-6 px-4 fixed right-0 left-0':
+								!isHomePage,
+						}
 					)}
 				>
-					<section className="flex-shrink-0">
+					<Button
+						onClick={() => setisOpenSidebar(!isOpenSidebar)}
+						className="!h-12 !w-12 !flex lg:!hidden items-center justify-center flex-shrink-0"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							strokeWidth={1.5}
+							stroke="currentColor"
+							className="size-6 flex-shrink-0"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</svg>
+					</Button>
+					<section className="flex-shrink-0 lg:block hidden">
 						<Image
 							src={Logo}
 							alt="logo"
@@ -73,7 +98,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 						/>
 					</section>
 
-					<section className="flex items-center gap-5 flex-1 justify-center">
+					<section className="lg:flex hidden items-center gap-5 flex-1 justify-center">
 						{menus.map((menu) => (
 							<Link
 								href={menu.link}
@@ -102,6 +127,11 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 				isModalOpen={isModalOpen}
 				handleOk={() => setIsModalOpen(false)}
 				handleCancel={() => setIsModalOpen(false)}
+			/>
+
+			<SidebarMobile
+				isOpenSidebar={isOpenSidebar}
+				setIsOpenSidebar={setisOpenSidebar}
 			/>
 		</AnimatePresence>
 	);

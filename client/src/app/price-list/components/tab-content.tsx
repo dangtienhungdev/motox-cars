@@ -39,8 +39,8 @@ const TabContent = ({ data }: TabContentProps) => {
 	});
 
 	return (
-		<section className="grid grid-cols-3 gap-20">
-			<section className="col-span-1">
+		<section className="grid lg:grid-cols-3 grid-cols-2 gap-20">
+			<section className="lg:col-span-1 hidden col-span-2">
 				<Image
 					src={data.thumnail}
 					alt={data.label}
@@ -50,8 +50,18 @@ const TabContent = ({ data }: TabContentProps) => {
 				/>
 			</section>
 
-			<section className="col-span-2">
+			<section className="lg:col-span-2 col-span-2">
 				<Table columns={columns} dataSource={dataSource} pagination={false} />
+			</section>
+
+			<section className="lg:col-span-1 lg:hidden col-span-2">
+				<Image
+					src={data.thumnail}
+					alt={data.label}
+					className="w-full"
+					height={300}
+					width={300}
+				/>
 			</section>
 		</section>
 	);

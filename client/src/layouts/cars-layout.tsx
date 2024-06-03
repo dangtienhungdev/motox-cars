@@ -33,7 +33,7 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 					className={cn(
 						'flex-1 min-h-[calc(100vh_-_80px)]',
 						{ 'pt-px80': !isHomePage },
-						{ 'mt-12': isHomePage },
+						{ 'lg:mt-12 mt-[calc(80px_+_48px)]': isHomePage },
 						className?.classMain
 					)}
 				>
