@@ -19,7 +19,7 @@ const menus = [
 	{
 		id: '4',
 		name: header.menus.products,
-		link: '/cars',
+		link: '/cars?id=1',
 	},
 	{
 		id: '6',

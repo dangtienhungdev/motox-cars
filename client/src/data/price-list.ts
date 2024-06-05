@@ -3,44 +3,6 @@ import { TPriceList } from '@/types/price-list.type';
 const priceList: { fords: TPriceList[] } = {
 	fords: [
 		{
-			id: 5,
-			label: 'Ford Everest',
-			thumnail:
-				'https://fordlongbien.com/wp-content/uploads/2022/08/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien.jpg',
-			children: [
-				{
-					id: 1,
-					title: 'Ford Everest Platinum 4×4 AT',
-					price: '0',
-					slug: 'ford-everest-platinum-4x4-at',
-				},
-				{
-					id: 2,
-					title: 'Ford Everest Titanium+ 4×4 AT',
-					price: '1468000000',
-					slug: 'ford-everest-titanium-4x4-at',
-				},
-				{
-					id: 3,
-					title: 'Ford Everest Titanium AT 4×2 AT',
-					price: '1299000000',
-					slug: 'ford-everest-titanium-at-4x2-at',
-				},
-				{
-					id: 4,
-					title: 'Ford Everest Sport 4×2 AT',
-					price: '1178000000',
-					slug: 'ford-everest-sport-4x2-at',
-				},
-				{
-					id: 5,
-					title: 'Ford Everest Ambient 4×2 AT',
-					price: '1099000000',
-					slug: 'ford-everest-ambient-4x2-at',
-				},
-			],
-		},
-		{
 			id: 1,
 			label: 'Ford Ranger',
 			thumnail:
@@ -121,6 +83,44 @@ const priceList: { fords: TPriceList[] } = {
 					title: 'Ford Territory Trend 1.5L AT',
 					price: '822000000',
 					slug: 'ford-territory-trend-1-5l-at',
+				},
+			],
+		},
+		{
+			id: 5,
+			label: 'Ford Everest',
+			thumnail:
+				'https://fordlongbien.com/wp-content/uploads/2022/08/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien.jpg',
+			children: [
+				{
+					id: 1,
+					title: 'Ford Everest Platinum 4×4 AT',
+					price: '0',
+					slug: 'ford-everest-platinum-4x4-at',
+				},
+				{
+					id: 2,
+					title: 'Ford Everest Titanium+ 4×4 AT',
+					price: '1468000000',
+					slug: 'ford-everest-titanium-4x4-at',
+				},
+				{
+					id: 3,
+					title: 'Ford Everest Titanium AT 4×2 AT',
+					price: '1299000000',
+					slug: 'ford-everest-titanium-at-4x2-at',
+				},
+				{
+					id: 4,
+					title: 'Ford Everest Sport 4×2 AT',
+					price: '1178000000',
+					slug: 'ford-everest-sport-4x2-at',
+				},
+				{
+					id: 5,
+					title: 'Ford Everest Ambient 4×2 AT',
+					price: '1099000000',
+					slug: 'ford-everest-ambient-4x2-at',
 				},
 			],
 		},

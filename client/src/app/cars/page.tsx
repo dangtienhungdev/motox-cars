@@ -1,11 +1,11 @@
 'use client';
 
 import ScrollTop from '@/components/scroll-top/scroll-top';
-import priceList from '@/data/price-list';
-import { Tabs } from 'antd';
-import { motion } from 'framer-motion';
-import { memo } from 'react';
 import TabContent from './tab-content';
+import { Tabs } from 'antd';
+import { memo } from 'react';
+import { motion } from 'framer-motion';
+import priceList from '@/data/price-list';
 
 const CarsPage = () => {
 	const tabs = priceList.fords;
@@ -17,11 +17,21 @@ const CarsPage = () => {
 			children: <TabContent data={tab} />,
 		};
 	});
+
+	const onChange = (key: string) => {
+		console.log(key);
+	};
+
 	return (
 		<motion.div className="w-full xl:px-px80 lg:px-10 md:px-6 px-4 py-6 h-full">
 			<ScrollTop />
 
-			<Tabs size="large" defaultActiveKey="5" items={items} />
+			<Tabs
+				size="large"
+				defaultActiveKey="1"
+				items={items}
+				onChange={onChange}
+			/>
 		</motion.div>
 	);
 };

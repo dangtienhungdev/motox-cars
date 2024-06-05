@@ -1,14 +1,14 @@
 import { Button, Tabs, TabsProps, Tooltip } from 'antd';
 
-import { products } from '@/data/products';
-import { TPriceList } from '@/types/price-list.type';
-import { formatCurrency } from '@/utils/fomatCurrency';
-import parse from 'html-react-parser';
-import Image from 'next/image';
-import { memo } from 'react';
 import GioiThieu from './gioi-thieu';
 import HinhAnhThucTe from './hinh-anh-thuc-te';
+import Image from 'next/image';
+import { TPriceList } from '@/types/price-list.type';
 import ThongSo from './thong-so';
+import { formatCurrency } from '@/utils/fomatCurrency';
+import { memo } from 'react';
+import parse from 'html-react-parser';
+import { products } from '@/data/products';
 
 const TabContent = ({ data }: { data: TPriceList }) => {
 	const ford = products.find((product) => product.id === data.id);
@@ -95,7 +95,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 				</section>
 			</section>
 
-			<section className="my-10 py-10 lg:grid-cols-5 gap-10 lg:grid hidden">
+			<section className="my-10 py-10 lg:grid-cols-5 xl:gap-6 lg:gap-6 lg:grid hidden">
 				{ford.xe.map((item) => (
 					<Tooltip title={item.title} key={item.id}>
 						<section className="flex flex-col gap-4 hover:shadow transition-all duration-200 border rounded-sm overflow-hidden cursor-pointer">

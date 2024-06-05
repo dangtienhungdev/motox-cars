@@ -176,4 +176,332 @@ export const products = [
 			pdf: 'Everest',
 		},
 	},
+	{
+		id: 1,
+		title: 'FORD RANGER',
+		price: '699000000',
+		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
+		desc: /* html */ `Mua Xe <span className="text-primary font-semibold">Ford Ranger 2024</span> Giá Tốt Nhất Toàn Quốc Tại <span className="text-primary font-semibold">Ford Hà Thành</span> Hà Nội Với Ưu Đãi Nhất. Hotline <span className="text-primary font-semibold">083 3096 605</span>. Giá Xe Ford Everest 2024`,
+		maMauXe: [
+			{
+				id: 1,
+				title: 'Xanh Đen',
+				color: '#C0C0C0',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 2,
+				title: 'Đỏ',
+				color: '#FF3300',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 3,
+				title: 'Đen',
+				color: '#000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 4,
+				title: 'Xanh',
+				color: '#333300',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 5,
+				title: 'Trắng',
+				color: '#FFFFFF',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 6,
+				title: 'Nâu',
+				color: '#555555',
+				image: 'https://picsum.photos/536/354',
+			},
+		],
+		xe: [
+			{
+				title: 'Ford Ranger Raptor 2.0L',
+				id: 'ford-ranger-raptor-2-0l',
+				price: '1299000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 'ford-ranger-stormtrak-4x4-at',
+				title: 'Ford Ranger StormTrak 4×4 AT',
+				price: '1039000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				id: 'ford-ranger-wildtrak-2-0l-4x4-at',
+				title: 'Ford Ranger Wildtrak 2.0L 4×4 AT',
+				price: '979000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				title: 'Ford Ranger Sport 4×4 AT',
+				id: 'ford-ranger-sport-4x4-at',
+				price: '864000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				title: 'Ford Ranger XLS 4×4 AT',
+				id: 'ford-ranger-xls-4x4-at',
+				price: '776000000',
+				image: 'https://picsum.photos/536/354',
+			},
+			{
+				title: 'Ford Ranger XLS 4×2 AT',
+				id: 'ford-ranger-xls-4x2-at',
+				price: '707000000',
+				image: 'https://picsum.photos/536/354',
+			},
+		],
+		gioithieu: {
+			heading1: 'Bảng giá xe bán tải Ford Ranger 2024 tại Ford Hà Thành',
+			children: [
+				{
+					title: 'Ford Ranger Raptor 2.0L',
+					id: 1,
+					price: '1299000000',
+					slug: 'ford-ranger-raptor-2-0l',
+				},
+				{
+					id: 2,
+					title: 'Ford Ranger StormTrak 4×4 AT',
+					price: '1039000000',
+					slug: 'ford-ranger-stormtrak-4x4-at',
+				},
+				{
+					id: 3,
+					title: 'Ford Ranger Wildtrak 2.0L 4×4 AT',
+					price: '979000000',
+					slug: 'ford-ranger-wildtrak-2-0l-4x4-at',
+				},
+				{
+					id: 4,
+					title: 'Ford Ranger Sport 4×4 AT',
+					price: '864000000',
+					slug: 'ford-ranger-sport-4x4-at',
+				},
+				{
+					id: 5,
+					title: 'Ford Ranger XLS 4×4 AT',
+					price: '776000000',
+					slug: 'ford-ranger-xls-4x4-at',
+				},
+				{
+					id: 6,
+					title: 'Ford Ranger XLS 4×2 AT',
+					price: '707000000',
+					slug: 'ford-ranger-xls-4x2-at',
+				},
+			],
+			desc: /* html */ `Hiện nay đại lý <span className="text-primary font-semibold">Ford Hà Thành</span>
+      đã nhận đặt cọc từ khách hàng để khách hàng có cơ hội được sở hữu
+      những chiếc xe
+      <span className="text-primary font-semibold">Ford Ranger 2024</span>
+      đầu tiên về đến Việt Nam. Mọi thông tin chi tiết mời quý vị liên hệ Đại diện bán hàng theo hotline <span className="text-primary font-semibold">083 3096 605</span> – <span className="text-primary font-semibold">Mr Hiếu</span> để được tư vấn cụ thể hơn`,
+			info: {
+				des1: 'Tổng Quan Ford Ranger 2024',
+				image1:
+					'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-Everest-2023-fordlongbien_com-9.jpg',
+				des2: /* html */ `Quý khách đang quan tâm đến dòng xe bán tải <span className="text-primary font-semibold text-lg">Ford Ranger 2024</span> của Mỹ – “Ông vua bán tải”?`,
+				des3: /* html */ `
+        Dòng xe bán tải đỉnh cao – dẫn đầu phân khúc bán tải hiện nay. Với thiết kế mạnh mẽ, hầm hố đậm chất Mỹ,
+        nội thất tiện nghi như một chiếc sedan hạng sang, vận hành mạnh mẽ xứng tầm “Bán tải Mỹ”…
+        <span className="text-primary font-semibold text-lg">Ford Ranger</span> không ngẫu nhiên dẫn đầu phân khúc với lượng xe bán ra hơn 1500 xe/ tháng!
+        `,
+				ul1: /* html */ `Những thông số kỹ thuật trên <span className="text-primary font-semibold text-lg">Ford Ranger 2024</span> bao gồm:`,
+				fordRanger: [
+					{
+						title: 'Loại Xe',
+						desc: 'Bán Tải Pick Up Cabin Kép',
+					},
+					{
+						title: 'Động cơ',
+						desc: 'Diesel 2.0L Bi-Turbo, Diesel 2.0 Single-Turbo',
+					},
+					{
+						title: 'Hộp số',
+						desc: 'Số tự động 6 cấp, Số tự động 10 cấp',
+					},
+					{
+						title: 'Số Chỗ Ngồi',
+						desc: '05 (chỗ)',
+					},
+					{
+						title: 'Kích Thước (dài x rộng x cao)',
+						desc: '5362 x 1918 x 1875 mm',
+					},
+					{
+						title: 'Chiều Dài Cơ Sở',
+						desc: '3270 mm',
+					},
+					{
+						title: 'Trọng Lượng Xe',
+						desc: '2032 – 2274 Kg',
+					},
+					{
+						title: 'Kích cỡ mâm lốp xe',
+						desc: '16 – 20 Inch',
+					},
+					{
+						title: 'Nước Sản Xuất',
+						desc: 'Việt Nam, Thái Lan',
+					},
+				],
+				fordRangerStormtrak: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2024/04/ford-ranger-stormtrak-39.jpg',
+					title: 'FORD RANGER STORMTRAK',
+					price: '1039000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger Stormtrak</span>
+            vừa mới chính thức ra mắt tại thị trường Việt Nam vào 11/04 vừa qua và là phiên
+            bản cao cấp nhất của dòng xe
+            <span className="text-primary font-semibold text-lg">Ford Ranger</span>
+            . Được trang bị những công nghệ vận hành,
+            công nghệ hỗ trợ người lái cũng như công nghệ an toàn đỉnh cao. Điển hình là các
+            tính năng công nghệ sau:
+          `,
+					listDesc: [
+						'Hệ thống trợ lực lái điện',
+						'Trang bị cần số điện tử',
+						'Trang bị thanh thể thao có thể thay đổi cách lắp đặt để phù hợp với nhu cầu sử dụng',
+						'Trang bị hệ thống đèn Led Matrix có trợ sáng',
+						'Phanh tay điện tử',
+						'Màn hình giải trí 12,4 Inch đặt dọc lớn nhất phân khúc',
+						'Hệ thống cảnh báo lệch làn và hỗ trợ duy trì làn đường',
+						'Hệ thống phanh chủ động khẩn cấp',
+						'Hệ thống tự động thích ứng khoảng cách Adaptive Cruiser Control',
+						'Hệ thống kiểm soát giảm thiểu lật xe',
+						'Hệ thống kiểm soát xe theo tải trọng',
+					],
+				},
+				fordRangerWildtrak: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2021/09/ford-ranger-wildtrak-2023-fordlongbien_com-17.jpg',
+					title: 'FORD RANGER WILDTRAK 2024',
+					price: '979000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger Wildtrak</span>
+            là phiên bản cao cấp của dòng xe Ford Ranger. Được trang bị những công nghệ
+            vận hành, công nghệ hỗ trợ người lái cũng như công nghệ an toàn đỉnh cao.
+            Điển hình là các tính năng công nghệ sau:
+          `,
+					listDesc: [
+						'Hệ thống trợ lực lái điện',
+						'Phanh tay điện tử',
+						'Màn hình giải trí 12,4 Inch đặt dọc lớn nhất phân khúc',
+						'Hệ thống cảnh báo lệch làn và hỗ trợ duy trì làn đường',
+						'Hệ thống phanh chủ động khẩn cấp',
+						'Hệ thống tự động thích ứng khoảng cách Adaptive Cruiser Control',
+						'Hệ thống kiểm soát giảm thiểu lật xe',
+						'Hệ thống kiểm soát xe theo tải trọng',
+					],
+				},
+				fordRangerSport: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-ranger-Sport-2024-mau-do.jpg',
+					title: 'Ford Ranger Sport 2024',
+					price: '864000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger Sport 2024</span>
+            cũng là phiên bản cao cấp nhưng dưới phiên bản Wildtrak. Tuy nhiên vẫn được trang bị 2 cầu cùng động cơ 2.0 Turbo và rất nhiều Option và công nghệ tối tân như:
+          `,
+					listDesc: [
+						'Ghế bọc da cao cấp',
+						'Hệ thống trợ lực lái điện',
+						'Hệ thống kiểm soát giảm thiểu lật xe',
+						'Hệ thống kiểm soát xe theo tải trọng',
+						'Hệ thống chống bó cứng phanh',
+						'Hệ thống phân phối lực phanh điện tử',
+						'Sạc không dây',
+						'Hệ thống đèn Full Led cùng dải led định vị ban ngày',
+					],
+				},
+				fordRangerXLS44: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-ranger-Sport-2024-mau-do.jpg',
+					title: 'Ford Ranger XLS 4×4 AT 2024',
+					price: '776000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger XLS 4×4 AT 2024</span>
+            là phiên bản bán chạy nhất của dòng xe <span className="text-primary font-semibold text-lg">Ford Ranger</span>. Phiên bản này được trang bị nhiều option
+            nhất trong các dòng bán tải cùng tầm giá và giá lăn bánh cũng rất hợp lý. Với mức giá lăn
+            bánh ở mức bình dân lại được trang bị hệ dẫn động 2 cầu thì rất nhiều những cá nhân hay doanh
+            nghiệp có thể dễ dàng tiếp cận phục vụ công việc cũng như gia đình
+          `,
+					listDesc: [
+						'Ghế bọc da cao cấp',
+						'Hệ thống kiểm soát hành trình Cruiser Control',
+						'Hệ thống giới hạn tốc độ – Limited Speed',
+						'Hệ thống chống bó cứng phanh',
+						'Hệ thống phân phối lực phanh điện tử',
+						'Hệ thống cân bằng điện tử',
+						'Hệ thống kiểm soát giảm thiểu lật xe',
+						'Hệ thống kiểm soát xe theo tải trọng',
+					],
+				},
+				fordRangerXLS42AT: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2017/08/Ford-ranger-xls-2024-mau-bac.jpg',
+					title: 'Ford Ranger XLS 4×2 AT 2024',
+					price: '776000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger XLS 4×2 AT 2024</span>
+            là phiên bản bán chạy nhất của dòng xe <span className="text-primary font-semibold text-lg">Ford Ranger</span>. Phiên bản này được trang bị nhiều option
+            nhất trong các dòng bán tải cùng tầm giá và giá lăn bánh cũng rất hợp lý. Với mức giá lăn
+            bánh ở mức bình dân lại được trang bị hệ dẫn động 2 cầu thì rất nhiều những cá nhân hay doanh
+            nghiệp có thể dễ dàng tiếp cận phục vụ công việc cũng như gia đình
+          `,
+					listDesc: [
+						'Hệ thống trợ lực lái điện',
+						'Hệ thống kiểm soát hành trình Cruiser Control',
+						'Hệ thống giới hạn tốc độ – Limited Speed',
+						'Hệ thống chống bó cứng phanh',
+						'Hệ thống phân phối lực phanh điện tử',
+						'Hệ thống cân bằng điện tử',
+						'Hệ thống kiểm soát giảm thiểu lật xe',
+						'Hệ thống kiểm soát xe theo tải trọng',
+					],
+				},
+				fordRangerXLSMT: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2017/08/ford-ranger-xls-2023-mau-den-icon-fordlongbien_com.jpg',
+					title: 'Ford Ranger XLS MT 2024',
+					price: '665000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger XLS MT 2024</span>
+            là phiên bản trang bị các công nghệ giống như <span className="text-primary font-semibold text-lg">Ford Ranger XLS AT</span>.
+            Chỉ khác nhau ở cơ cấu hộp số khi Ford Ranger MT có hộp số sàn 6 cấp,
+            dành cho những khách hàng ưa thích dòng xe số sàn.
+          `,
+				},
+				fordRangerXLMT2024: {
+					image:
+						'https://fordlongbien.com/wp-content/uploads/2017/08/ford-ranger-xl-2023-mau-trang-icon-fordlongbien_com.jpg',
+					title: 'Ford Ranger XL MT 2024',
+					price: '669000000',
+					desc: /* html */ `
+            <span className="text-primary font-semibold text-lg">Ford Ranger XL MT 2024</span>
+            là phiên bản thấp nhất của dòng xe <span className="text-primary font-semibold text-lg">Ford Ranger</span> với mức giá thấp nhất.
+            Chỉ với khoảng 630-640 là đã lăn bánh tại các địa phương.
+            Tuy giá thấp nhưng <span className="text-primary font-semibold text-lg">Ford Ranger XLS</span> vẫn được trang bị 2 cầu cùng hộp số sàn
+            và những option cần thiết điển hình như:
+          `,
+					listDesc: [
+						'Hệ thống trợ lực lái điện',
+						'Hệ thống chống bó cứng phanh',
+						'Hệ thống phân phối lực phanh điện tử',
+					],
+				},
+			},
+		},
+		thon_so_ky_thuat: {
+			pdf: 'Everest',
+		},
+	},
 ];

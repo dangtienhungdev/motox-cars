@@ -53,7 +53,7 @@ export default function Home() {
 
 			<Modal
 				title="ĐĂNG KÝ NHẬN BÁO GIÁ"
-				open={false}
+				open={isModalOpen}
 				onOk={handleOk}
 				width={800}
 				className="w-full max-w-[800px]"
