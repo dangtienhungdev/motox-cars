@@ -40,7 +40,7 @@ const TabContent = ({ data }: TabContentProps) => {
 
 	return (
 		<section className="grid lg:grid-cols-3 grid-cols-2 gap-20">
-			<section className="lg:col-span-1 hidden col-span-2">
+			<section className="lg:col-span-1 hidden lg:block col-span-2">
 				<Image
 					src={data.thumnail}
 					alt={data.label}

@@ -2,7 +2,7 @@ import { TCars } from '@/types/data.type';
 
 const data: TCars[] = [
 	{
-		id: '1',
+		id: '5',
 		name: 'Ford Everest',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
@@ -52,7 +52,7 @@ const data: TCars[] = [
 		],
 	},
 	{
-		id: '2',
+		id: '6',
 		name: 'Ford Explorer',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
@@ -74,7 +74,7 @@ const data: TCars[] = [
 		],
 	},
 	{
-		id: '3',
+		id: '1',
 		name: 'Ford Ranger',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
@@ -124,7 +124,7 @@ const data: TCars[] = [
 		],
 	},
 	{
-		id: '4',
+		id: '2',
 		name: 'Ford Raptor',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
@@ -139,7 +139,7 @@ const data: TCars[] = [
 		],
 	},
 	{
-		id: '5',
+		id: '4',
 		name: 'Ford Territory',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
@@ -168,7 +168,7 @@ const data: TCars[] = [
 		],
 	},
 	{
-		id: '6',
+		id: '7',
 		name: 'Ford Transit',
 		image:
 			'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',

@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import cn from '@/libs/clsxm';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface DongXeProps {
 	className?: {
@@ -12,40 +13,46 @@ interface DongXeProps {
 const DongXe = ({ className }: DongXeProps) => {
 	const data = [
 		{
-			id: 1,
-			title: 'Ford Ranger Raptor',
-			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
-		},
-		{
 			id: 2,
-			title: 'Ford Ranger',
+			title: 'Ford Ranger Raptor',
+			slug: 'ford-ranger-raptor',
 			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_uuafxd.jpg',
 		},
 		{
-			id: 3,
-			title: 'Ford Everest',
+			id: 1,
+			title: 'Ford Ranger',
+			slug: 'ford-ranger',
 			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-wildtrak-mau-vang-luxe-icon2-fordlongbien_com_l40h2a.jpg',
+		},
+		{
+			id: 5,
+			title: 'Ford Everest',
+			slug: 'ford-everest',
+			image:
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-everest-2022-mau-cam-icon-fordlongbien_com_tpiye8.jpg',
 		},
 		{
 			id: 4,
 			title: 'Ford Territory',
+			slug: 'ford-territory',
 			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-territory-2023-icon-fordlongbien_com_cynra9.jpg',
 		},
 		{
-			id: 5,
+			id: 6,
 			title: 'Ford Explorer',
+			slug: 'ford-explorer',
 			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-explorer-2022-icon-mau-do-fordlongbien_com-300x200_ghtqzg.jpg',
 		},
 		{
-			id: 5,
+			id: 7,
 			title: 'Ford Transit',
+			slug: 'ford-transit',
 			image:
-				'https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/homepage-re-imagine/desktop/Bronco_2160x926_Desktop.jpg/jcr:content/renditions/cq5dam.web.2160.2160.jpeg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-transit-fordlongbien_com-icon-1_e5lfxu.jpg',
 		},
 	];
 	return (
@@ -56,21 +63,20 @@ const DongXe = ({ className }: DongXeProps) => {
 			)}
 		>
 			{data.map((item) => (
-				<section
-					className="flex items-center justify-center gap-4 cursor-pointer overflow-hidden w-fit rounded-xl mx-auto relative"
-					key={item.id}
-				>
-					<Image
-						src={item.image}
-						width={300}
-						height={200}
-						className="w-[300px] h-[200px] rounded-xl object-cover hover:scale-105 shadow-md hover:shadow-xl transition-all duration-300 ease-in-out"
-						alt={item.title}
-					/>
-					<h1 className="absolute bottom-4 text-white drop-shadow-lg uppercase text-base whitespace-nowrap left-1/2 -translate-x-1/2 z-10">
-						{item.title}
-					</h1>
-				</section>
+				<Link key={item.id} href={`/cars?id=${item.id}`}>
+					<section className="flex items-center flex-col justify-center gap-4 cursor-pointer overflow-hidden w-fit rounded-xl mx-auto relative">
+						<Image
+							src={item.image}
+							width={300}
+							height={200}
+							className="w-[300px] h-[200px] rounded-xl object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+							alt={item.title}
+						/>
+						<h1 className="text-black drop-shadow-lg uppercase text-base whitespace-nowrap z-10">
+							{item.title}
+						</h1>
+					</section>
+				</Link>
 			))}
 		</section>
 	);
