@@ -1,11 +1,11 @@
 import { Image, Table } from 'antd';
 
-import FordRanger from './ford-ranger';
 import FormBaoGia from '@/components/form-bao-gia';
-import Link from 'next/link';
 import { formatCurrency } from '@/utils/fomatCurrency';
-import { memo } from 'react';
 import parse from 'html-react-parser';
+import Link from 'next/link';
+import { memo } from 'react';
+import FordRanger from './ford-ranger';
 
 const GioiThieu = ({ ford }: any) => {
 	const { gioithieu } = ford;
@@ -26,18 +26,20 @@ const GioiThieu = ({ ford }: any) => {
 			title: <span className="text-base font-medium">Giá sản phẩm</span>,
 			dataIndex: 'price',
 			key: 'price',
-			render: (text: string) => {
-				return <span>{formatCurrency(Number(text))}</span>;
+			render: (
+				_: string,
+				record: { id: string; title: string; price: string; slug: string }
+			) => {
+				return <span>{formatCurrency(Number(record.price))}</span>;
 			},
 		},
 	];
 
 	const dataSource = gioithieu.children.map(
-		(item: { id: number; title: string; price: number; slug: string }) => {
+		(item: { id: string; title: string; price: string; slug: string }) => {
 			return {
 				key: item.id,
-				title: item.title,
-				desc: item.price,
+				...item,
 			};
 		}
 	);
@@ -46,19 +48,7 @@ const GioiThieu = ({ ford }: any) => {
 		<section>
 			{/* trailer */}
 			<section className="grid lg:grid-cols-2 grid-cols-1 gap-10">
-				<section className="">
-					<iframe
-						width={560}
-						height={315}
-						src="https://www.youtube.com/embed/xU7DgFURYDA?si=C0kJXKqirLthXuNr"
-						title="YouTube video player"
-						frameBorder={0}
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						referrerPolicy="strict-origin-when-cross-origin"
-						allowFullScreen
-						className="w-full min-h-[400px]"
-					/>
-				</section>
+				<section className="">{gioithieu?.video}</section>
 				<section className="">
 					<p className="text-primary font-semibold text-xl">
 						{gioithieu.heading1}

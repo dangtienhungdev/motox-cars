@@ -1,4 +1,9 @@
 import {
+	PUBLIC_USER_ID,
+	TEAMPLATE_EMAIL_ID,
+	TEAMPLATE_SERVICES_EMAIL_ID,
+} from '@/configs/config';
+import {
 	Cascader,
 	CascaderProps,
 	Col,
@@ -10,13 +15,8 @@ import {
 	Row,
 	message,
 } from 'antd';
-import { Option, options } from './init';
-import {
-	PUBLIC_USER_ID,
-	TEAMPLATE_EMAIL_ID,
-	TEAMPLATE_SERVICES_EMAIL_ID,
-} from '@/configs/config';
 import { memo, useState } from 'react';
+import { Option, options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import emailjs from '@emailjs/browser';
@@ -148,7 +148,7 @@ const Content = ({
 								value={value}
 								size="large"
 							>
-								<Radio value={1}>Trả hết</Radio>
+								<Radio value={1}>Trả thẳng</Radio>
 								<Radio value={2}>Trả góp</Radio>
 							</Radio.Group>
 						</Form.Item>

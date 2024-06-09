@@ -2,11 +2,13 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 
+import { useHomePage } from '@/hooks/usePathName';
+import cn from '@/libs/clsxm';
+import { FloatButton } from 'antd';
+import Image from 'next/image';
+import { memo } from 'react';
 import FooterLayout from './components/footer-layout';
 import HeaderLayout from './components/header-layout';
-import cn from '@/libs/clsxm';
-import { memo } from 'react';
-import { useHomePage } from '@/hooks/usePathName';
 
 interface CarLayoutProps {
 	children: React.ReactNode;
@@ -41,6 +43,22 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 					)}
 				>
 					{children}
+					<FloatButton
+						icon={
+							<Image
+								src={
+									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717866930/tran-xuan-hieu/messenger_niax8a.png'
+								}
+								alt="Messenger"
+								height={56}
+								width={56}
+								className="object-contain w-full flex-shrink-0"
+							/>
+						}
+						type="default"
+						style={{ right: 24, height: 56, width: 56, padding: 0 }}
+						className="!p-0"
+					/>
 				</main>
 				<FooterLayout />
 			</motion.section>

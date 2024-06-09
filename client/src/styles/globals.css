@@ -20,3 +20,10 @@
 *::-webkit-scrollbar-track-piece {
 	background: #888;
 }
+
+:where(.css-dev-only-do-not-override-1basvn9).ant-float-btn
+	.ant-float-btn-body
+	.ant-float-btn-content
+	.ant-float-btn-icon {
+	width: 100% !important;
+}

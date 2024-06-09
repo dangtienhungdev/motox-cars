@@ -3,6 +3,45 @@ import { TPriceList } from '@/types/price-list.type';
 const priceList: { fords: TPriceList[] } = {
 	fords: [
 		{
+			id: 5,
+			label: 'Ford Everest',
+			slug: 'ford-everest',
+			thumnail:
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-everest-2022-mau-cam-icon-fordlongbien_com_tpiye8.jpg',
+			children: [
+				{
+					id: 'ford-everest-platinum-4x4-at',
+					title: 'Ford Everest Platinum 4×4 AT',
+					price: '1545000000',
+					slug: 'ford-everest-platinum-4x4-at',
+				},
+				{
+					id: 'ford-everest-titanium-4x4-at',
+					title: 'Ford Everest Titanium+ 4×4 AT',
+					price: '1468000000',
+					slug: 'ford-everest-titanium-4x4-at',
+				},
+				{
+					id: 'ford-everest-titanium-at-4x2-at',
+					title: 'Ford Everest Titanium AT 4×2 AT',
+					price: '1299000000',
+					slug: 'ford-everest-titanium-at-4x2-at',
+				},
+				{
+					id: 'ford-everest-sport-4x2-at',
+					title: 'Ford Everest Sport 4×2 AT',
+					price: '1178000000',
+					slug: 'ford-everest-sport-4x2-at',
+				},
+				{
+					id: 'ford-everest-ambient-4x2-at',
+					title: 'Ford Everest Ambient 4×2 AT',
+					price: '1099000000',
+					slug: 'ford-everest-ambient-4x2-at',
+				},
+			],
+		},
+		{
 			id: 1,
 			label: 'Ford Ranger',
 			slug: 'ford-ranger',
@@ -48,21 +87,6 @@ const priceList: { fords: TPriceList[] } = {
 			],
 		},
 		{
-			id: 2,
-			label: 'Ford Ranger Raptor',
-			slug: 'ford-ranger-raptor',
-			thumnail:
-				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_uuafxd.jpg',
-			children: [
-				{
-					id: 'ford-ranger-raptor-2023-2-0l-4wd-at',
-					title: 'Ford Ranger Raptor 2023 2.0L 4WD AT',
-					price: '1299000000',
-					slug: 'ford-ranger-raptor-2023-2-0l-4wd-at',
-				},
-			],
-		},
-		{
 			id: 4,
 			label: 'Ford Territory',
 			slug: 'ford-territory',
@@ -90,41 +114,17 @@ const priceList: { fords: TPriceList[] } = {
 			],
 		},
 		{
-			id: 5,
-			label: 'Ford Everest',
-			slug: 'ford-everest',
+			id: 2,
+			label: 'Ford Ranger Raptor',
+			slug: 'ford-ranger-raptor',
 			thumnail:
-				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-everest-2022-mau-cam-icon-fordlongbien_com_tpiye8.jpg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_uuafxd.jpg',
 			children: [
 				{
-					id: 'ford-everest-platinum-4x4-at',
-					title: 'Ford Everest Platinum 4×4 AT',
-					price: '1545000000',
-					slug: 'ford-everest-platinum-4x4-at',
-				},
-				{
-					id: 'ford-everest-titanium-4x4-at',
-					title: 'Ford Everest Titanium+ 4×4 AT',
-					price: '1468000000',
-					slug: 'ford-everest-titanium-4x4-at',
-				},
-				{
-					id: 'ford-everest-titanium-at-4x2-at',
-					title: 'Ford Everest Titanium AT 4×2 AT',
+					id: 'ford-ranger-raptor-2023-2-0l-4wd-at',
+					title: 'Ford Ranger Raptor 2023 2.0L 4WD AT',
 					price: '1299000000',
-					slug: 'ford-everest-titanium-at-4x2-at',
-				},
-				{
-					id: 'ford-everest-sport-4x2-at',
-					title: 'Ford Everest Sport 4×2 AT',
-					price: '1178000000',
-					slug: 'ford-everest-sport-4x2-at',
-				},
-				{
-					id: 'ford-everest-ambient-4x2-at',
-					title: 'Ford Everest Ambient 4×2 AT',
-					price: '1099000000',
-					slug: 'ford-everest-ambient-4x2-at',
+					slug: 'ford-ranger-raptor-2023-2-0l-4wd-at',
 				},
 			],
 		},
