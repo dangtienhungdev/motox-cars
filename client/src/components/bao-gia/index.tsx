@@ -2,10 +2,10 @@
 
 import { memo, useState } from 'react';
 
-import Content from './content';
-import { Drawer } from 'antd';
 import baoGiaXeData from '@/data/bao-gia-xe';
+import { Drawer } from 'antd';
 import parse from 'html-react-parser';
+import Content from './content';
 
 interface IBaoGiaXeProps {
 	isModalOpen: boolean;
@@ -18,7 +18,7 @@ const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
 
 	return (
 		<Drawer
-			title={baoGiaXeData.title}
+			title={<p className="md:block hidden">{baoGiaXeData.title}</p>}
 			onClose={handleCancel}
 			open={isModalOpen}
 			width={800}

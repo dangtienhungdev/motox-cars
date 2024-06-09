@@ -1,5 +1,4 @@
-import { Button, Drawer } from 'antd';
-
+import { Drawer } from 'antd';
 import Link from 'next/link';
 import { memo } from 'react';
 import menus from '../menus';
@@ -27,11 +26,15 @@ const SidebarMobile = ({
 					<Link
 						href={menu.link}
 						key={menu.id}
-						className="text-base text-primary py-3 font-medium flex justify-start w-full text-left"
+						className="text-base text-primary py-3 font-medium flex justify-start w-full text-left border-b"
+						onClick={() => setIsOpenSidebar(false)}
 					>
-						<Button className="!w-full !text-left !border-none outline-none ring-0 focus-visible:ring-0">
-							{menu.name}
-						</Button>
+						<section className="flex justify-start items-center gap-1">
+							{menu.icon && menu.icon}
+							<button className="!w-full !text-left !border-none outline-none ring-0 !flex !justify-start !text-base focus-visible:ring-0">
+								{menu.name}
+							</button>
+						</section>
 					</Link>
 				))}
 			</section>

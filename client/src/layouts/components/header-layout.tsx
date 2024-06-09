@@ -1,19 +1,18 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
 import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
+import { AnimatePresence, motion } from 'framer-motion';
 import { memo, useState } from 'react';
 
 import BaoGiaXe from '@/components/bao-gia';
+import ScrollTop from '@/components/scroll-top/scroll-top';
+import header from '@/data/header';
+import cn from '@/libs/clsxm';
 import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '~/images/logo.png';
-import ScrollTop from '@/components/scroll-top/scroll-top';
-import SidebarMobile from './sidebar-mobile';
-import cn from '@/libs/clsxm';
-import header from '@/data/header';
 import menus from '../menus';
+import SidebarMobile from './sidebar-mobile';
 
 const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -33,10 +32,14 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 				<nav
 					className={cn(
 						'bg-primary text-white h-12 hidden md:flex justify-between items-center xl:px-px80 lg:px-10 md:px-6 px-4',
-						{ hidden: !isHomePage }
+						{ '!hidden': !isHomePage }
 					)}
 				>
-					<section className="flex items-center gap-2">
+					{/* how to click phone call phone */}
+					<Link
+						href={`tel:${header.hotline}`}
+						className="flex items-center gap-2"
+					>
 						<span className="">
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
@@ -44,8 +47,12 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<span className="">Hot Line: </span>
 							<span className="text-base">{header.hotline}</span>
 						</p>
-					</section>
-					<section className="flex items-center gap-2">
+					</Link>
+					<Link
+						href={`https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new`}
+						target="_blank"
+						className="flex items-center gap-2"
+					>
 						<span className="">
 							<EnvelopeClosedIcon className="w-4 h-4" />
 						</span>
@@ -53,7 +60,7 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 							<span className="">Email: </span>
 							<span className="text-base">{'tranxuanhieu003@gmail.com'}</span>
 						</p>
-					</section>
+					</Link>
 				</nav>
 
 				<section
@@ -90,7 +97,9 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 					</Button>
 					<section className="flex-shrink-0 lg:block hidden">
 						<Image
-							src={Logo}
+							src={
+								'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717925246/tran-xuan-hieu/ford-logo-1280-x-960-wallpaper-df4sodvepcrbz8o0-removebg-preview_iypgeu.png'
+							}
 							alt="logo"
 							width={123}
 							height={40}

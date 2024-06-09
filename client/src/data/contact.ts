@@ -3,7 +3,7 @@ const contactData = {
 	sellerProfile: {
 		title: 'Thông tin người bán',
 		privateSeller: 'Người bán cá nhân',
-		name: 'Đặng Tiến Hưng',
+		name: 'Trần Xuân Hiếu',
 	},
 	info: {
 		phone: {
@@ -12,7 +12,7 @@ const contactData = {
 		},
 		email: {
 			title: 'Email',
-			value: 'dangtienhung.dev@gmail.com',
+			value: 'tranxuanhieu003@gmail.com',
 		},
 		address: {
 			title: 'Địa điểm',

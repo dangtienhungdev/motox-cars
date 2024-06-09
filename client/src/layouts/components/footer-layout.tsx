@@ -1,8 +1,8 @@
-import FacebookIcon from '~/socials/facebook.png';
+import Location from '@/app/contact/components/location';
 import Image from 'next/image';
 import Link from 'next/link';
-import Location from '@/app/contact/components/location';
 import { memo } from 'react';
+import FacebookIcon from '~/socials/facebook.png';
 
 const FooterLayout = () => {
 	const footers = [
@@ -224,7 +224,10 @@ const FooterLayout = () => {
 							<span className="text-sm">Trần Xuân Hiếu</span>
 						</section>
 					</Link>
-					<section className="flex leading-5 items-center gap-2 cursor-pointer">
+					<Link
+						href={`tel:0833096605`}
+						className="flex leading-5 items-center gap-2 cursor-pointer"
+					>
 						<span className="">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -242,7 +245,7 @@ const FooterLayout = () => {
 							</svg>
 						</span>
 						<span className="text-sm">083 3096 605</span>
-					</section>
+					</Link>
 				</section>
 			</section>
 		</footer>

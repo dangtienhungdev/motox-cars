@@ -9,6 +9,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import BaoGiaXe from '@/components/bao-gia';
+import LaiThuXe from '@/components/lai-thu-xe';
 import { products } from '@/data/products';
 import { TPriceList } from '@/types/price-list.type';
 import { formatCurrency } from '@/utils/fomatCurrency';
@@ -29,6 +30,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 	};
 
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+	const [laiThuXe, setLaiThuXe] = useState<boolean>(false);
 
 	if (!ford) {
 		return <section className="">Đang cập nhật dữ liệu...</section>;
@@ -79,6 +81,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 						<Button
 							size="large"
 							type="primary"
+							onClick={() => setLaiThuXe(true)}
 							className="!rounded-md text-base font-medium text-white !px-10"
 						>
 							Lái thử
@@ -179,6 +182,8 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 				handleOk={() => setIsModalOpen(false)}
 				handleCancel={() => setIsModalOpen(false)}
 			/>
+
+			<LaiThuXe open={laiThuXe} onClose={() => setLaiThuXe(false)} />
 		</section>
 	);
 };

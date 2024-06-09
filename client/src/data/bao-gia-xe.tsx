@@ -1,7 +1,7 @@
 const baoGiaXeData = {
 	title: 'Đăng ký nhận báo giá xe',
 	sendButton: 'Gửi yêu cầu báo giá',
-	desc: /*html*/ `Chào anh chị, để nhận được <span className="font-semibold">“Báo giá đặc biệt”</span> từ <span className="font-semibold">Ford Hà Thành</span>, các anh chị hãy liên hệ ngay cho Hotline theo số <span className="font-semibold">094.6937.769</span> hoặc điền thông tin vào font báo giá dưới đây. Xin cảm ơn!`,
+	desc: /*html*/ `Chào anh chị, để nhận được <span className="font-semibold">“Báo giá đặc biệt”</span> từ <span className="font-semibold">Ford Hà Thành</span>, các anh chị hãy liên hệ ngay cho Hotline theo số <span className="font-semibold">083.3096.605</span> hoặc điền thông tin vào font báo giá dưới đây. Xin cảm ơn!`,
 	form: {
 		username: {
 			title: 'Họ và tên',
