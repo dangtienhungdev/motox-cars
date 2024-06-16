@@ -1,11 +1,11 @@
 'use client';
 
 import ScrollTop from '@/components/scroll-top/scroll-top';
-import priceList from '@/data/price-list';
-import { Tabs } from 'antd';
-import { motion } from 'framer-motion';
-import { memo } from 'react';
 import TabContent from './components/tab-content';
+import { Tabs } from 'antd';
+import { memo } from 'react';
+import { motion } from 'framer-motion';
+import priceList from '@/data/price-list';
 
 const PriceList = () => {
 	const tabs = priceList.fords;
@@ -14,7 +14,7 @@ const PriceList = () => {
 		return {
 			label: tab.label,
 			key: tab.id.toString(),
-			children: <TabContent data={tab} />,
+			children: <TabContent data={tab} id={tab.id} />,
 		};
 	});
 

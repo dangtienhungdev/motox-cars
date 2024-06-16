@@ -51,15 +51,7 @@ const FormSeller = () => {
 					/>
 				</Form.Item>
 
-				<Form.Item<FieldType>
-					name="email"
-					rules={[
-						{
-							required: true,
-							message: contactData.contact.form.email.validate,
-						},
-					]}
-				>
+				<Form.Item<FieldType> name="email">
 					<Input
 						placeholder={contactData.contact.form.email.title}
 						size="large"

@@ -1,11 +1,13 @@
 import { Image, Table } from 'antd';
 
-import FormBaoGia from '@/components/form-bao-gia';
-import { formatCurrency } from '@/utils/fomatCurrency';
-import parse from 'html-react-parser';
-import Link from 'next/link';
-import { memo } from 'react';
+import Content from '@/components/bao-gia/content';
+import FordExplorer from './ford-explorer';
 import FordRanger from './ford-ranger';
+import FormBaoGia from '@/components/form-bao-gia';
+import Link from 'next/link';
+import { formatCurrency } from '@/utils/fomatCurrency';
+import { memo } from 'react';
+import parse from 'html-react-parser';
 
 const GioiThieu = ({ ford }: any) => {
 	const { gioithieu } = ford;
@@ -48,11 +50,13 @@ const GioiThieu = ({ ford }: any) => {
 		<section>
 			{/* trailer */}
 			<section className="grid lg:grid-cols-2 grid-cols-1 gap-10">
-				<section className="">{gioithieu?.video}</section>
+				{gioithieu?.video && <section className="">{gioithieu?.video}</section>}
 				<section className="">
-					<p className="text-primary font-semibold text-xl">
-						{gioithieu.heading1}
-					</p>
+					{gioithieu?.heading1 && (
+						<p className="text-primary font-semibold text-xl">
+							{gioithieu?.heading1}
+						</p>
+					)}
 
 					<section className="mt-8">
 						<Table
@@ -66,7 +70,9 @@ const GioiThieu = ({ ford }: any) => {
 
 			{/* content */}
 			<section className="mt-10">
-				<p className="text-base">{parse(gioithieu.desc)}</p>
+				{gioithieu?.desc && (
+					<p className="text-base">{parse(gioithieu.desc)}</p>
+				)}
 
 				<section className="grid grid-cols-12 gap-4 mt-10">
 					<section className="col-span-12 lg:col-span-8">
@@ -76,7 +82,7 @@ const GioiThieu = ({ ford }: any) => {
 									{info?.des1}
 								</h1>
 							)}
-							{info?.des1 && <Image src={info?.image1} alt={info?.des1} />}
+							{info?.image1 && <Image src={info?.image1} alt={info?.des1} />}
 
 							{info?.des2 && <p className="text-base">{parse(info?.des2)}</p>}
 							{info?.des3 && <p className="text-base">{parse(info?.des3)}</p>}
@@ -169,10 +175,16 @@ const GioiThieu = ({ ford }: any) => {
 
 							{/* FordRanger */}
 							<FordRanger ford={ford} />
+
+							{/* ford explorer */}
+							<FordExplorer ford={ford} />
+							{/* {info?.fordExplorer && ()} */}
 						</section>
 					</section>
 					<section className="col-span-12 lg:col-span-4">
-						<FormBaoGia />
+						<FormBaoGia>
+							<Content isSubmit={true} />
+						</FormBaoGia>
 					</section>
 				</section>
 			</section>

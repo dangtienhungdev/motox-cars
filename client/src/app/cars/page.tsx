@@ -1,14 +1,18 @@
 'use client';
 
 import ScrollTop from '@/components/scroll-top/scroll-top';
-import priceList from '@/data/price-list';
-import { Tabs } from 'antd';
-import { motion } from 'framer-motion';
-import { memo } from 'react';
 import TabContent from './tab-content';
+import { Tabs } from 'antd';
+import { memo } from 'react';
+import { motion } from 'framer-motion';
+import priceList from '@/data/price-list';
+import { useSearchParams } from 'next/navigation';
 
 const CarsPage = () => {
 	const tabs = priceList.fords;
+
+	const id = useSearchParams().get('id');
+
 	const items = tabs.map((tab) => {
 		return {
 			label: tab.label,
@@ -21,13 +25,22 @@ const CarsPage = () => {
 		console.log(key);
 	};
 
+	if (!id) {
+		return (
+			<motion.div className="w-full xl:px-px80 lg:px-10 md:px-6 px-4 py-6 h-full">
+				<ScrollTop />
+				<p>Đang cập nhật dữ liệu...</p>
+			</motion.div>
+		);
+	}
+
 	return (
 		<motion.div className="w-full xl:px-px80 lg:px-10 md:px-6 px-4 py-6 h-full">
 			<ScrollTop />
 
 			<Tabs
 				size="large"
-				defaultActiveKey={tabs[0].id.toString()}
+				defaultActiveKey={'6'}
 				items={items}
 				onChange={onChange}
 			/>

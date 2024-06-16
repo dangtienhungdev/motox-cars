@@ -1,9 +1,10 @@
 'use client';
 
+import Content from '@/components/bao-gia/content';
 import FormBaoGia from '@/components/form-bao-gia';
 import { introduce } from '@/data/introduce';
-import parse from 'html-react-parser';
 import { memo } from 'react';
+import parse from 'html-react-parser';
 
 const Introduce = () => {
 	return (
@@ -70,7 +71,9 @@ const Introduce = () => {
 					</ul>
 				</section>
 				<section className="col-span-12 lg:col-span-4">
-					<FormBaoGia />
+					<FormBaoGia>
+						<Content isSubmit={true} />
+					</FormBaoGia>
 				</section>
 			</section>
 		</section>

@@ -1,24 +1,27 @@
-import { TPriceList } from '@/types/price-list.type';
-import { formatCurrency } from '@/utils/fomatCurrency';
-import { Table } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
+import { TPriceList } from '@/types/price-list.type';
+import { Table } from 'antd';
+import { formatCurrency } from '@/utils/fomatCurrency';
 
 interface TabContentProps {
 	data: TPriceList;
+	id: number;
 }
 
-const TabContent = ({ data }: TabContentProps) => {
+const TabContent = ({ data, id }: TabContentProps) => {
 	const columns = [
 		{
 			title: <span className="text-base font-medium">Tên sản phẩm</span>,
 			dataIndex: 'title',
 			key: 'title',
-			render: (text: string) => (
-				<Link href={'/'} className="text-base">
-					{text}
-				</Link>
-			),
+			render: (text: string) => {
+				return (
+					<Link href={`cars?id=${id}`} className="text-base">
+						{text}
+					</Link>
+				);
+			},
 		},
 		{
 			title: <span className="text-base font-medium">Giá sản phẩm</span>,

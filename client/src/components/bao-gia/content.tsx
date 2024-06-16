@@ -1,9 +1,5 @@
 import {
-	PUBLIC_USER_ID,
-	TEAMPLATE_EMAIL_ID,
-	TEAMPLATE_SERVICES_EMAIL_ID,
-} from '@/configs/config';
-import {
+	Button,
 	Cascader,
 	CascaderProps,
 	Col,
@@ -15,8 +11,13 @@ import {
 	Row,
 	message,
 } from 'antd';
-import { memo, useState } from 'react';
 import { Option, options } from './init';
+import {
+	PUBLIC_USER_ID,
+	TEAMPLATE_EMAIL_ID,
+	TEAMPLATE_SERVICES_EMAIL_ID,
+} from '@/configs/config';
+import { memo, useState } from 'react';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import emailjs from '@emailjs/browser';
@@ -33,8 +34,10 @@ type FieldType = {
 
 const Content = ({
 	setIsLoading,
+	isSubmit,
 }: {
 	setIsLoading?: (value: boolean) => void;
+	isSubmit?: boolean;
 }) => {
 	const onFinish: FormProps<FieldType>['onFinish'] = async (values) => {
 		setIsLoading && setIsLoading(true);
@@ -188,6 +191,23 @@ const Content = ({
 				</Row>
 
 				<Input type="submit" id="submit-form" className="!hidden" />
+
+				{isSubmit && (
+					<Row>
+						<Col span={24}>
+							<Form.Item>
+								<Button
+									htmlType="submit"
+									type="primary"
+									className="bg-primary text-white w-full"
+									size="large"
+								>
+									Nhận báo giá
+								</Button>
+							</Form.Item>
+						</Col>
+					</Row>
+				)}
 			</Form>
 		</section>
 	);

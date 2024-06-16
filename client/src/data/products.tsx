@@ -1080,4 +1080,153 @@ export const products = [
 			pdf: 'Everest',
 		},
 	},
+	{
+		id: 6,
+		title: 'FORD EXPLORER',
+		price: '2439000000',
+		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
+		desc: /* html */ `Cảm nhận nét thanh lịch của cuộc sống trên tầm cao mới Khi cuộc sống đạt đến một tầm cao nhất định, bạn sẽ có sự cảm nhận khác biệt. Bầu trời trở nên quang đãng, cảnh vật trở nên rõ ràng. Sự tự tin sẽ tạo nên sức hấp dẫn cho bạn. Với chiếc xe Ford Explorer mới, sự khác biệt đến từ thiết kế hiện đại, mạnh mẽ nhưng không kém phần thanh lịch, cho bạn khả năng làm chủ trên mọi nẻo đường.`,
+		maMauXe: [
+			{
+				id: 1,
+				title: 'Màu Trắng',
+				color: '#E8E8E8',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530481/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-trang-fordlongbien_com_qjjlwh.jpg',
+			},
+			{
+				id: 2,
+				title: 'Màu Đỏ',
+				color: '#DA100F',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
+			},
+			{
+				id: 4,
+				title: 'Màu Đen',
+				color: '#000',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530510/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-den-fordlongbien_com_tzwrni.jpg',
+			},
+			{
+				id: 6,
+				title: 'Màu Xanh',
+				color: '#0000FF',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530515/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-xanh-fordlongbien_com_c7w7kb.jpg',
+			},
+		],
+		xe: [
+			{
+				title: 'Ford Explorer 2.3L AT Ecoboost 4×4',
+				id: 'ford-explorer-2-3l-at-ecoboost-4-4',
+				price: '2439000000',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
+			},
+		],
+		gioithieu: {
+			video: (
+				<iframe
+					width={560}
+					height={315}
+					className="w-full min-h-[400px]"
+					src="https://www.youtube.com/embed/LnsZsXbq89E?si=Cxb92nBZad8ZnFOm"
+					title="YouTube video player"
+					frameBorder={0}
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerPolicy="strict-origin-when-cross-origin"
+					allowFullScreen
+				></iframe>
+			),
+			heading1: 'Bảng giá xe bán tải Ford Explorer 2023 tại Ford Hà Thành',
+			children: [
+				{
+					title: 'Ford Explorer 2.3L AT Ecoboost 4×4',
+					id: 'ford-explorer-2-3l-at-ecoboost-4-4',
+					price: '2439000000',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
+				},
+			],
+			desc: /* html */ `Hiện nay đại lý <span className="text-primary font-semibold">Ford Hà Thành</span>
+      đã nhận đặt cọc từ khách hàng để khách hàng có cơ hội được sở hữu
+      những chiếc xe
+      <span className="text-primary font-semibold">Ford Explorer 2023</span>
+      đầu tiên về đến Việt Nam. Mọi thông tin chi tiết mời quý vị liên hệ Đại diện bán hàng theo hotline <span className="text-primary font-semibold">083 3096 605</span> – <span className="text-primary font-semibold">Mr Hiếu</span> để được tư vấn cụ thể hơn`,
+			info: {
+				des1: 'Tổng Quan Ford Explorer 2023',
+				ul1: /* html */ `Những thông số kỹ thuật trên <span className="text-primary font-semibold text-lg">Ford Explorer 2024</span> bao gồm:`,
+				fordRanger: [
+					{
+						title: 'Động cơ',
+						desc: 'Xăng 2.3L Ecoboost I4 GTDi',
+					},
+					{
+						title: 'Hộp số',
+						desc: 'Tự động 10 cấp',
+					},
+					{
+						title: 'Số chỗ ngồi',
+						desc: '07',
+					},
+					{
+						title: 'Nội thất',
+						desc: 'Da Cao Cấp',
+					},
+					{
+						title: 'Kích Thước (dài x rộng x cao)',
+						desc: '5037 x 2005 x 1813 mm',
+					},
+					{
+						title: 'Chiều Dài Cơ Sở',
+						desc: '2866 mm',
+					},
+					{
+						title: 'Trọng Lượng Xe',
+						desc: '2154 Kg',
+					},
+					{
+						title: 'Kích cỡ mâm lốp xe',
+						desc: '255/50R20',
+					},
+					{
+						title: 'Nước Sản Xuất',
+						desc: 'Mỹ / United State American',
+					},
+					{
+						title: 'Màu xe',
+						desc: 'Đen, Đỏ, Trắng, Xanh',
+					},
+				],
+				fordExplorer: {
+					imageFordExplorer1:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718531950/tran-xuan-hieu/ford-explorer/ford-explorer-2021-fordlongbien_com-6_rjcbqt.jpg',
+					des1: /* html */ `<span className="text-primary font-semibold">Ford Explorer 2023</span> là dòng xe SUV 7 chỗ đa dụng cỡ lớn hạng sang
+          được nhập khẩu nguyên chiếc từ Mỹ về thị trường Việt Nam. <span className="text-primary font-semibold">Ford Explorer 2023</span> nổi bật
+          với sự rộng rãi, đa dụng cùng ngập tràn các tính năng thông minh và an toàn tối tân được trang bị trong tầm giá hơn 2 tỷ. Tại Việt Nam dòng
+          xe <span className="text-primary font-semibold">Ford Explorer</span> đã khẳng định được vị thế trên thị trường từ những ngày đầu nhập về
+          vào thời điểm 2017. Và đến nay sau nhiều năm <span className="text-primary font-semibold">Ford Explorer 2023</span> đã được nâng cấp lên
+          những thay đổi đáng kể về ngoại hình, công nghệ trang bị`,
+					des2: /* html */ `<p className="text-primary font-semibold text-xl">Thời Gian Dự Kiến Ford Explorer 2023 Về Việt Nam Tại Ford Long Biên</p>`,
+					ul1: /* html */ `<span className="text-primary font-semibold">Ford Explorer 2023</span> nhập khẩu về Việt Nam sẽ là phiên bản
+          <span className="text-primary font-semibold">Ford Explorer Limited 2.3L</span> và dự kiến khoảng thời gian chính thức bán ra vào tháng
+          1 năm 2022. Khi nhập khẩu về Việt Nam <span className="text-primary font-semibold">Ford Explorer 2023</span> sẽ mang một làn gió mới đến
+          thị trường xe 7 chỗ cỡ lớn khi được trang bị những công nghệ đỉnh cao và cải tiến đáng giá trong phân khúc điển hình như:`,
+					listDesc: [
+						'Trang bị cần số núm vặn',
+						'Trang bị hộp số tự động 10 cấp',
+						'Đèn tự động điều chỉnh góc chiếu sáng',
+						'Khởi động xe từ xa',
+						'Hệ thống âm thanh 12 loa B&O',
+						'Trang bị sưởi ghế, làm mát ghế lái và ghế phụ',
+					],
+					des3: /* html */ `<p className="text-primary font-semibold text-xl">Giới Thiệu Chi Tiết, Đánh Giá Xe Ford Explorer 2023</p>`,
+				},
+			},
+		},
+		thon_so_ky_thuat: {
+			pdf: 'Everest',
+		},
+	},
 ];

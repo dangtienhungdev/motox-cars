@@ -1,14 +1,18 @@
 'use client';
 
+import { memo, useState } from 'react';
+
+import Content from '@/components/bao-gia/content';
 import DongXe from '@/components/dong-xe';
 import FormBaoGia from '@/components/form-bao-gia';
+import PrivateSeller from './components/private-seller';
 import ScrollTop from '@/components/scroll-top/scroll-top';
 import contactData from '@/data/contact';
 import { motion } from 'framer-motion';
-import { memo } from 'react';
-import PrivateSeller from './components/private-seller';
 
 const ContactPage = () => {
+	const [isLoading, setIsLoading] = useState<boolean>(false);
+
 	return (
 		<motion.section className="flex flex-col">
 			<ScrollTop />
@@ -88,7 +92,9 @@ const ContactPage = () => {
 						</section>
 					</section>
 
-					<FormBaoGia />
+					<FormBaoGia>
+						<Content isSubmit={true} />
+					</FormBaoGia>
 				</section>
 			</main>
 		</motion.section>
