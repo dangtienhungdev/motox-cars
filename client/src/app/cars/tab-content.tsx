@@ -3,21 +3,21 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Button, Tabs, TabsProps, Tooltip } from 'antd';
-import { memo, useState } from 'react';
 import { Autoplay, Navigation } from 'swiper/modules';
+import { Button, Tabs, TabsProps, Tooltip } from 'antd';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { memo, useState } from 'react';
 
 import BaoGiaXe from '@/components/bao-gia';
-import LaiThuXe from '@/components/lai-thu-xe';
-import { products } from '@/data/products';
-import { TPriceList } from '@/types/price-list.type';
-import { formatCurrency } from '@/utils/fomatCurrency';
-import parse from 'html-react-parser';
-import Image from 'next/image';
 import GioiThieu from './gioi-thieu';
 import HinhAnhThucTe from './hinh-anh-thuc-te';
+import Image from 'next/image';
+import LaiThuXe from '@/components/lai-thu-xe';
+import { TPriceList } from '@/types/price-list.type';
 import ThongSo from './thong-so';
+import { formatCurrency } from '@/utils/fomatCurrency';
+import parse from 'html-react-parser';
+import { products } from '@/data/products';
 
 // Import Swiper styles
 
@@ -58,9 +58,9 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 		<section className="">
 			<section className="grid lg:grid-cols-2 grid-cols-1 gap-10">
 				<section className="flex flex-col gap-8">
-					<h1 className="lg:text-2xl text-lg font-semibold text-primary">
+					<h3 className="lg:text-2xl text-lg font-semibold text-primary">
 						{ford.title}
-					</h1>
+					</h3>
 
 					<p className="text-gray-l10 font-medium text-xl">
 						Giá từ:{' '}

@@ -26,9 +26,9 @@ const ContactPage = () => {
 						</span>
 					</section>
 					<section>
-						<h1 className="font-bold text-white capitalize lg:text-[64px] md:text-3xl text-2xl">
+						<h2 className="font-bold text-white capitalize lg:text-[64px] md:text-3xl text-2xl">
 							{contactData.sellerProfile.title}
-						</h1>
+						</h2>
 					</section>
 				</section>
 			</aside>
@@ -40,15 +40,15 @@ const ContactPage = () => {
 				<section className="grid grid-cols-12 xl:gap-16 lg:gap-5 gap-4">
 					<section className="col-span-12 lg:col-span-8">
 						<section>
-							<h1 className="mb-6 text-3xl font-bold">
+							<h3 className="mb-6 text-3xl font-bold">
 								{contactData.introduce.title}
-							</h1>
+							</h3>
 							{/* <p className="text-gray">{contactData.introduce.desc}</p> */}
 							<section className="flex flex-col w-full gap-2">
-								<h1 className="">
+								<p className="">
 									Chúng tôi không chỉ bán sản phẩm - Chúng tôi còn trách nhiệm
 									với sản phẩm!
-								</h1>
+								</p>
 								<p className="">
 									Cam kết khi mua xe tại Ford Hà Thành - Hotline (24/7) :
 									<span className="text-primary font-medium">083 3096 605</span>
@@ -84,10 +84,10 @@ const ContactPage = () => {
 						</section>
 
 						<section className="pt-px80">
-							<h1 className="mb-6 md:text-3xl text-2xl font-bold w-fit py-2 relative">
+							<h4 className="mb-6 md:text-3xl text-2xl font-bold w-fit py-2 relative">
 								Các dòng xe tại Hà Thành Ford
 								<section className="absolute md:block hidden top-full left-0 w-1/3 h-0.5 bg-primary"></section>
-							</h1>
+							</h4>
 							<DongXe className={{ wrapper: 'pt-10' }} />
 						</section>
 					</section>

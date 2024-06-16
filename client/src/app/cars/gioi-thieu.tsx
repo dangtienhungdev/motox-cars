@@ -78,9 +78,9 @@ const GioiThieu = ({ ford }: any) => {
 					<section className="col-span-12 lg:col-span-8">
 						<section className="flex flex-col gap-4">
 							{info?.des1 && (
-								<h1 className="text-lg font-semibold text-primary">
+								<h2 className="text-lg font-semibold text-primary">
 									{info?.des1}
-								</h1>
+								</h2>
 							)}
 							{info?.image1 && <Image src={info?.image1} alt={info?.des1} />}
 
@@ -99,9 +99,9 @@ const GioiThieu = ({ ford }: any) => {
 							)}
 
 							{info?.des4 && (
-								<h1 className="text-lg font-semibold text-primary">
+								<h4 className="text-lg font-semibold text-primary">
 									{info?.des4}
-								</h1>
+								</h4>
 							)}
 							{info?.des5 && <Image src={info?.des5} alt={info?.des5} />}
 							{info?.des6 && <p className="text-base">{parse(info?.des6)}</p>}

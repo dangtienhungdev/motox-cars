@@ -1,18 +1,18 @@
 'use client';
 
-import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { AnimatePresence, motion } from 'framer-motion';
+import { ChatBubbleIcon, EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { memo, useState } from 'react';
 
 import BaoGiaXe from '@/components/bao-gia';
-import ScrollTop from '@/components/scroll-top/scroll-top';
-import header from '@/data/header';
-import cn from '@/libs/clsxm';
 import { Button } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import menus from '../menus';
+import ScrollTop from '@/components/scroll-top/scroll-top';
 import SidebarMobile from './sidebar-mobile';
+import cn from '@/libs/clsxm';
+import header from '@/data/header';
+import menus from '../menus';
 
 const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -96,15 +96,17 @@ const HeaderLayout = ({ isHomePage }: { isHomePage: boolean }) => {
 						</svg>
 					</Button>
 					<section className="flex-shrink-0 lg:block hidden">
-						<Image
-							src={
-								'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717925246/tran-xuan-hieu/ford-logo-1280-x-960-wallpaper-df4sodvepcrbz8o0-removebg-preview_iypgeu.png'
-							}
-							alt="logo"
-							width={123}
-							height={40}
-							className="object-contain"
-						/>
+						<Link href={'/'}>
+							<Image
+								src={
+									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717925246/tran-xuan-hieu/ford-logo-1280-x-960-wallpaper-df4sodvepcrbz8o0-removebg-preview_iypgeu.png'
+								}
+								alt="logo"
+								width={123}
+								height={40}
+								className="object-contain"
+							/>
+						</Link>
 					</section>
 
 					<section className="lg:flex hidden items-center gap-5 flex-1 justify-center">

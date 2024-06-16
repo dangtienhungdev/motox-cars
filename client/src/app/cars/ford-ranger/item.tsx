@@ -13,9 +13,9 @@ const FordItem = ({ data }: any) => {
 	return (
 		<>
 			{title && (
-				<h1 className="font-medium text-lg text-primary uppercase">
+				<h6 className="font-medium text-lg text-primary uppercase">
 					GIÁ XE {title}
-				</h1>
+				</h6>
 			)}
 
 			{image && (
