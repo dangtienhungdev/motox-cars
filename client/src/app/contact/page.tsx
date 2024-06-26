@@ -5,13 +5,16 @@ import { memo, useState } from 'react';
 import Content from '@/components/bao-gia/content';
 import DongXe from '@/components/dong-xe';
 import FormBaoGia from '@/components/form-bao-gia';
-import PrivateSeller from './components/private-seller';
 import ScrollTop from '@/components/scroll-top/scroll-top';
 import contactData from '@/data/contact';
+import { FieldType } from '@/types/data.type';
+import { useForm } from 'antd/es/form/Form';
 import { motion } from 'framer-motion';
+import PrivateSeller from './components/private-seller';
 
 const ContactPage = () => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [form] = useForm<FieldType>();
 
 	return (
 		<motion.section className="flex flex-col">
@@ -93,7 +96,7 @@ const ContactPage = () => {
 					</section>
 
 					<FormBaoGia>
-						<Content isSubmit={true} />
+						<Content form={form} isSubmit={true} />
 					</FormBaoGia>
 				</section>
 			</main>

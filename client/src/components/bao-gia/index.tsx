@@ -3,7 +3,9 @@
 import { memo, useState } from 'react';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
+import { FieldType } from '@/types/data.type';
 import { Drawer } from 'antd';
+import { useForm } from 'antd/es/form/Form';
 import parse from 'html-react-parser';
 import Content from './content';
 
@@ -15,6 +17,7 @@ interface IBaoGiaXeProps {
 
 const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [form] = useForm<FieldType>();
 
 	return (
 		<Drawer
@@ -25,6 +28,7 @@ const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
 			extra={
 				<label
 					htmlFor="submit-form"
+					onClick={() => form.submit()}
 					className="bg-primary text-white py-3 px-5 rounded-lg cursor-pointer h-[50px] min-w-[180px] flex items-center justify-center"
 				>
 					{isLoading ? (
@@ -37,7 +41,11 @@ const BaoGiaXe = ({ handleCancel, isModalOpen }: IBaoGiaXeProps) => {
 		>
 			<p className="">{parse(baoGiaXeData.desc)}</p>
 
-			<Content setIsLoading={setIsLoading} />
+			<Content
+				onCancel={handleCancel}
+				setIsLoading={setIsLoading}
+				form={form}
+			/>
 		</Drawer>
 	);
 };

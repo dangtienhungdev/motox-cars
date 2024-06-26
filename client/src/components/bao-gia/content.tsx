@@ -1,9 +1,15 @@
 import {
+	PUBLIC_USER_ID,
+	TEAMPLATE_EMAIL_ID,
+	TEAMPLATE_SERVICES_EMAIL_ID,
+} from '@/configs/config';
+import {
 	Button,
 	Cascader,
 	CascaderProps,
 	Col,
 	Form,
+	FormInstance,
 	FormProps,
 	Input,
 	Radio,
@@ -11,40 +17,31 @@ import {
 	Row,
 	message,
 } from 'antd';
-import { Option, options } from './init';
-import {
-	PUBLIC_USER_ID,
-	TEAMPLATE_EMAIL_ID,
-	TEAMPLATE_SERVICES_EMAIL_ID,
-} from '@/configs/config';
 import { memo, useState } from 'react';
+import { Option, options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
+import { FieldType } from '@/types/data.type';
 import emailjs from '@emailjs/browser';
-
-type FieldType = {
-	username: string;
-	email: string;
-	phone: string;
-	address: string;
-	hinhThucMua: string;
-	message: string;
-	chonXe: string;
-};
 
 const Content = ({
 	setIsLoading,
 	isSubmit,
+	form,
+	onCancel,
 }: {
 	setIsLoading?: (value: boolean) => void;
 	isSubmit?: boolean;
+	form: FormInstance<FieldType>;
+	onCancel?: () => void;
 }) => {
 	const onFinish: FormProps<FieldType>['onFinish'] = async (values) => {
 		setIsLoading && setIsLoading(true);
 		const data = {
 			...values,
 			chonXe: `${values.chonXe[0]}/ ${values.chonXe[1]}/ ${values.chonXe[2]}`,
-			hinhThucMua: value === 1 ? 'Trả hết' : 'Trả góp',
+			hinhThucMua:
+				value === 1 || values.hinhThucMua === undefined ? 'Trả hết' : 'Trả góp',
 			message: values.message || 'Không có lời nhắn',
 		};
 		emailjs
@@ -67,7 +64,16 @@ const Content = ({
 					setIsLoading && setIsLoading(false);
 					message.error('Có lỗi xảy ra, vui lòng thử lại sau!');
 				}
-			);
+			)
+			.then(() => {
+				// close modal
+				onCancel && onCancel();
+			})
+			.catch(() => {
+				setIsLoading && setIsLoading(false);
+				onCancel && onCancel();
+				message.error('Có lỗi xảy ra, vui lòng thử lại sau!');
+			});
 	};
 
 	const [value, setValue] = useState(1);
@@ -87,6 +93,7 @@ const Content = ({
 				layout="vertical"
 				onFinish={onFinish}
 				autoComplete="on"
+				form={form}
 			>
 				<Row gutter={24}>
 					<Col span={12}>
@@ -125,12 +132,14 @@ const Content = ({
 							name="phone"
 							rules={[
 								{ required: true, message: baoGiaXeData.form.validate.phone },
+								// regex /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
+								{
+									pattern: /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/,
+									message: 'Số điện thoại không hợp lệ',
+								},
 							]}
 						>
-							<Input
-								size="large"
-								placeholder={baoGiaXeData.form.username.placeholder}
-							/>
+							<Input size="large" placeholder={'Nhập số điện thoại của bạn'} />
 						</Form.Item>
 					</Col>
 
@@ -138,12 +147,6 @@ const Content = ({
 						<Form.Item<FieldType>
 							label={baoGiaXeData.form.hinhThucMua.title}
 							name="hinhThucMua"
-							rules={[
-								{
-									required: true,
-									message: baoGiaXeData.form.validate.hinhThucMua,
-								},
-							]}
 						>
 							<Radio.Group
 								defaultValue={1}
@@ -190,7 +193,7 @@ const Content = ({
 					</Col>
 				</Row>
 
-				<Input type="submit" id="submit-form" className="!hidden" />
+				<input type="submit" id="submit-form" className="!hidden" />
 
 				{isSubmit && (
 					<Row>
@@ -201,6 +204,7 @@ const Content = ({
 									type="primary"
 									className="bg-primary text-white w-full"
 									size="large"
+									id="submit-form"
 								>
 									Nhận báo giá
 								</Button>

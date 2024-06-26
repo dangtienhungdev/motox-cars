@@ -6,11 +6,14 @@ import { useEffect, useState } from 'react';
 import Content from '@/components/bao-gia/content';
 import DongXe from '@/components/dong-xe';
 import baoGiaXeData from '@/data/bao-gia-xe';
+import { FieldType } from '@/types/data.type';
+import { useForm } from 'antd/es/form/Form';
 import parse from 'html-react-parser';
 
 export default function Home() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [form] = useForm<FieldType>();
 
 	const showModal = () => {
 		setIsModalOpen(true);
@@ -76,7 +79,7 @@ export default function Home() {
 			>
 				<p className="">{parse(baoGiaXeData.desc)}</p>
 
-				<Content setIsLoading={setIsLoading} />
+				<Content form={form} setIsLoading={setIsLoading} />
 			</Modal>
 		</section>
 	);

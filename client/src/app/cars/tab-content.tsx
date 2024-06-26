@@ -3,21 +3,21 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Autoplay, Navigation } from 'swiper/modules';
 import { Button, Tabs, TabsProps, Tooltip } from 'antd';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { memo, useState } from 'react';
+import { Autoplay, Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 import BaoGiaXe from '@/components/bao-gia';
-import GioiThieu from './gioi-thieu';
-import HinhAnhThucTe from './hinh-anh-thuc-te';
-import Image from 'next/image';
 import LaiThuXe from '@/components/lai-thu-xe';
+import { products } from '@/data/products';
 import { TPriceList } from '@/types/price-list.type';
-import ThongSo from './thong-so';
 import { formatCurrency } from '@/utils/fomatCurrency';
 import parse from 'html-react-parser';
-import { products } from '@/data/products';
+import Image from 'next/image';
+import GioiThieu from './gioi-thieu';
+import HinhAnhThucTe from './hinh-anh-thuc-te';
+import ThongSo from './thong-so';
 
 // Import Swiper styles
 
@@ -149,7 +149,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 					{ford.xe.map((item) => (
 						<SwiperSlide key={item.id}>
 							<Tooltip title={item.title} key={item.id}>
-								<section className="flex flex-col h-[260px] gap-4 hover:shadow transition-all duration-200 border rounded-sm overflow-hidden cursor-pointer">
+								<section className="flex flex-col h-[260px] xl:h-fit gap-4 hover:shadow transition-all duration-200 border rounded-sm overflow-hidden cursor-pointer">
 									<section className="flex-shrink-0 flex items-center justify-center">
 										<Image
 											src={item.image}

@@ -3,10 +3,12 @@
 import Content from '@/components/bao-gia/content';
 import FormBaoGia from '@/components/form-bao-gia';
 import { introduce } from '@/data/introduce';
-import { memo } from 'react';
+import { useForm } from 'antd/es/form/Form';
 import parse from 'html-react-parser';
+import { memo } from 'react';
 
 const Introduce = () => {
+	const [form] = useForm();
 	return (
 		<section className="xl:p-px80 lg:p-10 md:p-6 p-4">
 			<section className="grid grid-cols-12 gap-4">
@@ -72,7 +74,7 @@ const Introduce = () => {
 				</section>
 				<section className="col-span-12 lg:col-span-4">
 					<FormBaoGia>
-						<Content isSubmit={true} />
+						<Content form={form} isSubmit={true} />
 					</FormBaoGia>
 				</section>
 			</section>

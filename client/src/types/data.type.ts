@@ -11,3 +11,13 @@ export type TCars = {
 	image: string;
 	children: ICar[];
 };
+
+export type FieldType = {
+	username: string;
+	email: string;
+	phone: string;
+	address: string;
+	hinhThucMua: string;
+	message: string;
+	chonXe: string;
+};

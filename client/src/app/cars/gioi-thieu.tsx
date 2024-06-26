@@ -1,17 +1,20 @@
 import { Image, Table } from 'antd';
 
 import Content from '@/components/bao-gia/content';
+import FormBaoGia from '@/components/form-bao-gia';
+import { FieldType } from '@/types/data.type';
+import { formatCurrency } from '@/utils/fomatCurrency';
+import { useForm } from 'antd/es/form/Form';
+import parse from 'html-react-parser';
+import Link from 'next/link';
+import { memo } from 'react';
 import FordExplorer from './ford-explorer';
 import FordRanger from './ford-ranger';
-import FormBaoGia from '@/components/form-bao-gia';
-import Link from 'next/link';
-import { formatCurrency } from '@/utils/fomatCurrency';
-import { memo } from 'react';
-import parse from 'html-react-parser';
 
 const GioiThieu = ({ ford }: any) => {
 	const { gioithieu } = ford;
 	const { info } = gioithieu;
+	const [form] = useForm<FieldType>();
 
 	const columns = [
 		{
@@ -183,7 +186,7 @@ const GioiThieu = ({ ford }: any) => {
 					</section>
 					<section className="col-span-12 lg:col-span-4">
 						<FormBaoGia>
-							<Content isSubmit={true} />
+							<Content form={form} isSubmit={true} />
 						</FormBaoGia>
 					</section>
 				</section>
