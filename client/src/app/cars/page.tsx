@@ -40,7 +40,7 @@ const CarsPage = () => {
 
 			<Tabs
 				size="large"
-				defaultActiveKey={'6'}
+				defaultActiveKey={id}
 				items={items}
 				onChange={onChange}
 			/>
