@@ -69,14 +69,14 @@ export const products = [
 				id: 'ford-everest-titanium-2-0l-at-4x2',
 				price: '1299000000',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-sport-2022-mau-xanh-icon-300x200_gdpz0c.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-bac-icon-300x200_xx7cpa.jpg',
 			},
 			{
 				title: 'Ford Everest Sport 2.0L 4X2 AT',
 				id: 'ford-everest-sport-2-0l-4x2-at',
 				price: '1178000000',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-bac-icon-300x200_xx7cpa.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-sport-2022-mau-xanh-icon-300x200_gdpz0c.jpg',
 			},
 			{
 				title: 'FORD EVEREST AMBIENT 2.0L 4X2 AT',
@@ -208,7 +208,7 @@ export const products = [
 	{
 		id: 1,
 		title: 'FORD RANGER',
-		price: '699000000',
+		price: '707000000',
 		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
 		desc: /* html */ `Mua Xe <span className="text-primary font-semibold">Ford Ranger 2024</span> Giá Tốt Nhất Toàn Quốc Tại <span className="text-primary font-semibold">Ford Hà Thành</span> Hà Nội Với Ưu Đãi Nhất. Hotline <span className="text-primary font-semibold">083 3096 605</span>. Giá Xe <span className="text-primary font-semibold">Ford Ranger 2024</span>`,
 		maMauXe: [

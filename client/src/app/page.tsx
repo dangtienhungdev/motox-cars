@@ -5,10 +5,10 @@ import { useEffect, useState } from 'react';
 
 import Content from '@/components/bao-gia/content';
 import DongXe from '@/components/dong-xe';
-import baoGiaXeData from '@/data/bao-gia-xe';
 import { FieldType } from '@/types/data.type';
-import { useForm } from 'antd/es/form/Form';
+import baoGiaXeData from '@/data/bao-gia-xe';
 import parse from 'html-react-parser';
+import { useForm } from 'antd/es/form/Form';
 
 export default function Home() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +28,11 @@ export default function Home() {
 	};
 
 	useEffect(() => {
-		showModal();
+		// showModal();
+		// tôi muốn sau 3s mới hiện modal và chỉ hiện 1 lần duy nhất
+		setTimeout(() => {
+			showModal();
+		}, 3000);
 
 		return () => setIsModalOpen(false);
 	}, []);

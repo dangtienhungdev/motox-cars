@@ -102,7 +102,7 @@ const priceList: { fords: TPriceList[] } = {
 				{
 					id: 'ford-territory-titanium-1-5l-at',
 					title: 'Ford Territory Titanium 1.5L AT',
-					price: '899000000',
+					price: '889000000',
 					slug: 'ford-territory-titanium-1-5l-at',
 				},
 				{

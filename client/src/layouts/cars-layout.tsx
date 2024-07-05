@@ -1,11 +1,13 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { FloatButton, Tooltip } from 'antd';
 
 import FooterLayout from './components/footer-layout';
 import HeaderLayout from './components/header-layout';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Tooltip } from 'antd';
+import Zalo from '~/socials/icons8-zalo-56.png';
 import cn from '@/libs/clsxm';
 import { memo } from 'react';
 import { useHomePage } from '@/hooks/usePathName';
@@ -44,55 +46,49 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 				>
 					{children}
 					<Tooltip title="Liên hệ với tôi qua số điện thoại">
-						<FloatButton
-							icon={
+						<Link href={'https://zalo.me/0833096605'} target="_blank">
+							<section className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[220px]">
 								<Image
-									src={
-										'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718548252/tran-xuan-hieu/widget_icon_click_to_call_zzkmlw.svg'
-									}
+									src={Zalo}
 									alt="Call"
 									height={56}
 									width={56}
-									className="object-contain w-full flex-shrink-0"
+									className="object-contain flex-shrink-0 h-[56px] w-[56px]"
 								/>
-							}
-							href="tel:0833096605"
-							type="default"
-							style={{
-								right: 24,
-								height: 56,
-								width: 56,
-								padding: 0,
-								bottom: 140,
-							}}
-							className="!p-0"
-						/>
+							</section>
+						</Link>
+					</Tooltip>
+					<Tooltip title="Liên hệ với tôi qua số điện thoại">
+						<Link
+							href={`tel:083 3096 605`}
+							className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[140px]"
+						>
+							<Image
+								src={
+									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718548252/tran-xuan-hieu/widget_icon_click_to_call_zzkmlw.svg'
+								}
+								alt="Call"
+								height={56}
+								width={56}
+								className="object-contain flex-shrink-0 h-[56px] w-[56px]"
+							/>
+						</Link>
 					</Tooltip>
 					<Tooltip title="Liện hệ với tôi qua messager">
-						<FloatButton
-							icon={
-								<Image
-									src={
-										'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717866930/tran-xuan-hieu/messenger_niax8a.png'
-									}
-									alt="Messenger"
-									height={56}
-									width={56}
-									className="object-contain w-full flex-shrink-0"
-								/>
-							}
-							type="default"
-							style={{
-								right: 24,
-								height: 56,
-								width: 56,
-								padding: 0,
-								bottom: 60,
-							}}
-							className="!p-0"
-						/>
+						<section className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[60px]">
+							<Image
+								src={
+									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717866930/tran-xuan-hieu/messenger_niax8a.png'
+								}
+								alt="Call"
+								height={56}
+								width={56}
+								className="object-contain flex-shrink-0 h-[56px] w-[56px]"
+							/>
+						</section>
 					</Tooltip>
 				</main>
+
 				<FooterLayout />
 			</motion.section>
 		</AnimatePresence>
