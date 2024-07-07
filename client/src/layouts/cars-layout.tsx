@@ -77,7 +77,8 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 					<Tooltip title="Liện hệ với tôi qua messager">
 						<Link
 							target="_blank"
-							href={'m.me/223278341521153'}
+							href={'https://m.me/223278341521153'}
+							rel="noopener noreferrer"
 							className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[60px]"
 						>
 							<Image

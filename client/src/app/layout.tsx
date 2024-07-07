@@ -1,14 +1,14 @@
 import '../styles/globals.css';
 
-import CarsLayout from '@/layouts/cars-layout';
-import theme from '@/styles/theme-antd';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+import CarsLayout from '@/layouts/cars-layout';
 import { ConfigProvider } from 'antd';
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Script from 'next/script';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import theme from '@/styles/theme-antd';
 
 const inter = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -257,6 +257,14 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'AW-16570723785');
+            `,
+				}}
+			/>
+			<Script
+				id="google-analytics-event"
+				dangerouslySetInnerHTML={{
+					__html: `
+              gtag('event', 'conversion', {'send_to': 'AW-16570723785/_8r5COeq3cAZEMnbxN09'});
             `,
 				}}
 			/>
