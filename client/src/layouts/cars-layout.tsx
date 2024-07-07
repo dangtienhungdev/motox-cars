@@ -2,15 +2,15 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 
-import FooterLayout from './components/footer-layout';
-import HeaderLayout from './components/header-layout';
+import { useHomePage } from '@/hooks/usePathName';
+import cn from '@/libs/clsxm';
+import { Tooltip } from 'antd';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Tooltip } from 'antd';
-import Zalo from '~/socials/icons8-zalo-56.png';
-import cn from '@/libs/clsxm';
 import { memo } from 'react';
-import { useHomePage } from '@/hooks/usePathName';
+import Zalo from '~/socials/icons8-zalo-56.png';
+import FooterLayout from './components/footer-layout';
+import HeaderLayout from './components/header-layout';
 
 interface CarLayoutProps {
 	children: React.ReactNode;
@@ -75,7 +75,11 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 						</Link>
 					</Tooltip>
 					<Tooltip title="Liện hệ với tôi qua messager">
-						<section className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[60px]">
+						<Link
+							target="_blank"
+							href={'m.me/223278341521153'}
+							className="fixed h-[56px] w-[56px] cursor-pointer bg-white flex items-center justify-center rounded-full p-1 z-50 right-6 bottom-[60px]"
+						>
 							<Image
 								src={
 									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717866930/tran-xuan-hieu/messenger_niax8a.png'
@@ -85,7 +89,7 @@ const CarLayout = ({ children, className }: CarLayoutProps) => {
 								width={56}
 								className="object-contain flex-shrink-0 h-[56px] w-[56px]"
 							/>
-						</section>
+						</Link>
 					</Tooltip>
 				</main>
 
