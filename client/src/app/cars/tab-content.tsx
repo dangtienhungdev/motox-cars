@@ -16,7 +16,6 @@ import { formatCurrency } from '@/utils/fomatCurrency';
 import parse from 'html-react-parser';
 import Image from 'next/image';
 import GioiThieu from './gioi-thieu';
-import HinhAnhThucTe from './hinh-anh-thuc-te';
 import ThongSo from './thong-so';
 
 // Import Swiper styles
@@ -35,6 +34,7 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 	if (!ford) {
 		return <section className="">Đang cập nhật dữ liệu...</section>;
 	}
+	console.log('🚀 ~ TabContent ~ ford:', ford);
 
 	const items: TabsProps['items'] = [
 		{
@@ -45,13 +45,13 @@ const TabContent = ({ data }: { data: TPriceList }) => {
 		{
 			key: '2',
 			label: <span className="text-base">Thông số kỹ thuật</span>,
-			children: <ThongSo />,
+			children: <ThongSo thongSo={ford?.thon_so_ky_thuat?.ford} />,
 		},
-		{
-			key: '3',
-			label: <span className="text-base">Hình ảnh thực tế</span>,
-			children: <HinhAnhThucTe />,
-		},
+		// {
+		// 	key: '3',
+		// 	label: <span className="text-base">Hình ảnh thực tế</span>,
+		// 	children: <HinhAnhThucTe />,
+		// },
 	];
 
 	return (

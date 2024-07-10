@@ -937,8 +937,8 @@ export const products = [
 	},
 	{
 		id: 7,
-		title: 'FORD TRANSIT',
-		price: '849000000',
+		title: 'FORD TRANSIT 2024',
+		price: '905000000',
 		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
 		desc: /* html */ `Xuất hiện lần đầu tiên tại thị trường Việt Nam vào năm 1997, chiếc mini buýt Ford Transit mới 16 chỗ đã được đánh giá là chiếc xe có tiêu chuẩn cao về độ an toàn, tiện nghi và tính ổn định cao, phù hợp nhiều mục đích sử dụng. Là phiên bản sau, Ford Transit 2017 được thừa hưởng những ưu điểm của Ford Transit mới đồng thời có những cải tiến vượt trội về hình thức cũng như tính năng.`,
 		maMauXe: [
@@ -949,42 +949,56 @@ export const products = [
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038533/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-1_kldela.jpg',
 			},
-			{
-				id: 2,
-				title: 'Màu Đỏ',
-				color: '#f00',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038586/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-2_oc4c2d.jpg',
-			},
-			{
-				id: 4,
-				title: 'Màu Xám Đậm',
-				color: '#AFAFBB',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038647/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-3_qfqhpb.jpg',
-			},
-			{
-				id: 5,
-				title: 'Màu Xám Nhạt',
-				color: '#E4E3E9',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038690/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-4_kkjxwm.jpg',
-			},
-			{
-				id: 6,
-				title: 'Màu Xám Vàng',
-				color: '#CBBBA2',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038739/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-5_h8a1hk.jpg',
-			},
+			// {
+			// 	id: 2,
+			// 	title: 'Màu Đỏ',
+			// 	color: '#f00',
+			// 	image:
+			// 		'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038586/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-2_oc4c2d.jpg',
+			// },
+			// {
+			// 	id: 4,
+			// 	title: 'Màu Xám Đậm',
+			// 	color: '#AFAFBB',
+			// 	image:
+			// 		'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038647/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-3_qfqhpb.jpg',
+			// },
+			// {
+			// 	id: 5,
+			// 	title: 'Màu Xám Nhạt',
+			// 	color: '#E4E3E9',
+			// 	image:
+			// 		'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038690/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-4_kkjxwm.jpg',
+			// },
+			// {
+			// 	id: 6,
+			// 	title: 'Màu Xám Vàng',
+			// 	color: '#CBBBA2',
+			// 	image:
+			// 		'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038739/tran-xuan-hieu/ford-transit/Xe-o-to-Ford-Transit-2017-fordlongbien_com-5_h8a1hk.jpg',
+			// },
 		],
 		xe: [
 			{
-				title: 'FORD TRANSIT',
-				id: 'ford-transit',
-				price: '849000000',
+				title: 'Transit Premium+ 18 chỗ',
+				id: 'transit-premium-18-cho',
+				price: '1087000000',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718038474/tran-xuan-hieu/ford-ranger-raptor/ford-transit-fordlongbien_com-icon-300x200_gz9upz.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625478/tran-xuan-hieu/ford-transit/transit-premium-plus_rhhdm2.webp',
+			},
+			{
+				title: 'Transit Premium 16 chỗ',
+				id: 'transit-premium-16-cho',
+				price: '999000000',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625586/tran-xuan-hieu/ford-transit/transit-premium_gt5kuh.webp',
+			},
+			{
+				title: 'Transit Trend 16 chỗ',
+				id: 'transit-trend-16-cho',
+				price: '905000000',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625607/tran-xuan-hieu/ford-transit/transit-trend_zare6g.webp',
 			},
 		],
 		gioithieu: {
@@ -1003,11 +1017,29 @@ export const products = [
 			),
 			heading1: 'Bảng giá xe bán tải Ford Transit 2024 tại Ford Hà Thành',
 			children: [
+				// {
+				// 	title: 'Ford Transit 2024',
+				// 	id: 'ford-transit',
+				// 	slug: 'ford-transit',
+				// 	price: '849000000',
+				// },
 				{
-					title: 'Ford Transit 2024',
-					id: 'ford-transit',
-					slug: 'ford-transit',
-					price: '849000000',
+					title: 'Transit Premium+ 18 chỗ',
+					id: 'transit-premium-18-cho',
+					price: '1087000000',
+					slug: 'transit-premium-18-cho',
+				},
+				{
+					title: 'Transit Premium 16 chỗ',
+					id: 'transit-premium-16-cho',
+					price: '999000000',
+					slug: 'transit-premium-16-cho',
+				},
+				{
+					title: 'Transit Trend 16 chỗ',
+					id: 'transit-trend-16-cho',
+					price: '905000000',
+					slug: 'transit-trend-16-cho',
 				},
 			],
 			desc: /* html */ `Hiện nay đại lý <span className="text-primary font-semibold">Ford Hà Thành</span>
@@ -1027,12 +1059,11 @@ export const products = [
 				des3: /* html */ `Phần đầu <span className="text-primary font-semibold">Ford Transit 2024</span> luôn đặc trưng vuông vức và cứng cáp,
         phiên bản bản SLX có lưới tản nhiệt mạ chrome bóng bẩy kết hợp cùng cản trước tạo nên “gương mặt” hình chữ X nổi bật, so với đối thủ
         Toyota Hiace thì <span className="text-primary font-semibold">Ford Transit</span> hiện đại và lịch lãm hơn hẳn.`,
-				des5: 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039210/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-2_gsbmur.jpg',
+				des5: 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625834/tran-xuan-hieu/ford-transit/transit-premium-design-desktop_odxxcr.webp',
 				des6: /* html */ `<span className="text-primary font-semibold">Ford Transit 2024</span> có cụm đèn pha bố trí gọn gàng và kích cỡ lớn hơn, chức năng điều chỉnh góc chiếu sáng giúp quý khách chủ động và dễ dàng hơn khi điều khiển Transit trên đường.`,
-				des7: 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039287/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-3_clleuo.jpg',
+				des7: 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625932/tran-xuan-hieu/ford-transit/safe-bad-weather-conditions_xnvp4x.webp',
 				des8: /* html */ `Ngoài ra, Ford trang bị tính năng “Follow Me Home” tự động bật/tắt đèn chiếu sáng để quý khách thuận tiện khi ra vào xe lúc trời tối. Đèn sương mù trước/sau được lắp đặt tiêu chuẩn ở cả hai phiên bản nhằm đảm bảo tầm qua sát cho các tài xế khi thời tiết xấu như sương mù hay mưa bão.`,
 				des9: 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039364/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-4_i7q3l2.png',
-				des10: /* html */ `<span className="text-primary font-semibold">Ford Transit 2024</span> sử dụng mâm bánh xe 16 inch và có khoảng sáng gầm 165mm khá thông thoáng, do đó Ford hết sức tinh tế khi thiết kế kèm ở cản trước một bậc đứng lau kính chắn gió, giúp tài xế dễ dàng hơn khi chăm sóc cho chiếc xe 16 chỗ.`,
 				des12: /* html */ `Đuôi xe hài hòa và hiện đại hơn với cụm đèn hậu lớn hơn thế hệ trước cùng đèn báo phanh phụ trên cao, tăng khả năng cảnh báo cho các phương tiện khác trên đường.`,
 				des13:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039447/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-5_lagrsl.jpg',
@@ -1040,13 +1071,13 @@ export const products = [
         tiêu chuẩn châu Âu mang đến cho quý khách cảm giác thoải mái cũng như sự hài lòng tốt nhất khi ngồi trên chiếc xe 16 chỗ.`,
 				des15: /* html */ `Cửa trượt thiết kế rộng kết hợp với bậc lên xuống giúp hành khách thuận tiện và an toàn trong việc lên xuống. Bên cạnh đó, quý khách dễ dàng đi lại bên trong nhờ vào trần xe cao và thoáng đãng.`,
 				des16:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039548/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-6_iwspoz.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720626083/tran-xuan-hieu/ford-transit/upgraded-interior_wa7qxd.webp',
 				des17: /* html */ `Hai cửa sau có góc mở 180 độ cùng cản chắn kiêm bậc lên xuống phía sau từ vật liệu siêu bền tăng khả năng tiếp cận không gian để hàng phía sau khi cần thiết.`,
 				des20: /* html */ `Nhằm tối ưu sự thoải mái khi di chuyển cho hành khách của Ford Transit, ba hàng ghế sau được thiết kế mới với tựa lưng và tựa đầu liền khối sang trọng, điều chỉnh ngả lưng thao tác nhẹ nhàng và đơn giản`,
 				des22:
 					'Riêng ghế tài có thể chỉnh tay 6 hướng đi kèm bệ nghỉ tay trong khi hai ghế bên cạnh tựa đầu điều chỉnh được 2 hướng và không gian để chân rộng rãi nhờ cần số bố trí sát bản tablo. Phiên bản SLX trang bị ghế ngồi bọc da cao cấp trong khi Ford Transit LX có nội thất vải bền bỉ, phù hợp với nhu cầu sử dụng kinh doanh.',
 				des23:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039650/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-7_ctb8et.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720626135/tran-xuan-hieu/ford-transit/dual-12-3-inch-screens_gqrr6d.webp',
 				des24: /* html */ `Bảng tablo với nút điều chỉnh của các hệ thống bố trí liền lạc, gọn gàng giúp tài xế dễ dàng thao tác, bên cạnh đó các ngăn chứa đồ cũng như khay để ly tăng thêm phần tiện ích cho quý khách.`,
 				des25:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718039692/tran-xuan-hieu/ford-transit/ford-transit-2017-fordlongbien_com-8_ffcglt.jpg',
@@ -1076,8 +1107,325 @@ export const products = [
 				des43: /* html */ `Transit có dây đai an toàn 3 điểm trang bị cho ghế lái và ghế hành khách phía trước, dây đai an toàn 2 điểm cho tất cả các ghế ngồi phía sau, đặc biệt lót sàn sử dụng vật liệu chống trượt. Tất cả thể hiện Ford chú trọng đến từng chi tiết nhằm giúp quý khách có được sự an toàn tuyệt đối.`,
 			},
 		},
+		hinhAnhThucTe: {},
 		thon_so_ky_thuat: {
-			pdf: 'Everest',
+			ford: [
+				{
+					title: 'Transit Premium+ 18 chỗ',
+					id: 'transit-premium-18-cho',
+					price: '1087000000',
+					slug: 'transit-premium-18-cho',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625478/tran-xuan-hieu/ford-transit/transit-premium-plus_rhhdm2.webp',
+					info: [
+						{
+							title: 'Động cơ & Tính năng Vận hành',
+							desc: [
+								'Động cơ : Turbo Diesel 2.3L - TDCi',
+								'Trục cam kép, có làm mát khí nạp',
+								'Dung tích xi lanh (cc) : 2296',
+								'Công suất cực đại (PS/vòng/phút) : 171 (126 kW) / 3200',
+								'Mô men xoắn cực đại (Nm/vòng/phút) : 425 / 1400 - 2400',
+								'Hộp số : 6 cấp số sàn',
+								'Ly hợp : Đĩa ma sát khô, dẫn động bằng thuỷ lực',
+								'Trợ lực lái thủy lực : Có',
+							],
+						},
+						{
+							title: 'Kích thước',
+							desc: [
+								'Dài x Rộng x Cao (mm) : 6703 x 2164 x 2775',
+								'Chiều dài cơ sở (mm) : 3750',
+								'Vệt bánh trước (mm) : 1740',
+								'Vệt bánh sau (mm) : 1702',
+								'Khoảng sáng gầm xe (mm) : 150',
+								'Bán kính vòng quay nhỏ nhất (m) : 6.7',
+								'Dung tích thùng nhiên liệu (L) : 80',
+							],
+						},
+						{
+							title: 'Hệ thống treo',
+							desc: [
+								'Trước : Hệ thống treo độc lập dùng lò xo trụ, thanh cân bằng và ống giảm chấn thủy lực',
+								'Sau : Hệ thống treo phụ thuộc dùng nhíp lá, thanh cân bằng với ống giảm chấn thủy lực',
+							],
+						},
+						{
+							title: 'Hệ thống phanh',
+							desc: [
+								'Phanh trước và sau : Phanh Đĩa',
+								'Vành xe : Vành thép 16"',
+								'Cỡ lốp : 195 / 75R16C (Trước đơn - Sau đôi)',
+							],
+						},
+						{
+							title: 'Trang thiết bị an toàn',
+							desc: [
+								'Túi khí phía trước cho người lái : Có',
+								'Túi khí cho hành khách phía trước : Có',
+								'Dây đai an toàn đa điểm cho tất cả các ghế : Có',
+								'Camera lùi : Có',
+								'Cảm biến hỗ trợ đỗ xe sau : Có',
+								'Hệ thống Chống bó cứng phanh & Phân phối lực phanh điện tử : Có',
+								'Hệ thống Cân bằng điện tử : Có',
+								'Hệ thống Kiểm soát hành trình : Có',
+								'Hệ thống Chống trộm : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị ngoại thất',
+							desc: [
+								'Đèn phía trước : LED, tự động bật đèn',
+								'Đèn chạy ban ngày : LED',
+								'Đèn sương mù : LED',
+								'Gạt mưa tự động : Có',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Bậc bước chân điện : Có',
+								'Cửa trượt điện : Có',
+								'Chắn bùn trước sau : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị bên trong xe',
+							desc: [
+								'Cửa gió điều hòa hành khách : Có',
+								'Đèn chạy ban ngày : LED',
+								'Chất liệu ghế : Nỉ kết hợp Vinyl',
+								'Điều chỉnh ghế lái : Chỉnh 6 hướng, có tựa tay',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Điều chỉnh hàng ghế sau : Điều chỉnh ngả, có tựa tay',
+								'Hàng ghế cuối gập phẳng : Có',
+								'Tay nắm hỗ trợ lên xuống : Có',
+								'Giá hành lý phía trên : Có',
+								'Cửa kính điều khiển điện : Có (1 chạm lên xuống cho hàng ghế trước)',
+								'Bảng đồng hồ tốc độ : Màn hình 12.3"',
+								'Màn hình trung tâm : Màn hình TFT cảm ứng 12.3"',
+								'Kết nối Apple Carplay & Android Auto : Không dây',
+								'Hệ thống âm thanh : AM/FM, Bluetooth, USB, 6 loa',
+								'Điều khiển âm thanh trên tay lái : Có',
+								'Cổng sạc USB cho hàng ghế sau : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị phần cứng cho bộ giải pháp Upfleet',
+							desc: [
+								'Thiết bị giám sát hành trình GPS : Tùy chọn tại Đại lý',
+								'Thiết bị giám sát hình ảnh : Tùy chọn tại Đại lý',
+							],
+						},
+					],
+				},
+				{
+					title: 'Transit Premium 16 chỗ',
+					id: 'transit-premium-16-cho',
+					price: '999000000',
+					slug: 'transit-premium-16-cho',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625586/tran-xuan-hieu/ford-transit/transit-premium_gt5kuh.webp',
+					info: [
+						{
+							title: 'Động cơ & Tính năng Vận hành',
+							desc: [
+								'Động cơ : Turbo Diesel 2.3L - TDCi',
+								'Trục cam kép, có làm mát khí nạp',
+								'Dung tích xi lanh (cc) : 2296',
+								'Công suất cực đại (PS/vòng/phút) : 171 (126 kW) / 3200',
+								'Mô men xoắn cực đại (Nm/vòng/phút) : 425 / 1400 - 2400',
+								'Hộp số : 6 cấp số sàn',
+								'Ly hợp : Đĩa ma sát khô, dẫn động bằng thuỷ lực',
+								'Trợ lực lái thủy lực : Có',
+							],
+						},
+						{
+							title: 'Kích thước',
+							desc: [
+								'Dài x Rộng x Cao (mm) : 5998 x 2068 x 2775',
+								'Chiều dài cơ sở (mm) : 3750',
+								'Vệt bánh trước (mm) : 1740',
+								'Vệt bánh sau (mm) : 1702',
+								'Khoảng sáng gầm xe (mm) : 150',
+								'Bán kính vòng quay nhỏ nhất (m) : 6.7',
+								'Dung tích thùng nhiên liệu (L) : 80',
+							],
+						},
+						{
+							title: 'Hệ thống treo',
+							desc: [
+								'Trước : Hệ thống treo độc lập dùng lò xo trụ, thanh cân bằng và ống giảm chấn thủy lực',
+								'Sau : Hệ thống treo phụ thuộc dùng nhíp lá với ống giảm chấn thủy lực',
+							],
+						},
+						{
+							title: 'Hệ thống phanh',
+							desc: [
+								'Phanh trước và sau : Phanh Đĩa',
+								'Vành xe : Vành thép 16"',
+								'Cỡ lốp : 235 / 65R16C',
+							],
+						},
+						{
+							title: 'Trang thiết bị an toàn',
+							desc: [
+								'Túi khí phía trước cho người lái : Có',
+								'Túi khí cho hành khách phía trước : Có',
+								'Dây đai an toàn đa điểm cho tất cả các ghế : Có',
+								'Camera lùi : Có',
+								'Cảm biến hỗ trợ đỗ xe sau : Có',
+								'Hệ thống Chống bó cứng phanh & Phân phối lực phanh điện tử : Có',
+								'Hệ thống Cân bằng điện tử : Có',
+								'Hệ thống Kiểm soát hành trình : Có',
+								'Hệ thống Chống trộm : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị ngoại thất',
+							desc: [
+								'Đèn phía trước : LED, tự động bật đèn',
+								'Đèn chạy ban ngày : LED',
+								'Đèn sương mù : LED',
+								'Gạt mưa tự động : Có',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Bậc bước chân điện : Có',
+								'Cửa trượt điện : Có',
+								'Chắn bùn trước sau : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị bên trong xe',
+							desc: [
+								'Cửa gió điều hòa hành khách : Có',
+								'Đèn chạy ban ngày : LED',
+								'Chất liệu ghế : Nỉ kết hợp Vinyl',
+								'Điều chỉnh ghế lái : Chỉnh 6 hướng, có tựa tay',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Điều chỉnh hàng ghế sau : Điều chỉnh ngả, có tựa tay',
+								'Hàng ghế cuối gập phẳng : Có',
+								'Tay nắm hỗ trợ lên xuống : Có',
+								'Giá hành lý phía trên : Có',
+								'Cửa kính điều khiển điện : Có (1 chạm lên xuống cho hàng ghế trước)',
+								'Bảng đồng hồ tốc độ : Màn hình 12.3"',
+								'Màn hình trung tâm : Màn hình TFT cảm ứng 12.3"',
+								'Kết nối Apple Carplay & Android Auto : Không dây',
+								'Hệ thống âm thanh : AM/FM, Bluetooth, USB, 6 loa',
+								'Điều khiển âm thanh trên tay lái : Có',
+								'Cổng sạc USB cho hàng ghế sau : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị phần cứng cho bộ giải pháp Upfleet',
+							desc: [
+								'Thiết bị giám sát hành trình GPS : Tùy chọn tại Đại lý',
+								'Thiết bị giám sát hình ảnh : Tùy chọn tại Đại lý',
+							],
+						},
+					],
+				},
+				{
+					title: 'Transit Trend 16 chỗ',
+					id: 'transit-trend-16-cho',
+					price: '905000000',
+					slug: 'transit-trend-16-cho',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625607/tran-xuan-hieu/ford-transit/transit-trend_zare6g.webp',
+					info: [
+						{
+							title: 'Động cơ & Tính năng Vận hành',
+							desc: [
+								'Động cơ : Turbo Diesel 2.3L - TDCi',
+								'Trục cam kép, có làm mát khí nạp',
+								'Dung tích xi lanh (cc) : 2296',
+								'Công suất cực đại (PS/vòng/phút) : 171 (126 kW) / 3200',
+								'Mô men xoắn cực đại (Nm/vòng/phút) : 425 / 1400 - 2400',
+								'Hộp số : 6 cấp số sàn',
+								'Ly hợp : Đĩa ma sát khô, dẫn động bằng thuỷ lực',
+								'Trợ lực lái thủy lực : Có',
+							],
+						},
+						{
+							title: 'Kích thước',
+							desc: [
+								'Dài x Rộng x Cao (mm) : 5998 x 2068 x 2485',
+								'Chiều dài cơ sở (mm) : 3750',
+								'Vệt bánh trước (mm) : 1740',
+								'Vệt bánh sau (mm) : 1702',
+								'Khoảng sáng gầm xe (mm) : 150',
+								'Bán kính vòng quay nhỏ nhất (m) : 6.7',
+								'Dung tích thùng nhiên liệu (L) : 80',
+							],
+						},
+						{
+							title: 'Hệ thống treo',
+							desc: [
+								'Trước : Hệ thống treo độc lập dùng lò xo trụ, thanh cân bằng và ống giảm chấn thủy lực',
+								'Sau : Hệ thống treo phụ thuộc dùng nhíp lá với ống giảm chấn thủy lực',
+							],
+						},
+						{
+							title: 'Hệ thống phanh',
+							desc: [
+								'Phanh trước và sau : Phanh Đĩa',
+								'Cỡ lốp : 235 / 65R16C',
+								'Vành xe : Vành thép 16"',
+							],
+						},
+						{
+							title: 'Trang thiết bị an toàn',
+							desc: [
+								'Túi khí phía trước cho người lái : Có',
+								'Túi khí cho hành khách phía trước : Không',
+								'Dây đai an toàn đa điểm cho tất cả các ghế : Có',
+								'Camera lùi : Có',
+								'Cảm biến hỗ trợ đỗ xe sau : Có',
+								'Hệ thống Chống bó cứng phanh & Phân phối lực phanh điện tử : Có',
+								'Hệ thống Cân bằng điện tử : Có',
+								'Hệ thống Kiểm soát hành trình : Có',
+								'Hệ thống Chống trộm : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị ngoại thất',
+							desc: [
+								'Đèn phía trước : LED',
+								'Đèn chạy ban ngày : LED',
+								'Đèn sương mù : Halogen',
+								'Gạt mưa tự động : Có',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Bậc bước chân điện : Có',
+								'Cửa trượt điện : Không',
+								'Chắn bùn trước sau : Có',
+							],
+						},
+						{
+							title: 'Trang thiết bị bên trong xe',
+							desc: [
+								'Cửa gió điều hòa hành khách : Có',
+								'Đèn chạy ban ngày : LED',
+								'Chất liệu ghế : Nỉ kết hợp Vinyl',
+								'Điều chỉnh ghế lái : Chỉnh 6 hướng',
+								'Gương chiếu hậu ngoài : Chỉnh điện và gập điện',
+								'Điều chỉnh hàng ghế sau : Điều chỉnh ngả',
+								'Hàng ghế cuối gập phẳng : Không',
+								'Tay nắm hỗ trợ lên xuống : Có',
+								'Giá hành lý phía trên : Không',
+								'Cửa kính điều khiển điện : Có (1 chạm lên xuống cho hàng ghế trước)',
+								'Bảng đồng hồ tốc độ : Màn hình 3.5"',
+								'Màn hình trung tâm : Màn hình TFT cảm ứng 8"',
+								'Kết nối Apple Carplay & Android Auto : Không',
+								'Hệ thống âm thanh : AM/FM, Bluetooth, USB, 6 loa',
+								'Điều khiển âm thanh trên tay lái : Có',
+								'Cổng sạc USB cho hàng ghế sau : Không',
+							],
+						},
+						{
+							title: 'Trang thiết bị phần cứng cho bộ giải pháp Upfleet',
+							desc: [
+								'Thiết bị giám sát hành trình GPS : Tùy chọn tại Đại lý',
+								'Thiết bị giám sát hình ảnh : Tùy chọn tại Đại lý',
+							],
+						},
+					],
+				},
+			],
 		},
 	},
 	{

@@ -145,16 +145,28 @@ const priceList: { fords: TPriceList[] } = {
 		},
 		{
 			id: 7,
-			label: 'Ford Transit',
+			label: 'Transit Hoàn Toàn Mới',
 			slug: 'ford-transit',
 			thumnail:
-				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-transit-fordlongbien_com-icon-1_e5lfxu.jpg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625478/tran-xuan-hieu/ford-transit/transit-premium-plus_rhhdm2.webp',
 			children: [
 				{
-					id: 'ford-transit-2024',
-					title: 'Ford Transit (Bản Tiêu chuẩn)',
-					price: '849000000',
-					slug: 'ford-transit-2024',
+					title: 'Transit Premium+ 18 chỗ',
+					id: 'transit-premium-18-cho',
+					price: '1087000000',
+					slug: 'transit-premium-18-cho',
+				},
+				{
+					title: 'Transit Premium 16 chỗ',
+					id: 'transit-premium-16-cho',
+					price: '999000000',
+					slug: 'transit-premium-16-cho',
+				},
+				{
+					title: 'Transit Trend 16 chỗ',
+					id: 'transit-trend-16-cho',
+					price: '905000000',
+					slug: 'transit-trend-16-cho',
 				},
 			],
 		},

@@ -1,14 +1,14 @@
 import '../styles/globals.css';
 
-import { Analytics } from '@vercel/analytics/react';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
 import CarsLayout from '@/layouts/cars-layout';
+import theme from '@/styles/theme-antd';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ConfigProvider } from 'antd';
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import Script from 'next/script';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import theme from '@/styles/theme-antd';
 
 const inter = Plus_Jakarta_Sans({ subsets: ['latin'] });
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 	robots: 'index, follow',
 	keywords:
 		'Ford, Ford Việt Nam, Ford Hà Thành, báo giá xe ford, Ford everest, Ford ranger,Ford transit, Ford territory, Ford raptor, Giá xe  Ford everest, Giá xe Ford ranger,  Giá xe Ford transit, Giá xe Ford transit, Giá xe Ford raptor, Báo giá xe ford, Báo giá xe Ford everest, Báo giá xe Ford ranger, Báo giá xe Ford transit, Báo giá xe Ford territory, Báo giá xe Ford raptor, Thông số kĩ thuật xe  Ford everest, Thông số kĩ thuật xe Ford raptor, Thông số kĩ thuật xe Ford territory, Thông số kĩ thuật xe Ford transit, Thông số kĩ thuật xe Ford ranger, Thông số kĩ thuật xe  Ford everest',
-	metadataBase: new URL('https://fordxuanhieu.com'),
+	metadataBase: new URL('https://hathanhford.net'),
 	icons: {
 		icon: '/public/images/favicon.png',
 	},
@@ -82,7 +82,7 @@ export default function RootLayout({
 					property="og:image"
 					content="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717925246/tran-xuan-hieu/ford-logo-1280-x-960-wallpaper-df4sodvepcrbz8o0-removebg-preview_iypgeu.png"
 				/>
-				<meta property="og:url" content="https://fordxuanhieu.com" />
+				<meta property="og:url" content="https://hathanhford.net" />
 				<meta property="og:type" content="website" />
 				{/* Twitter Meta Data */}
 				<meta
@@ -110,7 +110,7 @@ export default function RootLayout({
 					crossOrigin="anonymous"
 				/>
 				{/* canonical */}
-				<link rel="canonical" href="https://fordxuanhieu.com" />
+				<link rel="canonical" href="https://hathanhford.net" />
 				{/* domain verify */}
 				<meta
 					name="google-site-verification"
@@ -128,7 +128,7 @@ export default function RootLayout({
 				<meta name="msapplication-config" content="/browserconfig.xml" />
 				<meta name="theme-color" content="#000000" />
 				{/* manifest */}
-				<link rel="manifest" href="/manifest.json" />
+				{/* <link rel="manifest" href="/public/images/logo.png" /> */}
 				{/* apple */}
 				<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 				<link

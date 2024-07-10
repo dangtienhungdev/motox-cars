@@ -1,6 +1,5 @@
 export const introduce = {
-	title:
-		'FORD Hà Thành – ĐẠI LÝ ỦY QUYỀN CHÍNH HÃNG CỦA FORD LỚN NHẤT ĐÔNG NAM Á',
+	title: 'FORD Hà Thành – ĐẠI LÝ ỦY QUYỀN CHÍNH HÃNG CỦA FORD',
 	des1: 'Kính gửi Quý khách hàng',
 	des2: /* html */ `Đại lý <span className="text-lg font-semibold text-primary">Ford Hà Thành</span> tự hào là đại lý ủy quyền chính thức của Công ty TNHH Ford Việt Nam, thực hiện đầy đủ các chức năng:`,
 	list: [
