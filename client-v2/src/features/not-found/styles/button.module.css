@@ -1,11 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.btn404,
-.btn404:active,
-.btn404:hover,
-.btn404:focus {
+.btn,
+.btn:active,
+.btn:hover,
+.btn:focus {
 	margin-top: 5rem;
 	font-family: 'Space Mono', monospace;
 	color: #fff;
