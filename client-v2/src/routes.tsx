@@ -1,8 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
 import LayoutCars from './layouts';
 import HomePage from './pages';
+import ContactPage from './pages/contact';
 import Introduce from './pages/introduce';
 import NotFound from './pages/not-found';
+import PriceList from './pages/price-list';
 
 export const routes = createBrowserRouter([
 	{
@@ -16,6 +18,14 @@ export const routes = createBrowserRouter([
 			{
 				path: '/introduce',
 				element: <Introduce />,
+			},
+			{
+				path: '/price-list',
+				element: <PriceList />,
+			},
+			{
+				path: '/contact',
+				element: <ContactPage />,
 			},
 		],
 	},

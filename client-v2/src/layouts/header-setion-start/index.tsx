@@ -2,6 +2,100 @@ import { Link } from 'react-router-dom';
 import SearchInput from '../search-input';
 
 const HeaderSectionStart = () => {
+	const data = [
+		{
+			id: 1,
+			title: 'Trang chủ',
+			link: '/',
+		},
+		{
+			id: 2,
+			title: 'Giới thiệu',
+			link: '/introduce',
+		},
+		{
+			id: 3,
+			title: 'Bảng giá xe',
+			link: '/price-list',
+			// icon: <i className="fas fa-angle-down" />,
+			// children: [
+			// 	{
+			// 		id: 3.1,
+			// 		title: 'Ford Everest',
+			// 		link: '/ford-everest',
+			// 	},
+			// 	{
+			// 		id: 3.2,
+			// 		title: 'Ford Ranger',
+			// 		link: '/ford-ranger',
+			// 	},
+			// 	{
+			// 		id: 3.3,
+			// 		title: 'Ford Ranger Raptor',
+			// 		link: '/ford-ranger-raptor',
+			// 	},
+			// 	{
+			// 		id: 3.4,
+			// 		title: 'Ford Explorer',
+			// 		link: '/ford-explorer',
+			// 	},
+			// 	{
+			// 		id: 3.5,
+			// 		title: 'Ford Territory',
+			// 		link: '/ford-territory',
+			// 	},
+			// 	{
+			// 		id: 3.6,
+			// 		title: 'Ford Transit',
+			// 		link: '/ford-transit',
+			// 	},
+			// ],
+		},
+		{
+			id: 4,
+			title: 'Sản phẩm',
+			link: '/ford-everest',
+			icon: <i className="fas fa-angle-down" />,
+			children: [
+				{
+					id: 4.1,
+					title: 'Ford Everest',
+					link: '/ford-everest',
+				},
+				{
+					id: 4.2,
+					title: 'Ford Ranger',
+					link: '/ford-ranger',
+				},
+				{
+					id: 4.3,
+					title: 'Ford Ranger Raptor',
+					link: '/ford-ranger-raptor',
+				},
+				{
+					id: 4.4,
+					title: 'Ford Explorer',
+					link: '/ford-explorer',
+				},
+				{
+					id: 4.5,
+					title: 'Ford Territory',
+					link: '/ford-territory',
+				},
+				{
+					id: 4.6,
+					title: 'Ford Transit',
+					link: '/ford-transit',
+				},
+			],
+		},
+		{
+			id: 5,
+			title: 'Liên hệ',
+			link: '/contact',
+		},
+	];
+
 	return (
 		<>
 			<header id="header-sticky" className="header-1">
@@ -23,49 +117,32 @@ const HeaderSectionStart = () => {
 									<div className="main-menu">
 										<nav id="mobile-menu">
 											<ul>
-												<li className="has-dropdown active menu-thumb">
-													<Link to="/">Trang chủ</Link>
-												</li>
-												<li>
-													<Link to="/introduce">Giới thiệu</Link>
-												</li>
-												<li className="has-dropdown">
-													<Link to="/">
-														Bảng giá xe
-														<i className="fas fa-angle-down" />
-													</Link>
-													<ul className="submenu">
-														<li>
-															<Link to="gallery.html">Xe Ford</Link>
+												{data.map((item) => {
+													return (
+														<li
+															className="has-dropdown active menu-thumb"
+															key={item.id}
+														>
+															<Link to={`${item.link}`}>
+																{item.title}
+																{item.icon && item.icon}
+															</Link>
+															<ul className="submenu">
+																{item.children &&
+																	item.children.length > 0 &&
+																	item.children.map((child) => {
+																		return (
+																			<li key={child.id}>
+																				<Link to={`${child.link}`}>
+																					{child.title}
+																				</Link>
+																			</li>
+																		);
+																	})}
+															</ul>
 														</li>
-														<li>
-															<Link to="faq.html">Xe Ford</Link>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<Link to="program-details.html">
-														Sản phẩm
-														<i className="fas fa-angle-down" />
-													</Link>
-													<ul className="submenu">
-														<li>
-															<Link to="car-grid.html">Ford 1</Link>
-														</li>
-														<li>
-															<Link to="car-list.html">Ford 1</Link>
-														</li>
-														<li>
-															<Link to="car-list-sidebar.html">Ford 1</Link>
-														</li>
-														<li>
-															<Link to="car-details.html">Ford 1</Link>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<Link to="contact.html">Liên hệ</Link>
-												</li>
+													);
+												})}
 											</ul>
 										</nav>
 									</div>

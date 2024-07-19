@@ -3436,7 +3436,7 @@ span {
 	top: 0 !important;
 	left: 0;
 	width: 100%;
-	z-index: 9999;
+	z-index: 1000;
 	transition: all 0.9s;
 	background-color: var(--white);
 	box-shadow: var(--box-shadow);

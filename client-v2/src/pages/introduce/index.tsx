@@ -4,7 +4,7 @@ import GetToKnowUs from '@/features/introduce/get-to-know-us';
 const Introduce = () => {
 	return (
 		<div>
-			<BannerPage />
+			<BannerPage title="Giới thiệu" />
 
 			<GetToKnowUs />
 		</div>

@@ -1,5 +1,4 @@
 import BackToTopStart from '../components/back-to-top-start';
-import PreloaderStart from '../components/preloader-start';
 import CacDongXe from '../features/home/components/cac-dong-xe';
 import FeedbackKhachHang from '../features/home/components/feedback-khach-hang';
 import HeroSectionStart from '../features/home/components/hero-sectiontion-start';
@@ -10,7 +9,7 @@ const HomePage = () => {
 	return (
 		<div>
 			{/* preloader */}
-			<PreloaderStart />
+			{/* <PreloaderStart /> */}
 			{/* back to top */}
 			<BackToTopStart />
 

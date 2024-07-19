@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
 
-const BannerPage = () => {
+type BannerPageProps = {
+	title: string;
+};
+
+const BannerPage = ({ title }: BannerPageProps) => {
 	return (
 		<div
 			className="bg-cover breadcrumb-wrapper"
@@ -18,10 +22,10 @@ const BannerPage = () => {
 						<li>
 							<i className="fas fa-chevron-right" />
 						</li>
-						<li>Giới thiệu</li>
+						<li>{title}</li>
 					</ul>
 					<h1 className="wow fadeInUp" data-wow-delay=".5s">
-						Giới thiệu
+						{title}
 					</h1>
 				</div>
 			</div>
