@@ -24,3 +24,7 @@
 	.ant-select-selector {
 	@apply !tw-px-0 tw-text-base;
 }
+
+span.ant-select-selection-item {
+	@apply !tw-text-base !tw-pl-4 tw-text-[#77797F];
+}
