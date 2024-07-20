@@ -32,5 +32,5 @@
 			"@/public/*": ["public/*"]
 		}
 	},
-	"include": ["src", "public/js"]
+	"include": ["src", "src/assets/js"]
 }
