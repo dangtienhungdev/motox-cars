@@ -28,8 +28,9 @@
 			"@/*": ["src/*"],
 			"@/data/*": ["src/data/*"],
 			"@/components/*": ["src/components/*"],
-			"@/types/*": ["src/types/*"]
+			"@/types/*": ["src/types/*"],
+			"@/public/*": ["public/*"]
 		}
 	},
-	"include": ["src"]
+	"include": ["src", "public/js"]
 }
