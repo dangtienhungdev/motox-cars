@@ -28,3 +28,7 @@
 span.ant-select-selection-item {
 	@apply !tw-text-base !tw-pl-4 tw-text-[#77797F];
 }
+
+.header-main .main-menu ul {
+	@apply tw-hidden lg:tw-block;
+}
