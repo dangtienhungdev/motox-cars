@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MHeaderSelectionStart from '../header-top-selection-start/m-header-selection';
 import SearchInput from '../search-input';
 
 const HeaderSectionStart = () => {
@@ -96,8 +98,12 @@ const HeaderSectionStart = () => {
 		},
 	];
 
+	const [openSidebar, setOpenSidebar] = useState(false);
+
 	return (
 		<>
+			<MHeaderSelectionStart open={openSidebar} />
+
 			<header id="header-sticky" className="header-1">
 				<div className="container-fluid">
 					<div className="mega-menu-wrapper">
@@ -168,11 +174,14 @@ const HeaderSectionStart = () => {
 										Tìm xe bạn muốn báo giá
 									</a>
 								</div>
-								<div className="my-auto header__hamburger d-xl-none">
+								<button
+									onClick={() => setOpenSidebar(!openSidebar)}
+									className="my-auto header__hamburger d-xl-none tw-cursor-pointer"
+								>
 									<div className="sidebar__toggle">
 										<i className="fas fa-bars" />
 									</div>
-								</div>
+								</button>
 							</div>
 						</div>
 					</div>
