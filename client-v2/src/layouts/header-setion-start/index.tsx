@@ -102,7 +102,10 @@ const HeaderSectionStart = () => {
 
 	return (
 		<>
-			<MHeaderSelectionStart open={openSidebar} />
+			<MHeaderSelectionStart
+				open={openSidebar}
+				setOpenSidebar={setOpenSidebar}
+			/>
 
 			<header id="header-sticky" className="header-1">
 				<div className="container-fluid">
@@ -166,9 +169,9 @@ const HeaderSectionStart = () => {
 										</h6>
 									</div>
 								</div>
-								<button className="search-trigger search-icon">
+								{/* <button className="search-trigger search-icon">
 									<i className="fa fa-search" aria-hidden="true" />
-								</button>
+								</button> */}
 								<div className="header-button">
 									<a href="car-details.html" className="header-btn">
 										Tìm xe bạn muốn báo giá

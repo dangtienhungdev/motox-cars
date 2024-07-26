@@ -1,11 +1,18 @@
 import { cn } from '@/utils/cn';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface MHeaderSelectionStartProps {
 	open: boolean;
+	setOpenSidebar: (open: boolean) => void;
 }
 
-const MHeaderSelectionStart = ({ open }: MHeaderSelectionStartProps) => {
+const MHeaderSelectionStart = ({
+	open,
+	setOpenSidebar,
+}: MHeaderSelectionStartProps) => {
+	const [opened, setOpened] = useState<boolean>(false);
+
 	return (
 		<div>
 			<div className="fix-area">
@@ -21,7 +28,10 @@ const MHeaderSelectionStart = ({ open }: MHeaderSelectionStartProps) => {
 										/>
 									</a>
 								</div>
-								<div className="offcanvas__close">
+								<div
+									className="offcanvas__close"
+									onClick={() => setOpenSidebar(false)}
+								>
 									<button>
 										<i className="fas fa-times" />
 									</button>
@@ -32,7 +42,53 @@ const MHeaderSelectionStart = ({ open }: MHeaderSelectionStartProps) => {
 								thông tin, hãy liên hệ với chúng tôi qua số điện thoại hoặc
 								email dưới đây.
 							</p>
-							<div className="mb-3 mobile-menu fix" />
+							<div className="mb-3 mobile-menu fix mean-container">
+								<div className="mean-bar">
+									<a
+										href="#nav"
+										className="meanmenu-reveal"
+										style={{ right: 0, left: 'auto', display: 'inline' }}
+									>
+										<span>
+											<span>
+												<span />
+											</span>
+										</span>
+									</a>
+									<nav className="mean-nav">
+										<ul style={{ display: 'none' }}>
+											<li className="has-dropdown !tw-bg-[#f3f7fb] menu-thumb">
+												<Link to="/" className="!tw-text-black">
+													Trang chủ
+												</Link>
+											</li>
+											<li className="!tw-bg-[#f3f7fb]">
+												<Link className="!tw-text-black" to="/introduce">
+													Giới thiệu
+												</Link>
+											</li>
+											<li className="!tw-bg-[#f3f7fb]">
+												<Link className="!tw-text-black" to="/price-list">
+													Bảng giá xe
+												</Link>
+											</li>
+											{/* <li className="dropdown-opened"> */}
+											<li className="!tw-bg-[#f3f7fb]">
+												<Link className="!tw-text-black" to="/">
+													Sản phẩm
+													<i className="fas fa-angle-down" />
+												</Link>
+											</li>
+											<li className="!tw-bg-[#f3f7fb]">
+												<Link className="!tw-text-black" to="/contact">
+													Liên hệ
+												</Link>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
 							<div className="offcanvas__contact">
 								<h4>Thông tin liên lạc</h4>
 								<ul>
