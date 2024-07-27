@@ -44,8 +44,8 @@ const MHeaderSelectionStart = ({
 							</p>
 							<div className="mb-3 mobile-menu fix mean-container">
 								<div className="mean-bar">
-									<a
-										href="#nav"
+									<Link
+										to="#nav"
 										className="meanmenu-reveal"
 										style={{ right: 0, left: 'auto', display: 'inline' }}
 									>
@@ -54,36 +54,48 @@ const MHeaderSelectionStart = ({
 												<span />
 											</span>
 										</span>
-									</a>
+									</Link>
 									<nav className="mean-nav">
 										<ul style={{ display: 'none' }}>
-											<li className="has-dropdown !tw-bg-[#f3f7fb] menu-thumb">
-												<Link to="/" className="!tw-text-black">
-													Trang chủ
-												</Link>
-											</li>
-											<li className="!tw-bg-[#f3f7fb]">
-												<Link className="!tw-text-black" to="/introduce">
-													Giới thiệu
-												</Link>
-											</li>
-											<li className="!tw-bg-[#f3f7fb]">
-												<Link className="!tw-text-black" to="/price-list">
-													Bảng giá xe
-												</Link>
-											</li>
-											{/* <li className="dropdown-opened"> */}
-											<li className="!tw-bg-[#f3f7fb]">
-												<Link className="!tw-text-black" to="/">
-													Sản phẩm
-													<i className="fas fa-angle-down" />
-												</Link>
-											</li>
-											<li className="!tw-bg-[#f3f7fb]">
-												<Link className="!tw-text-black" to="/contact">
-													Liên hệ
-												</Link>
-											</li>
+											{[
+												{
+													id: 1,
+													title: 'Trang chủ',
+													link: '/',
+												},
+												{
+													id: 2,
+													title: 'Giới thiệu',
+													link: '/introduce',
+												},
+												{
+													id: 3,
+													title: 'Bảng giá xe',
+													link: '/price-list',
+												},
+												{
+													id: 4,
+													title: 'Sản phẩm',
+													link: '/',
+												},
+												{
+													id: 5,
+													title: 'Liên hệ',
+													link: '/contact',
+												},
+											].map((item) => {
+												return (
+													<li
+														className="!tw-bg-[#f3f7fb]"
+														key={item.id}
+														onClick={() => setOpenSidebar(false)}
+													>
+														<Link className="!tw-text-black" to={item.link}>
+															{item.title}
+														</Link>
+													</li>
+												);
+											})}
 										</ul>
 									</nav>
 								</div>
