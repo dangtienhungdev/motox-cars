@@ -56,7 +56,7 @@ const HeaderSectionStart = () => {
 		{
 			id: 4,
 			title: 'Sản phẩm',
-			link: '/ford-everest',
+			link: '/cars',
 			icon: <i className="fas fa-angle-down" />,
 			children: [
 				{

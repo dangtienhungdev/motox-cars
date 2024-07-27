@@ -10,8 +10,6 @@ const MHeaderSelectionStart = ({
 	open,
 	setOpenSidebar,
 }: MHeaderSelectionStartProps) => {
-	// const [opened, setOpened] = useState<boolean>(false);
-
 	return (
 		<div>
 			<div className="fix-area">

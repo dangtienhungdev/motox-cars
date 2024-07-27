@@ -11,4 +11,5 @@ export type TPriceListChildren = {
 	title: string;
 	price: string;
 	slug?: string;
+	image?: string;
 };

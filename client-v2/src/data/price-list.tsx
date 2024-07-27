@@ -14,30 +14,40 @@ const priceList: { fords: TPriceList[] } = {
 					title: 'Ford Everest Platinum 4×4 AT',
 					price: '1545000000',
 					slug: 'ford-everest-platinum-4x4-at',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-platinum-mau-xam-icon-300x200-1-300x200_cv5n7b.jpg',
 				},
 				{
 					id: 'ford-everest-titanium-4x4-at',
 					title: 'Ford Everest Titanium+ 4×4 AT',
 					price: '1468000000',
 					slug: 'ford-everest-titanium-4x4-at',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/Ford-Everest-2023-fordlongbien_com-14-300x200_lqcv0f.jpg',
 				},
 				{
 					id: 'ford-everest-titanium-at-4x2-at',
 					title: 'Ford Everest Titanium AT 4×2 AT',
 					price: '1299000000',
 					slug: 'ford-everest-titanium-at-4x2-at',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-bac-icon-300x200_xx7cpa.jpg',
 				},
 				{
 					id: 'ford-everest-sport-4x2-at',
 					title: 'Ford Everest Sport 4×2 AT',
 					price: '1178000000',
 					slug: 'ford-everest-sport-4x2-at',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-sport-2022-mau-xanh-icon-300x200_gdpz0c.jpg',
 				},
 				{
 					id: 'ford-everest-ambient-4x2-at',
 					title: 'Ford Everest Ambient 4×2 AT',
 					price: '1099000000',
 					slug: 'ford-everest-ambient-4x2-at',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-nau-icon-300x200_lz3fjc.jpg',
 				},
 			],
 		},

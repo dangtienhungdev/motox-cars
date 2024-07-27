@@ -24,7 +24,7 @@ const TabContent = ({ data, id }: TabContentProps) => {
 							</div>
 							<div className="car-content">
 								<h3>
-									<Link to={`cars?id=${id}`}>{item.title}</Link>
+									<Link to={`/cars?id=${id}`}>{item.title}</Link>
 								</h3>
 								<div className="star">
 									<span className="tw-text-base tw-font-medium tw-text-primary">
