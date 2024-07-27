@@ -1,5 +1,4 @@
 import { cn } from '@/utils/cn';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface MHeaderSelectionStartProps {
@@ -11,7 +10,7 @@ const MHeaderSelectionStart = ({
 	open,
 	setOpenSidebar,
 }: MHeaderSelectionStartProps) => {
-	const [opened, setOpened] = useState<boolean>(false);
+	// const [opened, setOpened] = useState<boolean>(false);
 
 	return (
 		<div>
