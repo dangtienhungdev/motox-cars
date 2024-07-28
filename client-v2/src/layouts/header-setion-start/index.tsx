@@ -1,3 +1,5 @@
+import BaoGiaXeModal from '@/components/bao-gia';
+import { Tooltip } from 'antd';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import MHeaderSelectionStart from '../header-top-selection-start/m-header-selection';
@@ -99,6 +101,7 @@ const HeaderSectionStart = () => {
 	];
 
 	const [openSidebar, setOpenSidebar] = useState(false);
+	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
 	return (
 		<>
@@ -169,9 +172,14 @@ const HeaderSectionStart = () => {
 										</h6>
 									</div>
 								</div>
-								{/* <button className="search-trigger search-icon">
-									<i className="fa fa-search" aria-hidden="true" />
-								</button> */}
+								<Tooltip title="Nhận báo giá xe">
+									<button
+										className="search-trigger search-icon"
+										onClick={() => setIsModalOpen(true)}
+									>
+										<i className="fa-solid fa-truck-fast" aria-hidden="true" />
+									</button>
+								</Tooltip>
 								<div className="header-button">
 									<a href="car-details.html" className="header-btn">
 										Tìm xe bạn muốn báo giá
@@ -192,6 +200,12 @@ const HeaderSectionStart = () => {
 			</header>
 
 			<SearchInput />
+
+			<BaoGiaXeModal
+				isModalOpen={isModalOpen}
+				handleOk={() => setIsModalOpen(false)}
+				handleCancel={() => setIsModalOpen(false)}
+			/>
 		</>
 	);
 };

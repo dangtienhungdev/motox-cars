@@ -1,5 +1,5 @@
-import { cn } from '@/utils/cn';
 import { Link } from 'react-router-dom';
+import { cn } from '@/utils/cn';
 
 interface MHeaderSelectionStartProps {
 	open: boolean;
@@ -73,7 +73,7 @@ const MHeaderSelectionStart = ({
 												{
 													id: 4,
 													title: 'Sản phẩm',
-													link: '/',
+													link: '/cars',
 												},
 												{
 													id: 5,

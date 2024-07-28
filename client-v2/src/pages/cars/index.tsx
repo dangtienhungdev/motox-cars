@@ -3,9 +3,14 @@ import BaoGiaXe from '@/components/bao-gia-xe/bao-gia-xe';
 import priceList from '@/data/price-list';
 import TabContent from '@/features/price-list/tab-content';
 import { Tabs } from 'antd';
+import { useSearchParams } from 'react-router-dom';
 
 const CarPage = () => {
 	const tabs = priceList.fords;
+
+	const [params] = useSearchParams();
+	const id = params.get('id');
+	console.log('🚀 ~ CarPage ~ id:', id);
 
 	const items = tabs.map((tab) => {
 		return {
@@ -14,6 +19,19 @@ const CarPage = () => {
 			children: <TabContent data={tab} id={tab.id} />,
 		};
 	});
+
+	if (!id) {
+		return (
+			<div>
+				<BannerPage title={`Thông tin của xe`} />
+
+				<div className="tw-w-full tw-h-full tw-px-4 tw-py-6 xl:tw-px-px80 lg:tw-px-10 md:tw-px-6">
+					<p className="tw-text-center">Đang cập nhật dữ liệu...</p>
+				</div>
+			</div>
+		);
+	}
+
 	return (
 		<div>
 			<BannerPage title="Bảng giá xe Ford" />
@@ -24,7 +42,7 @@ const CarPage = () => {
 						<div className="row g-4">
 							<div className="col-lg-8">
 								<div className="row g-4">
-									<Tabs defaultActiveKey="5" items={items} />
+									<Tabs defaultActiveKey={id} items={items} />
 								</div>
 							</div>
 

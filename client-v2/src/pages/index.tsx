@@ -52,11 +52,11 @@ const HomePage = () => {
 			{/* nhan bao gia xe */}
 			<NhanBaoGiaXe />
 
-			{/* lợi ích của bạn */}
-			<QuyenLoiCuaBan />
-
 			{/* các dòng xe của bạn */}
 			<CacDongXe />
+
+			{/* lợi ích của bạn */}
+			<QuyenLoiCuaBan />
 
 			{/* khach hang tin tuong */}
 			<FeedbackKhachHang />

@@ -17,7 +17,7 @@ const TabContent = ({ data, id }: TabContentProps) => {
 							<div
 								className="tw-bg-contain tw-bg-center tw-bg-no-repeat car-image"
 								style={{
-									backgroundImage: `url(${data.thumnail})`,
+									backgroundImage: `url(${item.image})`,
 								}}
 							>
 								<div className="post-cat">2024 Model</div>

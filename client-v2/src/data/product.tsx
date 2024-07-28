@@ -269,46 +269,52 @@ export const products = [
 		],
 		xe: [
 			{
-				title: 'Ford Ranger Raptor 2.0L',
-				id: 'ford-ranger-raptor-2-0l',
-				price: '1299000000',
+				id: 'ford-ranger-xls-4x2-at',
+				slug: 'ford-ranger-xls-4x2-at',
+				title: 'Ford Ranger XLS 4×2 AT',
+				price: '707000000',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917141/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien-300x200_xbmpmd.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917056/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-bac-300x200_g9nenb.jpg',
 			},
 			{
-				id: 'ford-ranger-stormtrak-4x4-at',
-				title: 'Ford Ranger StormTrak 4×4 AT',
-				price: '1039000000',
+				id: 'ford-ranger-XLS-4×4-AT',
+				title: 'Ford Ranger XLS 4×4 AT',
+				price: '776000000',
+				slug: 'ford-ranger-xls-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916957/tran-xuan-hieu/ford-ranger/ford-ranger-stormtrak-mau-trang-icon300x200-300x200_xorb01.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917032/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-den-300x200_lyxmrn.jpg',
+			},
+			{
+				id: 'ford-ranger-sport-4×4-AT',
+				title: 'Ford Ranger Sport 4×4 AT',
+				price: '864000000',
+				slug: 'ford-ranger-sport-4x4-at',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917007/tran-xuan-hieu/ford-ranger/Ford-ranger-Sport-2024-mau-nau-300x200_gboa8a.jpg',
 			},
 			{
 				id: 'ford-ranger-wildtrak-2-0l-4x4-at',
 				title: 'Ford Ranger Wildtrak 2.0L 4×4 AT',
 				price: '979000000',
+				slug: 'ford-ranger-wildtrak-2-0l-4x4-at',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916985/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-vang-luxe-icon-fordlongbien-300x200_cly3bf.jpg',
 			},
 			{
-				title: 'Ford Ranger Sport 4×4 AT',
-				id: 'ford-ranger-sport-4x4-at',
-				price: '864000000',
+				id: 'ford-ranger-stormtrak-2-0l-4x4-at',
+				title: 'Ford Ranger Stormtrak 2.0L 4×4 AT',
+				price: '1039000000',
+				slug: 'ford-ranger-stormtrak-2-0l-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917007/tran-xuan-hieu/ford-ranger/Ford-ranger-Sport-2024-mau-nau-300x200_gboa8a.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916957/tran-xuan-hieu/ford-ranger/ford-ranger-stormtrak-mau-trang-icon300x200-300x200_xorb01.jpg',
 			},
 			{
-				title: 'Ford Ranger XLS 4×4 AT',
-				id: 'ford-ranger-xls-4x4-at',
-				price: '776000000',
+				id: 'ford-ranger-raptor-2-0l',
+				title: 'Ford Ranger Raptor 2.0L',
+				price: '1299000000',
+				slug: 'ford-ranger-raptor-2-0l',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917032/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-den-300x200_lyxmrn.jpg',
-			},
-			{
-				title: 'Ford Ranger XLS 4×2 AT',
-				id: 'ford-ranger-xls-4x2-at',
-				price: '707000000',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917056/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-bac-300x200_g9nenb.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917141/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien-300x200_xbmpmd.jpg',
 			},
 		],
 		gioithieu: {
@@ -334,13 +340,13 @@ export const products = [
 					price: '707000000',
 				},
 				{
-					id: 'Ford Ranger XLS 4×4 AT',
+					id: 'ford-ranger-XLS-4×4-AT',
 					title: 'Ford Ranger XLS 4×4 AT',
 					price: '776000000',
 					slug: 'ford-ranger-xls-4x4-at',
 				},
 				{
-					id: 'Ford Ranger Sport 4×4 AT',
+					id: 'ford-ranger-sport-4×4-AT',
 					title: 'Ford Ranger Sport 4×4 AT',
 					price: '864000000',
 					slug: 'ford-ranger-sport-4x4-at',
@@ -601,18 +607,12 @@ export const products = [
 		],
 		xe: [
 			{
-				title: 'Ford Ranger Raptor Màu Xám, Đỏ Cam',
-				id: 'ford-ranger-raptor-maxxam',
-				price: '1306000000',
+				id: 'ford-ranger-raptor-2023-2-0l-4wd-at',
+				title: 'Ford Ranger Raptor 2023 2.0L 4WD AT',
+				price: '1299000000',
+				slug: 'ford-ranger-raptor-2023-2-0l-4wd-at',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717843788/tran-xuan-hieu/ford-ranger-raptor/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_itoigs.jpg',
-			},
-			{
-				id: 'ford-ranger-raptor',
-				title: 'Ford Ranger Raptor',
-				price: '1299000000',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718035802/tran-xuan-hieu/ford-ranger-raptor/ford-ranger-raptor-2023-mau-trang-icon-fordlongbien_com_crkc2q.jpg',
 			},
 		],
 		gioithieu: {
@@ -789,25 +789,28 @@ export const products = [
 		],
 		xe: [
 			{
-				title: 'Ford Territory Trend 1.5L AT',
-				id: 'ford-territory-trend-1-5l-at',
-				price: '799000000',
+				id: 'ford-territory-titanium-x-1-5l-at',
+				title: 'Ford Territory Titanium X 1.5L AT',
+				price: '929000000',
+				slug: 'ford-territory-titanium-x-1-5l-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031311/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-1-300x200_trd0zj.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031285/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-3-300x200_gzkvrg.jpg',
 			},
 			{
 				id: 'ford-territory-titanium-1-5l-at',
 				title: 'Ford Territory Titanium 1.5L AT',
-				price: '899000000',
+				price: '889000000',
+				slug: 'ford-territory-titanium-1-5l-at',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031298/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-2-300x200_mp0yag.jpg',
 			},
 			{
-				id: 'ford-territory-titanium-x-1-5l-at',
-				title: 'Ford Territory Titanium X 1.5L AT',
-				price: '929000000',
+				id: 'ford-territory-trend-1-5l-at',
+				title: 'Ford Territory Trend 1.5L AT',
+				price: '799000000',
+				slug: 'ford-territory-trend-1-5l-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031285/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-3-300x200_gzkvrg.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031311/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-1-300x200_trd0zj.jpg',
 			},
 		],
 		gioithieu: {
@@ -988,6 +991,7 @@ export const products = [
 				title: 'Transit Premium+ 18 chỗ',
 				id: 'transit-premium-18-cho',
 				price: '1087000000',
+				slug: 'transit-premium-18-cho',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625478/tran-xuan-hieu/ford-transit/transit-premium-plus_rhhdm2.webp',
 			},
@@ -995,6 +999,7 @@ export const products = [
 				title: 'Transit Premium 16 chỗ',
 				id: 'transit-premium-16-cho',
 				price: '999000000',
+				slug: 'transit-premium-16-cho',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625586/tran-xuan-hieu/ford-transit/transit-premium_gt5kuh.webp',
 			},
@@ -1002,6 +1007,7 @@ export const products = [
 				title: 'Transit Trend 16 chỗ',
 				id: 'transit-trend-16-cho',
 				price: '905000000',
+				slug: 'transit-trend-16-cho',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1720625607/tran-xuan-hieu/ford-transit/transit-trend_zare6g.webp',
 			},
@@ -1471,9 +1477,10 @@ export const products = [
 		],
 		xe: [
 			{
-				title: 'Ford Explorer 2.3L AT Ecoboost 4×4',
-				id: 'ford-explorer-2-3l-at-ecoboost-4-4',
+				id: 'ford-explorer-limited',
+				title: 'Ford Explorer Limited ',
 				price: '2439000000',
+				slug: 'ford-explorer-limited',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
 			},

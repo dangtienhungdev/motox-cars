@@ -301,68 +301,70 @@ const CarDetail = () => {
 				</div>
 			</section>
 
-			<section className="pt-0 car-rentals-section-2 section-padding fix">
-				<div className="container">
-					<div className="text-center section-title">
-						<img
-							src={
-								'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1721231120/icon/sub-icon_qklxrk.png'
-							}
-							alt="icon-img"
-							className="wow fadeInUp"
-						/>
-						<span className="wow fadeInUp" data-wow-delay=".2s">
-							Các dòng xe khác của {carDetail.label}
-						</span>
-						<h2 className="wow fadeInUp" data-wow-delay=".4s">
-							Các dòng xe tương tự
-						</h2>
-					</div>
-					<div className="row">
-						{thongTinXe &&
-							thongTinXe.xe.length > 0 &&
-							thongTinXe.xe
-								.filter((x) => x.id !== id)
-								.map((item) => (
-									<div
-										className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp !tw-border !tw-border-gray-300"
-										data-wow-delay=".3s"
-										key={item.id}
-									>
-										<div className="car-rentals-items">
-											<div className="car-image">
-												<img src={item.image} alt={item.title} />
-											</div>
-											<div className="car-content">
-												<div className="post-cat">2024 Model</div>
+			{thongTinXe && thongTinXe.xe.filter((x) => x.id !== id).length > 0 && (
+				<section className="pt-0 car-rentals-section-2 section-padding fix">
+					<div className="container">
+						<div className="text-center section-title">
+							<img
+								src={
+									'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1721231120/icon/sub-icon_qklxrk.png'
+								}
+								alt="icon-img"
+								className="wow fadeInUp"
+							/>
+							<span className="wow fadeInUp" data-wow-delay=".2s">
+								Các dòng xe khác của {carDetail.label}
+							</span>
+							<h2 className="wow fadeInUp" data-wow-delay=".4s">
+								Các dòng xe tương tự
+							</h2>
+						</div>
+						<div className="row">
+							{thongTinXe &&
+								thongTinXe.xe.length > 0 &&
+								thongTinXe.xe
+									.filter((x) => x.id !== id)
+									.map((item) => (
+										<div
+											className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp !tw-border !tw-border-gray-300"
+											data-wow-delay=".3s"
+											key={item.id}
+										>
+											<div className="car-rentals-items">
+												<div className="car-image">
+													<img src={item.image} alt={item.title} />
+												</div>
+												<div className="car-content">
+													<div className="post-cat">2024 Model</div>
 
-												<h4>
+													<h4>
+														<Link
+															to={`/car/${item.id}?id=${idHangXe}&ford=${ford}`}
+															className="tw-truncate"
+														>
+															{item.title}
+														</Link>
+													</h4>
+													<h6>
+														<span>Giá chỉ từ</span>{' '}
+														{formatCurrency(Number(item.price))}
+													</h6>
+
 													<Link
 														to={`/car/${item.id}?id=${idHangXe}&ford=${ford}`}
-														className="tw-truncate"
+														className="text-center tw-mt-5 !tw-bg-[#015CB5] !tw-text-white theme-btn bg-color w-100"
 													>
-														{item.title}
+														book now{' '}
+														<i className="fa-solid fa-arrow-right ps-1" />
 													</Link>
-												</h4>
-												<h6>
-													<span>Giá chỉ từ</span>{' '}
-													{formatCurrency(Number(item.price))}
-												</h6>
-
-												<Link
-													to="car-details.html"
-													className="text-center tw-mt-5 !tw-bg-[#015CB5] !tw-text-white theme-btn bg-color w-100"
-												>
-													book now{' '}
-													<i className="fa-solid fa-arrow-right ps-1" />
-												</Link>
+												</div>
 											</div>
 										</div>
-									</div>
-								))}
+									))}
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 		</div>
 	);
 };
