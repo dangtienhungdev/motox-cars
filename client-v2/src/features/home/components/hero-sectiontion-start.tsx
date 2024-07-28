@@ -1,7 +1,7 @@
 const HeroSectionStart = () => {
 	return (
 		<section className="hero-section hero-1 fix">
-			<div className="array-button">
+			<div className="array-button !tw-hidden">
 				<button className="image-array-left">
 					<i className="fa-solid fa-chevron-left" />
 				</button>

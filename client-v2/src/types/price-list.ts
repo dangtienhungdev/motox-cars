@@ -12,4 +12,12 @@ export type TPriceListChildren = {
 	price: string;
 	slug?: string;
 	image?: string;
+	moTaXe?: TMoTaXe[];
+};
+
+export type TMoTaXe = {
+	id: string;
+	title: string;
+	image: string;
+	desc: string;
 };

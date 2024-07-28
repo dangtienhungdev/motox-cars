@@ -4,14 +4,14 @@ export const cacDongXe = [
 		title: 'Ford Everest',
 		slug: 'ford-everest',
 		image:
-			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-everest-2022-mau-cam-icon-fordlongbien_com_tpiye8.jpg',
+			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722152673/tran-xuan-hieu/banner/nge-vn-landing-page-card-1_tx9qym.avif',
 	},
 	{
 		id: 1,
 		title: 'Ford Ranger',
 		slug: 'ford-ranger',
 		image:
-			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-wildtrak-mau-vang-luxe-icon2-fordlongbien_com_l40h2a.jpg',
+			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916957/tran-xuan-hieu/ford-ranger/ford-ranger-stormtrak-mau-trang-icon300x200-300x200_xorb01.jpg',
 	},
 	{
 		id: 2,
@@ -25,7 +25,7 @@ export const cacDongXe = [
 		title: 'Ford Explorer',
 		slug: 'ford-explorer',
 		image:
-			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-explorer-2022-icon-mau-do-fordlongbien_com-300x200_ghtqzg.jpg',
+			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722152969/tran-xuan-hieu/banner/explorer_xen3fh.avif',
 	},
 	{
 		id: 4,
@@ -40,6 +40,6 @@ export const cacDongXe = [
 		title: 'Ford Transit',
 		slug: 'ford-transit',
 		image:
-			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-transit-fordlongbien_com-icon-1_e5lfxu.jpg',
+			'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722152603/tran-xuan-hieu/banner/ford-transit-frozen-white_mxmlcs.webp',
 	},
 ];

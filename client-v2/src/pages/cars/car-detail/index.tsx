@@ -1,11 +1,14 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 
 import BannerPage from '@/components/banner';
-import BaoGiaXe from '@/components/bao-gia-xe/bao-gia-xe';
 import priceList from '@/data/price-list';
 import { products } from '@/data/product';
+import { TMoTaXe } from '@/types/price-list';
 import { formatCurrency } from '@/utils/format-currency';
+import { Image } from 'antd';
 import parse from 'html-react-parser';
+import CacMauSac from './components/cac-mau-sac';
+import MucTieuThuNhienLieu from './components/muc-tieu-thu-nhien-lieu';
 
 const CarDetail = () => {
 	const tabs = priceList.fords;
@@ -30,7 +33,7 @@ const CarDetail = () => {
 	console.log('🚀 ~ CarDetail ~ thongTinXe:', thongTinXe);
 
 	// lấy ra xe chi tiết dựa vào id
-	const xeCanTim = thongTinXe?.xe.find((x) => x.id === id);
+	const xeCanTim: any = thongTinXe?.xe.find((x) => x.id === id);
 	console.log('🚀 ~ CarDetail ~ xeCanTim:', xeCanTim);
 
 	if (!id || !carDetail || !idHangXe || !ford || !xeCanTim) {
@@ -47,13 +50,13 @@ const CarDetail = () => {
 
 	return (
 		<div>
-			<BannerPage title={`Thông tin của xe ${carDetail.label}`} />
+			<BannerPage title={`Thông tin của xe ${xeCanTim.title}`} />
 
 			<section className="car-details fix section-padding">
 				<div className="container">
 					<div className="car-details-wrapper">
 						<div className="row g-5">
-							<div className="col-lg-8">
+							<div className="col-lg-12">
 								<div className="car-details-items">
 									<div className="car-image">
 										<img
@@ -72,13 +75,13 @@ const CarDetail = () => {
 										{thongTinXe?.desc && (
 											<p className="">{parse(thongTinXe?.desc)}</p>
 										)}
-										{thongTinXe &&
+										{/* {thongTinXe &&
 											thongTinXe?.gioithieu &&
 											thongTinXe.gioithieu.video && (
 												<div className="tw-w-full tw-flex tw-items-center tw-justify-center tw-py-4">
 													{thongTinXe.gioithieu.video}
 												</div>
-											)}
+											)} */}
 										{/* <div className="price-table-area">
 											<h6>
 												Table Price <span>( by day of the week )</span>
@@ -112,190 +115,42 @@ const CarDetail = () => {
 												<p>$70.00</p>
 											</div>
 										</div> */}
+
+										{(xeCanTim as any)?.moTaXe && (
+											<section className="tw-mt-10 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-4 md:tw-gap-10">
+												{xeCanTim.moTaXe.map((itemXe: TMoTaXe) => (
+													<div
+														className="tw-flex tw-gap-3 tw-w-full tw-flex-col"
+														key={itemXe.id}
+													>
+														<Image
+															src={itemXe.image}
+															alt={itemXe.title}
+															className="tw-w-full"
+														/>
+														<h5 className="tw-font-semibold tw-text-primary tw-text-lg">
+															{itemXe.title}
+														</h5>
+														<p className="">{itemXe.desc}</p>
+													</div>
+												))}
+											</section>
+										)}
+
+										{xeCanTim?.tieuThuNhienLieu && (
+											<MucTieuThuNhienLieu
+												title={xeCanTim.title}
+												data={xeCanTim.tieuThuNhienLieu}
+											/>
+										)}
 									</div>
 								</div>
-								{/* <div className="car-booking-items">
-									<div className="booking-header">
-										<h3>Request for Booking</h3>
-										<p>
-											Send your requirement to us. We will check email and
-											contact you soon.
-										</p>
-									</div>
-									<form
-										action="#"
-										id="contact-form"
-										method="POST"
-										className="contact-form-items"
-									>
-										<div className="row g-4">
-											<div className="col-lg-6">
-												<div className="form-clt">
-													<label className="label-text">Your Name</label>
-													<input
-														type="text"
-														name="name"
-														id="name"
-														placeholder="Afzaal Islam"
-													/>
-												</div>
-											</div>
-											<div className="col-lg-6">
-												<div className="form-clt">
-													<label className="label-text">Email</label>
-													<input
-														type="text"
-														name="email"
-														id="email"
-														placeholder="pixydrops@gmail.com"
-													/>
-												</div>
-											</div>
-											<div className="col-lg-6">
-												<div className="form-clt">
-													<label className="label-text">Phone Number</label>
-													<input
-														type="text"
-														name="phone"
-														id="phone"
-														placeholder="+ 00 0000 - 000"
-													/>
-												</div>
-											</div>
-											<div className="col-lg-6">
-												<div className="form-clt">
-													<label className="label-text">Address</label>
-													<input
-														type="text"
-														name="address"
-														id="address"
-														placeholder="Address"
-													/>
-												</div>
-											</div>
-											<div className="col-lg-4">
-												<div className="form-clt">
-													<label className="label-text">Pick-up Location</label>
-													<div className="category-oneadjust">
-														<select
-															name="cate"
-															className="category"
-															style={{ display: 'none' }}
-														>
-															<option value={1}>Select Location</option>
-															<option value={1}>Houston</option>
-															<option value={1}>Texas</option>
-															<option value={1}>New York</option>
-															<option value={1}>Other Location</option>
-														</select>
-														<div className="nice-select category" tabIndex={0}>
-															<span className="current">Select Location</span>
-															<ul className="list">
-																<li data-value={1} className="option selected">
-																	Select Location
-																</li>
-																<li data-value={1} className="option">
-																	Houston
-																</li>
-																<li data-value={1} className="option">
-																	Texas
-																</li>
-																<li data-value={1} className="option">
-																	New York
-																</li>
-																<li data-value={1} className="option">
-																	Other Location
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-lg-4">
-												<div className="form-clt">
-													<label className="label-text">Pick-up Date</label>
-													<div
-														id="datepicker3"
-														className="input-group date"
-														data-date-format="dd-mm-yyyy"
-													>
-														<input
-															className="form-control"
-															type="text"
-															placeholder="Check in"
-															readOnly
-														/>
-														<span className="input-group-addon">
-															{' '}
-															<i className="fa-solid fa-calendar-days" />
-														</span>
-													</div>
-												</div>
-											</div>
-											<div className="col-lg-4">
-												<div className="form-clt">
-													<label className="label-text">Drop-off Date</label>
-													<div
-														id="datepicker4"
-														className="input-group date"
-														data-date-format="dd-mm-yyyy"
-													>
-														<input
-															className="form-control"
-															type="text"
-															placeholder="Check in"
-															readOnly
-														/>
-														<span className="input-group-addon">
-															{' '}
-															<i className="fa-solid fa-calendar-days" />
-														</span>
-													</div>
-												</div>
-											</div>
-											<div className="col-lg-5">
-												<div className="input-save-items-area">
-													<div className="input-save-items">
-														<div className="mb-3 input-save d-flex align-items-center">
-															<input
-																type="checkbox"
-																className="form-check-input"
-																name="save-for-next"
-																id="saveForNext1"
-															/>
-															<label htmlFor="saveForNext1">Driver</label>
-														</div>
-														<div className="input-save d-flex align-items-center">
-															<input
-																type="checkbox"
-																className="form-check-input"
-																name="save-for-next"
-																id="saveForNext2"
-															/>
-															<label htmlFor="saveForNext2">Baby Seat</label>
-														</div>
-													</div>
-													<div className="input-save-items">
-														<div className="mb-3 input-save d-flex align-items-center">
-															<label>$10.00 / Day</label>
-														</div>
-														<div className="input-save d-flex align-items-center">
-															<label>$30.00 / Total</label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div className="col-lg-12">
-												<button className="theme-btn" type="submit">
-													Send Request
-												</button>
-											</div>
-										</div>
-									</form>
-								</div> */}
-							</div>
 
-							<BaoGiaXe />
+								{xeCanTim?.mauSac && (
+									<CacMauSac title={xeCanTim.title} mauSac={xeCanTim?.mauSac} />
+								)}
+							</div>
+							{/* <BaoGiaXe /> */}
 						</div>
 					</div>
 				</div>
@@ -326,13 +181,17 @@ const CarDetail = () => {
 									.filter((x) => x.id !== id)
 									.map((item) => (
 										<div
-											className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp !tw-border !tw-border-gray-300"
+											className="col-xl-4 tw-overflow-hidden col-lg-6 col-md-6 wow fadeInUp !tw-border !tw-border-gray-300"
 											data-wow-delay=".3s"
 											key={item.id}
 										>
-											<div className="car-rentals-items">
-												<div className="car-image">
-													<img src={item.image} alt={item.title} />
+											<div className="car-rentals-items tw-overflow-hidden">
+												<div className="car-image !tw-overflow-hidden">
+													<img
+														src={item.image}
+														alt={item.title}
+														className="!tw-h-[250px] tw-object-cover tw-rounded-t-md"
+													/>
 												</div>
 												<div className="car-content">
 													<div className="post-cat">2024 Model</div>
@@ -354,7 +213,7 @@ const CarDetail = () => {
 														to={`/car/${item.id}?id=${idHangXe}&ford=${ford}`}
 														className="text-center tw-mt-5 !tw-bg-[#015CB5] !tw-text-white theme-btn bg-color w-100"
 													>
-														book now{' '}
+														Xem chi tiết{' '}
 														<i className="fa-solid fa-arrow-right ps-1" />
 													</Link>
 												</div>

@@ -177,7 +177,8 @@ const HeaderSectionStart = () => {
 										className="search-trigger search-icon"
 										onClick={() => setIsModalOpen(true)}
 									>
-										<i className="fa-solid fa-truck-fast" aria-hidden="true" />
+										{/* <i className="fa-solid fa-truck-fast" aria-hidden="true" /> */}
+										<i className="fa-solid fa-feather" aria-hidden="true"></i>
 									</button>
 								</Tooltip>
 								<div className="header-button">

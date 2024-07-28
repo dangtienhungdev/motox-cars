@@ -7,7 +7,7 @@ const priceList: { fords: TPriceList[] } = {
 			label: 'Ford Everest',
 			slug: 'ford-everest',
 			thumnail:
-				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819144/tran-xuan-hieu/ford-everest-2022-mau-cam-icon-fordlongbien_com_tpiye8.jpg',
+				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722153632/tran-xuan-hieu/banner/hero-banner-2.jpg.renditions.original_aefo9z.avif',
 			children: [
 				{
 					id: 'ford-everest-platinum-4x4-at',
@@ -15,7 +15,7 @@ const priceList: { fords: TPriceList[] } = {
 					price: '1545000000',
 					slug: 'ford-everest-platinum-4x4-at',
 					image:
-						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-platinum-mau-xam-icon-300x200-1-300x200_cv5n7b.jpg',
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722153632/tran-xuan-hieu/banner/hero-banner-2.jpg.renditions.original_aefo9z.avif',
 				},
 				{
 					id: 'ford-everest-titanium-4x4-at',

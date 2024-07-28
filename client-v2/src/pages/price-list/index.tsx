@@ -47,15 +47,12 @@ const PriceList = () => {
 };
 
 const TabContent = ({ data, id }: TabContentProps) => {
-	console.log('🚀 ~ TabContent ~ id:', id);
-	console.log('🚀 ~ TabContent ~ data:', data);
 	const columns = [
 		{
 			title: <span className="!tw-text-lg tw-font-medium">Tên sản phẩm</span>,
 			dataIndex: 'title',
 			key: 'title',
 			render: (text: string, record: any) => {
-				console.log('🚀 ~ TabContent ~ record:', record);
 				return (
 					<Link
 						to={`/car/${record.id}?id=${id}&ford=${data.slug}`}
@@ -70,6 +67,7 @@ const TabContent = ({ data, id }: TabContentProps) => {
 			title: <span className="tw-text-lg tw-font-medium">Giá sản phẩm</span>,
 			dataIndex: 'price',
 			key: 'price',
+			sorter: (a: any, b: any) => Number(a.price) - Number(b.price),
 			render: (text: string) => {
 				return <span>{formatCurrency(Number(text))}</span>;
 			},
@@ -85,7 +83,6 @@ const TabContent = ({ data, id }: TabContentProps) => {
 			price: item.price,
 		};
 	});
-	console.log('🚀 ~ dataSource ~ dataSource:', dataSource);
 
 	return (
 		<section className="tw-grid tw-grid-cols-1 tw-gap-10 lg:tw-grid-cols-1 tw-w-full">

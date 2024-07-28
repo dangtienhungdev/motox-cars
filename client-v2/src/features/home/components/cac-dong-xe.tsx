@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const CacDongXe = () => {
 	return (
-		<section className="popular-car-section fix section-padding">
+		<section className="popular-car-section fix section-padding tw-z-[1001]">
 			<div className="container">
 				<div className="text-center section-title">
 					<img

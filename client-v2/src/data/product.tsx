@@ -56,7 +56,95 @@ export const products = [
 				price: '1545000000',
 				slug: 'ford-everest-platinum-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-platinum-mau-xam-icon-300x200-1-300x200_cv5n7b.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722153632/tran-xuan-hieu/banner/hero-banner-2.jpg.renditions.original_aefo9z.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Ngoại thất mang đậm chất DNA Ford',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722154278/tran-xuan-hieu/banner/platinum-c-lamp-large.jpg.renditions.original_rgkjhk.avif',
+						desc: 'Thiết kế lưới tản nhiệt mới thêm nổi bật với những chi tiết mạ chrome cao cấp, cho một ngoại thất tinh tế và sang trọng. Nắp ca-pô với đường dập nổi độc đáo cùng hàng chữ “Platinum” 3D khẳng định vị thế của chiếc xe.',
+					},
+					{
+						id: '2',
+						title: 'Vành hợp kim 20 inch',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722154537/tran-xuan-hieu/banner/platinum-alloy-wheels.jpg.renditions.original_v4irop.avif',
+						desc: 'Vành xe hợp kim 20 inch, 12 chấu với 3 lớp sơn càng làm tôn thêm dáng vẻ bề thế và sang trọng của chiếc xe ở mọi góc nhìn',
+					},
+					{
+						id: '3',
+						title: 'Bảng điều khiển hiện đại',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722154591/tran-xuan-hieu/banner/paltinum-interior-large.jpg.renditions.original_kwz0jj.avif',
+						desc: 'Bảng điều khiển trung tâm thiết kế trải dài sang hai bên cho cảm giác khoang xe được mở rộng hơn. Phiên bản Platinum được trang bị màn hình đồng hồ kỹ thuật số 12,4 inch và màn hình giải trí LCD cảm ứng 12 inch.',
+					},
+
+					{
+						id: '4',
+						title: 'Nội thất đẳng cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722154659/tran-xuan-hieu/ford-everest/platinum-seats.jpg.renditions.original_g92rne.avif',
+						desc: 'Hàng ghế ngồi phía trước được trang bị sưởi điện và thông gió, điều chỉnh điện 10 hướng, nhớ vị trí chỉnh ghế. Nội thất sử dụng chất liệu da cao cấp, lòng ghế thiết kế trần trám cùng với logo Platinum thương hiệu tạo nên sự sang trọng cho chiếc xe. Cửa sổ trời toàn cảnh như mang cả thế giới bên ngoài vào trong xe.',
+					},
+					{
+						id: '5',
+						title: 'Hệ thống loa high-end',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722155404/tran-xuan-hieu/ford-everest/2_ozwnkm.avif',
+						desc: 'Hệ thống loa B&O cho trải nghiệm âm thanh tuyệt vời với chất âm trung thực và rõ ràng đến từng chi tiết.',
+					},
+					{
+						id: '6',
+						title: 'Hệ thống chiếu sáng đa vùng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722155404/tran-xuan-hieu/ford-everest/3_hyybwf.jpg',
+						desc: 'Hệ thống đèn chiếu sáng trên Everest có thể bật/tắt toàn vùng hay độc lập từng vùng cho phép người lái xe linh hoạt điều chỉnh đèn chiếu sáng theo nhu cầu và điều kiện cụ thể.',
+					},
+				],
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EVEREST PLATINUM',
+						chuTrinhToHop: '8,00 (lít/100km)',
+						chuTrinhDoThiCoBan: '9,6 (lít/100km)',
+						chuTrinhDoThiPhu: '7,1 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156269/tran-xuan-hieu/ford-everest/7_aack2q.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/6_d3boum.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Nâu',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/5_ph4try.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/5.1_ttdtqz.jpg',
+					},
+					{
+						id: '2',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156266/tran-xuan-hieu/ford-everest/4_j4nxem.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+				],
 			},
 			{
 				id: 'ford-everest-titanium-4x4-at',
@@ -64,7 +152,80 @@ export const products = [
 				price: '1468000000',
 				slug: 'ford-everest-titanium-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/Ford-Everest-2023-fordlongbien_com-14-300x200_lqcv0f.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159696/tran-xuan-hieu/ford-everest/1_gxx7fr.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Nâng Tầm Thiết Kế',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/1_mxnhgo.avif',
+						desc: 'Phần đầu xe Everest Titanium đặc biệt nổi bật với lưới tản nhiệt dạng lưới mạ crôm kết hợp cùng cụm đèn LED hình chữ C mang đậm đặc trưng thiết kế toàn cầu của Ford. Các điểm nhấn mạ crôm trên gương, tay nắm cửa, bậc lên xuống hai bên xe tạo nên vẻ cứng cáp nhưng vẫn vô cùng sang trọng cho chiếc xe.',
+					},
+					{
+						id: '2',
+						title: 'Mâm Xe Hợp Kim với thiết kế hiện đại',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/2_txuuv7.avif',
+						desc: 'Mâm xe hợp kim lớn 20 inch đa chấu đươc hoàn thiện tỉ mỉ, tôn thêm vẻ bề thế, cơ bắp và linh hoạt cho Titanium. Các điểm nhấn mạ chrôm trên tấm chắn bùn giúp gắn kết bánh xe với phần thân trên.',
+					},
+					{
+						id: '3',
+						title: 'Bảng Điều Khiển Kỹ thuật số Cao Cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/3_bf4bq0.jpg',
+						desc: 'Bảng điều khiển mới với thiết kế trải rộng tạo một không gian vô cùng rộng rãi cho khoang lái. Xung quanh cụm đồng hồ kỹ thuật số và màn hình cảm ứng LCD 12 inch tích hợp là những chi tiết hoàn thiện tinh xảo với chất liệu cao cấp.',
+					},
+					{
+						id: '4',
+						title: 'Nội Thất Đặc trưng hoàn thiện',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/4_injz6i.avif',
+						desc: 'Nội thất màu đen gỗ mun và nâu hạt dẻ tùy chọn, ghế bọc da sang trọng, êm ái với cấu tạo lỗ đệm thông khí. Các chi tiết trên xe bằng kim loại được mài và đánh bóng bề mặt để tạo cảm giác sang trọng mỗi khi bạn chạm tay. Cửa số trời Toàn cảnh mở rộng tầm nhìn của bạn và mang đến không gian mở phóng khoáng.',
+					},
+				],
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EVEREST 2.0L ST5 10AT 4X4 TITA+',
+						chuTrinhToHop: '8,43 (lít/100km)',
+						chuTrinhDoThiCoBan: '10,09 (lít/100km)',
+						chuTrinhDoThiPhu: '7,45 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/4_pufusf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/3_memmnx.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '4',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161136/tran-xuan-hieu/ford-everest/AMBIENTE/2_f1knwf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161136/tran-xuan-hieu/ford-everest/AMBIENTE/1_xihikf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+				],
 			},
 			{
 				id: 'ford-everest-titanium-at-4x2-at',
@@ -72,7 +233,37 @@ export const products = [
 				price: '1299000000',
 				slug: 'ford-everest-titanium-at-4x2-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-bac-icon-300x200_xx7cpa.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159696/tran-xuan-hieu/ford-everest/1_gxx7fr.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Nâng Tầm Thiết Kế',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/1_mxnhgo.avif',
+						desc: 'Phần đầu xe Everest Titanium đặc biệt nổi bật với lưới tản nhiệt dạng lưới mạ crôm kết hợp cùng cụm đèn LED hình chữ C mang đậm đặc trưng thiết kế toàn cầu của Ford. Các điểm nhấn mạ crôm trên gương, tay nắm cửa, bậc lên xuống hai bên xe tạo nên vẻ cứng cáp nhưng vẫn vô cùng sang trọng cho chiếc xe.',
+					},
+					{
+						id: '2',
+						title: 'Mâm Xe Hợp Kim với thiết kế hiện đại',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/2_txuuv7.avif',
+						desc: 'Mâm xe hợp kim lớn 20 inch đa chấu đươc hoàn thiện tỉ mỉ, tôn thêm vẻ bề thế, cơ bắp và linh hoạt cho Titanium. Các điểm nhấn mạ chrôm trên tấm chắn bùn giúp gắn kết bánh xe với phần thân trên.',
+					},
+					{
+						id: '3',
+						title: 'Bảng Điều Khiển Kỹ thuật số Cao Cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/3_bf4bq0.jpg',
+						desc: 'Bảng điều khiển mới với thiết kế trải rộng tạo một không gian vô cùng rộng rãi cho khoang lái. Xung quanh cụm đồng hồ kỹ thuật số và màn hình cảm ứng LCD 12 inch tích hợp là những chi tiết hoàn thiện tinh xảo với chất liệu cao cấp.',
+					},
+					{
+						id: '4',
+						title: 'Nội Thất Đặc trưng hoàn thiện',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161685/tran-xuan-hieu/ford-everest/titanium44/4_injz6i.avif',
+						desc: 'Nội thất màu đen gỗ mun và nâu hạt dẻ tùy chọn, ghế bọc da sang trọng, êm ái với cấu tạo lỗ đệm thông khí. Các chi tiết trên xe bằng kim loại được mài và đánh bóng bề mặt để tạo cảm giác sang trọng mỗi khi bạn chạm tay. Cửa số trời Toàn cảnh mở rộng tầm nhìn của bạn và mang đến không gian mở phóng khoáng.',
+					},
+				],
 			},
 			{
 				id: 'ford-everest-sport-4x2-at',
@@ -80,7 +271,96 @@ export const products = [
 				price: '1178000000',
 				slug: 'ford-everest-sport-4x2-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-sport-2022-mau-xanh-icon-300x200_gdpz0c.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159828/tran-xuan-hieu/ford-everest/2_mhr3cy.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế đen táo bạo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159925/tran-xuan-hieu/ford-everest/sport/3_c2bizl.avif',
+						desc: "Lưới tản nhiệt, tấm che gầm và ốp bậc lên xuống đều được sơn đen mang đến cho Sport vẻ ngoài ấn tượng và đậm chất thể thao. Chữ 'EVEREST' được sơn đen nổi bật trên nắp ca-pô tạo nên nét đặc trưng cho chiếc xe.",
+					},
+					{
+						id: '2',
+						title: 'Mâm Xe Hợp kim Đen bóng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159926/tran-xuan-hieu/ford-everest/sport/4_lxq0ek.avif',
+						desc: 'Mâm xe hợp kim 20 inch đen bóng vừa tôn thêm dáng vẻ thể thao cho Everest Sport, vừa kết hợp hoàn hảo với các điểm nhấn màu đen phía trước và sau xe.',
+					},
+					{
+						id: '3',
+						title: 'Bảng Điều khiển Kỹ thuật số Cao cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159927/tran-xuan-hieu/ford-everest/sport/5_chhcsd.avif',
+						desc: 'Bảng điều khiển mới với thiết kế trải rộng tạo một không gian vô cùng rộng rãi cho khoang lái. Xung quanh cụm đồng hồ kỹ thuật số và màn hình giải trí cảm ứng LCD 10,1 inch tích hợp là những chi tiết hoàn thiện tinh xảo với chất liệu cao cấp',
+					},
+					{
+						id: '4',
+						title: 'Nội thất đen sang trọng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722159927/tran-xuan-hieu/ford-everest/sport/6_upj1kq.avif',
+						desc: 'Nội thất màu đen gỗ mun sang trọng kết hợp cùng các chi tiết kim loại sáng bóng tạo nên nét tương phản nổi bật bên trong Everest Sport. Ghế đệm êm ái với logo ‘SPORT’ đặc trưng cho bạn cảm giác thoải mái tối đa trên mọi hành trình.',
+					},
+				],
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EVEREST 2.0L ST5 6AT 2WD SPOR',
+						chuTrinhToHop: '8,56 (lít/100km)',
+						chuTrinhDoThiCoBan: '11,08 (lít/100km)',
+						chuTrinhDoThiPhu: '7,09 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160349/tran-xuan-hieu/ford-everest/sport/12_nyrpeo.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160349/tran-xuan-hieu/ford-everest/sport/11_mhtaqt.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Nâu',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160350/tran-xuan-hieu/ford-everest/sport/10_wrj4go.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/5.1_ttdtqz.jpg',
+					},
+					{
+						id: '4',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160349/tran-xuan-hieu/ford-everest/sport/7_i7ti6s.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160349/tran-xuan-hieu/ford-everest/sport/8_enmxlx.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+					{
+						id: '6',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160349/tran-xuan-hieu/ford-everest/sport/9_mqzs3m.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+				],
 			},
 			{
 				id: 'ford-everest-ambient-4x2-at',
@@ -88,7 +368,80 @@ export const products = [
 				price: '1099000000',
 				slug: 'ford-everest-ambient-4x2-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-nau-icon-300x200_lz3fjc.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/4_pufusf.jpg',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Lưới Tản nhiệt Đặc trưng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160679/tran-xuan-hieu/ford-everest/AMBIENTE/1_capvl5.avif',
+						desc: 'Một thanh đơn nằm ngang chắc chắn tạo nên dáng vẻ hầm hố cho phiên bản Ambiente. Điểm nhấn cho tấm lưới tản nhiệt thiết kế mới chính là cụm đèn LED hình chữ C, mang phong đặc trưng của ‘Built Ford Tough’.',
+					},
+					{
+						id: '2',
+						title: 'Mâm xe Hợp kim 18 inch',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160679/tran-xuan-hieu/ford-everest/AMBIENTE/2_iyuzl1.avif',
+						desc: 'Mâm xe hợp kim 18 inch màu đen bạc ánh kim làm tôn lên vẻ tự tin và chắc chắn cho Everest Ambiente.',
+					},
+					{
+						id: '3',
+						title: 'Bảng Điều khiển Kỹ thuật số Cao cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160679/tran-xuan-hieu/ford-everest/AMBIENTE/3_touhfm.avif',
+						desc: 'Bảng điều khiển mới với thiết kế trải rộng tạo một không gian vô cùng rộng rãi cho khoang lái. Xung quanh cụm đồng hồ kỹ thuật số và màn hình cảm ứng LCD 10,1 inch tích hợp là những chi tiết hoàn thiện tinh xảo với chất liệu cao cấp.',
+					},
+					{
+						id: '4',
+						title: 'Nâng tầm Tiện nghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160680/tran-xuan-hieu/ford-everest/AMBIENTE/4_qco95h.avif',
+						desc: 'Thiết kế ghế ngồi hoàn toàn mới với lớp đệm và mút xốp giúp tối ưu sự thoải mái. Chất liệu và độ hoàn thiện giúp nâng tầm toàn bộ không gian khoang lái của Ambiente. Hệ thống treo được tinh chỉnh mang đến trải nghiệm lái tốt hơn trên cả đường bằng và đường off-road.',
+					},
+				],
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EVEREST 2.0L ST5 6AT 2WD AMBIENTE',
+						chuTrinhToHop: '8,51 (lít/100km)',
+						chuTrinhDoThiCoBan: '10,8 (lít/100km)',
+						chuTrinhDoThiPhu: '7,17 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/4_pufusf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/3_memmnx.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '4',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161136/tran-xuan-hieu/ford-everest/AMBIENTE/2_f1knwf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161136/tran-xuan-hieu/ford-everest/AMBIENTE/1_xihikf.jpg',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+				],
 			},
 		],
 		gioithieu: {
@@ -112,7 +465,7 @@ export const products = [
 					id: 'ford-everest-platinum-2-0l-4x4-at',
 					price: '1545000000',
 					image:
-						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-platinum-mau-xam-icon-300x200-1-300x200_cv5n7b.jpg',
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722153632/tran-xuan-hieu/banner/hero-banner-2.jpg.renditions.original_aefo9z.avif',
 				},
 				{
 					title: 'Ford Everest Titanium+ 2.0L 4×4 AT',
