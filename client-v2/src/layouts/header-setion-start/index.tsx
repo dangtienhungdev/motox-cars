@@ -141,7 +141,7 @@ const HeaderSectionStart = () => {
 								</div>
 								<Tooltip title="Nhận báo giá xe">
 									<button
-										className="search-trigger search-icon tw-bg-primary tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-items-center tw-justify-center"
+										className="search-trigger search-icon tw-bg-primary tw-h-[33px] tw-relative tw-w-[33px] tw-rounded-full tw-flex tw-items-center tw-justify-center"
 										onClick={() => setIsModalOpen(true)}
 									>
 										{/* <i className="fa-solid fa-truck-fast" aria-hidden="true" /> */}
@@ -149,7 +149,7 @@ const HeaderSectionStart = () => {
 										<img
 											src="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722261400/tran-xuan-hieu/banner/toolmenu6_agkdeg.png"
 											alt="logo"
-											className="tw-w-6 tw-h-6"
+											className="tw-w-8 tw-h-8 tw-absolute tw-top-1/2 tw-left-1/2 -tw-translate-x-1/2 -tw-translate-y-1/2"
 										/>
 									</button>
 								</Tooltip>
