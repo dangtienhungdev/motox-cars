@@ -21,75 +21,42 @@ const HeaderSectionStart = () => {
 			id: 3,
 			title: 'Bảng giá xe',
 			link: '/price-list',
-			// icon: <i className="fas fa-angle-down" />,
-			// children: [
-			// 	{
-			// 		id: 3.1,
-			// 		title: 'Ford Everest',
-			// 		link: '/ford-everest',
-			// 	},
-			// 	{
-			// 		id: 3.2,
-			// 		title: 'Ford Ranger',
-			// 		link: '/ford-ranger',
-			// 	},
-			// 	{
-			// 		id: 3.3,
-			// 		title: 'Ford Ranger Raptor',
-			// 		link: '/ford-ranger-raptor',
-			// 	},
-			// 	{
-			// 		id: 3.4,
-			// 		title: 'Ford Explorer',
-			// 		link: '/ford-explorer',
-			// 	},
-			// 	{
-			// 		id: 3.5,
-			// 		title: 'Ford Territory',
-			// 		link: '/ford-territory',
-			// 	},
-			// 	{
-			// 		id: 3.6,
-			// 		title: 'Ford Transit',
-			// 		link: '/ford-transit',
-			// 	},
-			// ],
 		},
 		{
 			id: 4,
 			title: 'Sản phẩm',
-			link: '/cars',
+			link: '/cars?id=5',
 			icon: <i className="fas fa-angle-down" />,
 			children: [
 				{
 					id: 4.1,
 					title: 'Ford Everest',
-					link: '/ford-everest',
+					link: '/cars?id=5',
 				},
 				{
 					id: 4.2,
 					title: 'Ford Ranger',
-					link: '/ford-ranger',
+					link: '/cars?id=1',
 				},
 				{
 					id: 4.3,
 					title: 'Ford Ranger Raptor',
-					link: '/ford-ranger-raptor',
+					link: '/cars?id=2',
 				},
 				{
 					id: 4.4,
 					title: 'Ford Explorer',
-					link: '/ford-explorer',
+					link: '/cars?id=6',
 				},
 				{
 					id: 4.5,
 					title: 'Ford Territory',
-					link: '/ford-territory',
+					link: '/cars?id=4',
 				},
 				{
 					id: 4.6,
 					title: 'Ford Transit',
-					link: '/ford-transit',
+					link: '/cars?id=7',
 				},
 			],
 		},
@@ -160,7 +127,7 @@ const HeaderSectionStart = () => {
 									</div>
 								</div>
 							</div>
-							<div className="header-right d-flex justify-content-end align-items-center">
+							<div className="header-right d-flex !tw-gap-4 justify-content-end align-items-center">
 								<div className="icon-items">
 									<Link to="tel:0833096605" className="icon">
 										<i className="fas fa-phone-alt" />
@@ -174,11 +141,16 @@ const HeaderSectionStart = () => {
 								</div>
 								<Tooltip title="Nhận báo giá xe">
 									<button
-										className="search-trigger search-icon"
+										className="search-trigger search-icon tw-bg-primary tw-h-8 tw-w-8 tw-rounded-full tw-flex tw-items-center tw-justify-center"
 										onClick={() => setIsModalOpen(true)}
 									>
 										{/* <i className="fa-solid fa-truck-fast" aria-hidden="true" /> */}
-										<i className="fa-solid fa-feather" aria-hidden="true"></i>
+										{/* <i className="fa-solid fa-feather" aria-hidden="true"></i> */}
+										<img
+											src="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722261400/tran-xuan-hieu/banner/toolmenu6_agkdeg.png"
+											alt="logo"
+											className="tw-w-6 tw-h-6"
+										/>
 									</button>
 								</Tooltip>
 								<div className="header-button">

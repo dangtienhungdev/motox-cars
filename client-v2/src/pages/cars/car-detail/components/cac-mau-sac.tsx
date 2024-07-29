@@ -21,7 +21,7 @@ const CacMauSac = ({ title, mauSac }: CacMauSacProps) => {
 			</p>
 
 			<section className="">
-				<section className="tw-rounded-md tw-overflow-hidden">
+				<section className="tw-rounded-md tw-overflow-hidden tw-w-full tw-flex tw-items-center tw-justify-center">
 					<Image
 						src={mauSac[imageActive].image}
 						alt={mauSac[imageActive].title}
@@ -31,7 +31,10 @@ const CacMauSac = ({ title, mauSac }: CacMauSacProps) => {
 
 				<section className="tw-flex tw-items-center tw-justify-center tw-gap-10 tw-mt-10">
 					{mauSac.map((item, index) => (
-						<section className="tw-flex tw-flex-col tw-gap-2" key={item.id}>
+						<section
+							className="tw-flex tw-flex-col tw-gap-2 tw-items-center"
+							key={item.id}
+						>
 							<button
 								className={`${
 									imageActive === index

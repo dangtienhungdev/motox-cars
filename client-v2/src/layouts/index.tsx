@@ -42,8 +42,9 @@ const LayoutCars = () => {
 								to={contact.link}
 								target="_blank"
 								className={cn(
-									'tw-fixed tw-h-[56px] tw-w-[56px] tw-cursor-pointer tw-bg-transparent tw-flex tw-items-center tw-justify-center tw-rounded-full tw-p-1 tw-z-50 tw-right-6 tw-bottom-[140px]',
-									{ '!tw-bottom-[220px]': contact.id === 1 }
+									'tw-fixed tw-h-[56px] tw-w-[56px] tw-cursor-pointer tw-bg-transparent tw-flex tw-items-center tw-justify-center tw-rounded-full tw-p-1 tw-z-50 tw-right-4 tw-bottom-[60px]',
+									{ '!tw-bottom-[120px]': contact.id === 1 }
+									// { '!tw-h-[32px] !tw-w-[32px] tw-right-8': contact.id === 2 }
 								)}
 							>
 								<img
@@ -51,7 +52,10 @@ const LayoutCars = () => {
 									alt="Call"
 									height={56}
 									width={56}
-									className="tw-object-contain tw-flex-shrink-0 tw-h-[56px] tw-w-[56px]"
+									className={cn(
+										'tw-object-contain tw-flex-shrink-0 tw-h-[56px] tw-w-[56px]',
+										{ '!tw-h-[50px] !tw-w-[50px]': contact.id === 2 }
+									)}
 								/>
 							</Link>
 						</Tooltip>

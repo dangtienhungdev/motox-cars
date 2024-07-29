@@ -965,7 +965,94 @@ export const products = [
 				price: '1299000000',
 				slug: 'ford-ranger-raptor-2023-2-0l-4wd-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717843788/tran-xuan-hieu/ford-ranger-raptor/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_itoigs.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264521/tran-xuan-hieu/ford-ranger-raptor/5_q3x6ea.webp',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế đầu xe đặc trưng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/1_a5cyze.webp',
+						desc: 'Điểm nhấn then chốt phần đầu xe là chữ Ford được thiết kế dạng khối nổi cỡ lớn. Đèn LED ma trận nổi bật trong đêm, cản trước bắt thẳng vào khung xe và tấm hợp kim chắn gầm siêu cứng, tất cả đều như đang sẵn sàng mở đường dẫn lối.',
+					},
+					{
+						id: '2',
+						title: 'La-zăng hợp kim địa hình',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/2_hfwc5p.webp',
+						desc: 'Bộ la-zăng hợp kim 17 inch hầm hố dành cho đường địa hình lắp với lốp xe BF GoodRich All-Terrain K02 hiệu năng cao danh tiếng (kích thước 285/70 R17). Dù vượt núi đồi hay chạy tốc độ cao, đều đáp ứng trong mọi điều kiện.',
+					},
+					{
+						id: '3',
+						title: 'Bảng đồng hồ điều khiển độc đáo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/3_bwdftt.webp',
+						desc: 'Cụm màn hình kỹ thuật số 12,4 inch hiển thị đầy đủ cấu hình xe, nằm trên bảng táp lô thiết kế liền mạch trải rộng, cùng với màn hình giải trí cảm ứng trung tâm 12 inch',
+					},
+
+					{
+						id: '4',
+						title: 'Ghế ngồi theo phong cách thiết kế Ford Performance',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/4_vrwvod.webp',
+						desc: 'Lấy cảm hứng từ máy bay chiến đấu phản lực, ghế ngồi xe Raptor có thiết kế ôm trọn người lái, giúp lái xe có tư thế chắc chắn khi ôm cua hoặc tiếp đất. Các đường chỉ khâu độc đáo và kết hợp với da lộn giúp tối ưu sự thoải mái và tăng tính thẩm mỹ.',
+					},
+					{
+						id: '5',
+						title: 'Rèm chắn nắng cửa sổ tự cuộn',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263563/tran-xuan-hieu/ford-explorer/5_z6oeso.avif',
+						desc: 'Rèm chắn nắng cửa sổ tự cuộn được trang bị trên cửa kính xe giúp khách hàng cảm thấy dễ chịu hơn trong những chuyến đi xa.',
+					},
+					{
+						id: '6',
+						title: 'Gương chiếu hậu ngoài',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263562/tran-xuan-hieu/ford-explorer/6_jr8pga.avif',
+						desc: 'Gập điện tự động với chức năng nhớ vị trí',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264853/tran-xuan-hieu/ford-ranger-raptor/7_qqebxv.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/6_gcpwlb.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/8_qqk9k2.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '5',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264853/tran-xuan-hieu/ford-ranger-raptor/10_uci4tf.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '6',
+						title: 'Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/9_xrp6ts.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+				],
 			},
 		],
 		gioithieu: {
@@ -1116,7 +1203,7 @@ export const products = [
 		title: 'FORD TERRITORY',
 		price: '799000000',
 		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
-		desc: /* html */ `Phân khúc xe gầm cao 5 chỗ ngày càng được người tiêu dùng Việt Nam tin tưởng chọn lựa nhờ tính tiện dụng trong thành phố cùng không gian sử dụng thoải mái`,
+		desc: /* html */ `Phân khúc xe gầm cao 5 chỗ ngày càng được người tiêu dùng Việt Nam tin tưởng chọn lựa nhờ tính tiện dụng trong thành phố cùng không gian sử dụng thoải mái. Ford Territory sở hữu triết lý thiết kế DNA toàn cầu mới nhất của Ford “Sức mạnh của dòng chảy năng lượng không ngừng”. Triết lý thiết kế này đã giúp Ford Territory trở thành một mẫu xe SUV rộng rãi, hiện đại với nhiều công nghệ thông minh tất cả trong một mở ra một thế giới đầy ắp những trải nghiệm tuyệt vời. Đây cũng là thiết kế được áp dụng trên các dòng xe nổi tiếng của Ford và sẽ áp dụng nhiều trên các dòng xe khác trong tương lai.`,
 		maMauXe: [
 			{
 				id: 1,
@@ -1147,7 +1234,109 @@ export const products = [
 				price: '929000000',
 				slug: 'ford-territory-titanium-x-1-5l-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718031285/tran-xuan-hieu/ford-terri/ford-territory-2023-icon-fordlongbien_com-3-300x200_gzkvrg.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265418/tran-xuan-hieu/ford-terri/1_kduxho.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Mặt ga lăng khơi dậy sự đổi mới sáng tạo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265570/tran-xuan-hieu/ford-terri/2_pypicu.avif',
+						desc: 'Mặt ga lăng hình bát giác cỡ lớn được tạo nên từ những mắt lưới hình tổ ong sắp xếp theo kiểu ma trận kết hợp với logo thương hiệu giúp khơi dậy tinh thần sáng tạo, tiên phong trong triết lý thiết kế mới của Ford.',
+					},
+					{
+						id: '2',
+						title: 'Thiết kế đuôi xe thể hiện sự bề thế vững trãi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265570/tran-xuan-hieu/ford-terri/3_o5kic5.avif',
+						desc: 'Thiết kế đuôi xe cũng sử dụng triết lý DNA toàn cầu của Ford tạo cảm giác bề thế và vững trãi, với chữ TERRITORY crôm kéo dài nối liền 2 cụm đèn hậu LED 3D.',
+					},
+					{
+						id: '3',
+						title: 'Thiết kế hai bên xe năng động và hiện đại',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265571/tran-xuan-hieu/ford-terri/4_vxsoqp.webp',
+						desc: 'Hai bên xe được thiết kế với nhiều đương gân dập nổi kết hợp viền crôm cửa sổ và nẹp thể thao phía dưới giúp nhấn mạnh sự năng động và linh hoạt của xe.',
+					},
+					{
+						id: '4',
+						title: 'La-zăng hợp kim 19’’',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265571/tran-xuan-hieu/ford-terri/5_npb9gn.avif',
+						desc: 'La-zăng hợp kim 19’’ càng làm tôn thêm dáng vẻ khỏe khoắn và sang trọng cho tổng thể chiếc xe.',
+					},
+					{
+						id: '6',
+						title: 'Mặt táp lô trẻ trung hiện đại',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265572/tran-xuan-hieu/ford-terri/7_nvngaw.webp',
+						desc: 'Mặt táp lô thoáng đạt nổi bật với nhiều vật liệu mềm cao cấp được thiết kế ăn khớp với hai màn hình 12” cỡ lớn cùng vô lăng hình chữ D-Cut giúp cabin xe tràn ngập hơi thở trẻ trung hiện đại.',
+					},
+					{
+						id: '7',
+						title: 'Cần số điện tử nổi bật với thiết kế tinh xảo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265571/tran-xuan-hieu/ford-terri/8_ejx6di.avif',
+						desc: 'Cần số điện tử được thiết kế tinh xảo kết hợp với hộc đựng đồ và bệ tỳ tay phía trước không chỉ giúp nội thất sang trọng hơn mà còn tối ưu hóa về mặt không gian mang đến sự tự do phóng khoáng cho mọi hành khách trên xe.',
+					},
+					{
+						id: '8',
+						title: 'Ghế bọc da tích hợp nhiều tiện nghi cao cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265571/tran-xuan-hieu/ford-terri/9_nkosir.avif',
+						desc: 'Ghế bọc da sang trọng, êm ái với các lỗ đệm thông khí tích hợp chức năng làm mát, Ford Territory mang đến cho bạn cảm giác tự tin thoải mái trong mọi hành trình.',
+					},
+					{
+						id: '9',
+						title: 'Cửa sổ trời toàn cảnh Panorama',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722265571/tran-xuan-hieu/ford-terri/10_elultz.webp',
+						desc: 'Cửa sổ trời toàn cảnh có thể mở rộng tới 50%, điều này có nghĩa là bạn có thể mở ra cả thế giới và trải nghiệm cuộc sống xung quanh chỉ với một nút bấm.',
+					},
+				],
+
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EXPLORER LIMITED 2.3L ECOBOOST I4',
+						chuTrinhToHop: '11.24 (lít/100km)',
+						chuTrinhDoThiCoBan: '13.42 (lít/100km)',
+						chuTrinhDoThiPhu: '9.96 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263882/tran-xuan-hieu/ford-explorer/7_s4fmt7.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263884/tran-xuan-hieu/ford-explorer/10_mlh1pr.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/9_xobq2b.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đỏ',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/8_b79uxh.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-territory-titanium-1-5l-at',
@@ -1797,37 +1986,7 @@ export const products = [
 		title: 'FORD EXPLORER',
 		price: '2439000000',
 		titleTraGop: 'TRẢ GÓP TỪ 10 TRIỆU / THÁNG',
-		desc: /* html */ `Cảm nhận nét thanh lịch của cuộc sống trên tầm cao mới Khi cuộc sống đạt đến một tầm cao nhất định, bạn sẽ có sự cảm nhận khác biệt. Bầu trời trở nên quang đãng, cảnh vật trở nên rõ ràng. Sự tự tin sẽ tạo nên sức hấp dẫn cho bạn. Với chiếc xe Ford Explorer mới, sự khác biệt đến từ thiết kế hiện đại, mạnh mẽ nhưng không kém phần thanh lịch, cho bạn khả năng làm chủ trên mọi nẻo đường.`,
-		maMauXe: [
-			{
-				id: 1,
-				title: 'Màu Trắng',
-				color: '#E8E8E8',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530481/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-trang-fordlongbien_com_qjjlwh.jpg',
-			},
-			{
-				id: 2,
-				title: 'Màu Đỏ',
-				color: '#DA100F',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
-			},
-			{
-				id: 4,
-				title: 'Màu Đen',
-				color: '#000',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530510/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-den-fordlongbien_com_tzwrni.jpg',
-			},
-			{
-				id: 6,
-				title: 'Màu Xanh',
-				color: '#0000FF',
-				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530515/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-xanh-fordlongbien_com_c7w7kb.jpg',
-			},
-		],
+		desc: /* html */ `Phiên bản Ford Explorer Limited được trang bị động cơ Xăng 2.3L Ecoboost I4 mạnh mẽ và tiết kiệm nhiên liệu. Với công suất lớn hơn thế hệ động cơ trước đó kết hợp cùng hộp số tự động 10 cấp cho phép chuyển số mượt mà và nhạy bén, Explorer mới luôn mang đến sự phấn khích trên mọi nẻo đường.`,
 		xe: [
 			{
 				id: 'ford-explorer-limited',
@@ -1835,7 +1994,96 @@ export const products = [
 				price: '2439000000',
 				slug: 'ford-explorer-limited',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1718530500/tran-xuan-hieu/ford-explorer/icon-ford-explorer-mau-do-fordlongbien_com_xqnxyp.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722262415/tran-xuan-hieu/ford-explorer/image.imgs.full.high_vm10y1.avif',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế khí động học',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263561/tran-xuan-hieu/ford-explorer/1_akpffo.webp',
+						desc: 'Lưới tản nhiệt của Explorer mang kiểu dáng hiện đại và khí động học. Với những đường dập táo bạo cùng đường viền bao quanh tinh tế, Explorer tự tin chinh phục ngay từ cái nhìn đầu tiên.',
+					},
+					{
+						id: '2',
+						title: 'Camera phía sau',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263561/tran-xuan-hieu/ford-explorer/2._helv3a.avif',
+						desc: 'Camera phía sau trên Explorer giúp cung cấp tầm nhìn phía sau xe cho chủ sở hữu.',
+					},
+					{
+						id: '3',
+						title: 'Bậc lên xuống hàng ghế thứ 2',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263561/tran-xuan-hieu/ford-explorer/3_iwvqoc.avif',
+						desc: 'Bậc lên xuống hàng ghế thứ 2 giúp việc lên và xuống xe trở nên thật dễ dàng.',
+					},
+
+					{
+						id: '4',
+						title: 'Sạc không dây',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263561/tran-xuan-hieu/ford-explorer/4_ozqjby.avif',
+						desc: 'Không còn những rắc rối mỗi lần tìm dây sạc. Chỉ cần đặt điện thoại lên bàn sạc và tiếp tục hành trình của bạn.',
+					},
+					{
+						id: '5',
+						title: 'Rèm chắn nắng cửa sổ tự cuộn',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263563/tran-xuan-hieu/ford-explorer/5_z6oeso.avif',
+						desc: 'Rèm chắn nắng cửa sổ tự cuộn được trang bị trên cửa kính xe giúp khách hàng cảm thấy dễ chịu hơn trong những chuyến đi xa.',
+					},
+					{
+						id: '6',
+						title: 'Gương chiếu hậu ngoài',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263562/tran-xuan-hieu/ford-explorer/6_jr8pga.avif',
+						desc: 'Gập điện tự động với chức năng nhớ vị trí',
+					},
+				],
+
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EXPLORER LIMITED 2.3L ECOBOOST I4',
+						chuTrinhToHop: '11.24 (lít/100km)',
+						chuTrinhDoThiCoBan: '13.42 (lít/100km)',
+						chuTrinhDoThiPhu: '9.96 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263882/tran-xuan-hieu/ford-explorer/7_s4fmt7.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263884/tran-xuan-hieu/ford-explorer/10_mlh1pr.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/9_xobq2b.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đỏ',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/8_b79uxh.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+				],
 			},
 		],
 		gioithieu: {

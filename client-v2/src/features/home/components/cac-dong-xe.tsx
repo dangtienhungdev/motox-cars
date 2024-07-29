@@ -21,8 +21,9 @@ const CacDongXe = () => {
 				<div className="row g-4 mt-30">
 					{cacDongXe.map((item) => {
 						return (
-							<div
-								className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+							<Link
+								to={`/cars?id=${item.id}`}
+								className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp tw-block"
 								data-wow-delay=".3s"
 								key={item.id}
 							>
@@ -37,7 +38,7 @@ const CacDongXe = () => {
 										<img src={item.image} alt="img" />
 									</div>
 								</div>
-							</div>
+							</Link>
 						);
 					})}
 				</div>
