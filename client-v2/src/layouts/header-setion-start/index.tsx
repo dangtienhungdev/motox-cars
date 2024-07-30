@@ -144,8 +144,6 @@ const HeaderSectionStart = () => {
 										className="search-trigger search-icon tw-bg-primary tw-h-[33px] tw-relative tw-w-[33px] tw-rounded-full tw-flex tw-items-center tw-justify-center"
 										onClick={() => setIsModalOpen(true)}
 									>
-										{/* <i className="fa-solid fa-truck-fast" aria-hidden="true" /> */}
-										{/* <i className="fa-solid fa-feather" aria-hidden="true"></i> */}
 										<img
 											src="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722261400/tran-xuan-hieu/banner/toolmenu6_agkdeg.png"
 											alt="logo"

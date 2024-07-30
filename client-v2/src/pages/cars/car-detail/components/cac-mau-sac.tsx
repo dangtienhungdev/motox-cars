@@ -16,7 +16,7 @@ const CacMauSac = ({ title, mauSac }: CacMauSacProps) => {
 
 	return (
 		<div className="tw-my-10 tw-flex tw-flex-col tw-gap-5">
-			<p className="text-center tw-text-primary tw-font-semibold tw-text-3xl">
+			<p className="text-center tw-text-primary tw-font-semibold lg:tw-text-3xl md:tw-text-xl tw-text-lg">
 				Khám phá các màu sắc của {title}
 			</p>
 

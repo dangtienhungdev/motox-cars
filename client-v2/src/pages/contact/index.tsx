@@ -31,36 +31,49 @@ const ContactPage = () => {
 												083 3096 605
 											</li>
 										</ul>
-										<h3>The best fastest and most powerful road car</h3>
-										<p className="mt-3">
-											Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci
-											phaedrum. There are many variations of passages of Lorem
-											Ipsum available, but the majority have alteration in some
-											injected or words which don't look even slightly
-											believable. If you are going to use a passage of Lorem
-											Ipsum, you need to be sure there isn't anything embarrang
-											hidden in the middle of text. All the Lorem Ipsum
-											generators on the Internet tend to repeat predefined
-											chunks as necessary, making this the first true generator
-											on the Internet. It uses a dictionary of over 200 Latin
-											words, combined with a handful of model sentence
-											structures, to generate Lorem Ipsum which looks
-											reasonable.
-										</p>
-										<p className="mt-4">
-											Lorem Ipsum has been the industry's standard dummy text
-											ever since the 1500s, when an unknown printer took a
-											galley of type and scrambled it to make a type simen book.
-											It has survived not only five centuries, but also the leap
-											into electronic typesetting.
-										</p>
-										<p className="mt-4">
-											Lorem Ipsum is simply dummy text of the printing and
-											typesetting industry. orem Ipsum has been the industry's
-											standard dummy text ever since the when an unknown printer
-											took a galley of type and scrambled it to make a type
-											specimen book.
-										</p>
+										<h3 className="!tw-text-xl">
+											Trần Xuân Hiếu - Ford Hà Thành - Hotline (24/7): 083 3096
+											605
+										</h3>
+										<section className="flex flex-col w-full gap-2 tw-mt-5">
+											<p className="">
+												Chúng tôi không chỉ bán sản phẩm - Chúng tôi còn trách
+												nhiệm với sản phẩm!
+											</p>
+											<p className="">
+												Cam kết khi mua xe tại Ford Hà Thành - Hotline (24/7) :
+												<span className="font-medium text-primary">
+													083 3096 605
+												</span>
+											</p>
+											<p className="">
+												Với đội ngũ nhiều năm kinh nghiệm bán xe, tin rằng sẽ
+												giúp anh chị lựa chọn được chiếc xe ưng ý nhất cho bản
+												thân và gia đình. Ngoài việc tư vấn, còn hỗ trợ anh chị:
+											</p>
+											<ul className="list-disc pl-7">
+												<li>
+													<span className="font-medium text-primary-l10">
+														Báo giá
+													</span>{' '}
+													xe tốt nhất | Nhiều{' '}
+													<span className="font-medium text-primary-l10">
+														khuyến mãi
+													</span>{' '}
+													và quà tặng hấp dẫn.
+												</li>
+												<li>
+													<span className="font-medium text-primary-l10">
+														Lái thử
+													</span>{' '}
+													xe tận nhà | Tư vấn vay{' '}
+													<span className="font-medium text-primary-l10">
+														trả góp
+													</span>
+													trả đến 70 - 80%, lãi thấp.{' '}
+												</li>
+											</ul>
+										</section>
 									</div>
 								</div>
 
@@ -113,32 +126,6 @@ const ContactPage = () => {
 										<div className="wid-title">
 											<h3>Các dòng xe</h3>
 										</div>
-										{/* <div className="recent-post-area">
-											{cacDongXe.map((item) => {
-												return (
-													<div className="recent-items" key={item.id}>
-														<div className="recent-thumb">
-															<img
-																src={item.image}
-																alt={item.title}
-																className="tw-h-[140px] tw-w-[140px]"
-															/>
-														</div>
-														<div className="recent-content">
-															<ul>
-																<li>
-																	<i className="fa-solid fa-comments" />2
-																	Comments
-																</li>
-															</ul>
-															<h6>
-																<Link to="news-details.html">{item.title}</Link>
-															</h6>
-														</div>
-													</div>
-												);
-											})}
-										</div> */}
 										<div className="!tw-grid !tw-grid-cols-1 !tw-gap-5 g-4 mt-30">
 											{cacDongXe.map((item) => {
 												return (
@@ -159,9 +146,12 @@ const ContactPage = () => {
 																</h4>
 																{/* <p>Available for Rent</p> */}
 															</div>
-															<div className="car-image">
+															<Link
+																className="car-image"
+																to={`/cars?id=${item.id}`}
+															>
 																<img src={item.image} alt="img" />
-															</div>
+															</Link>
 														</div>
 													</div>
 												);

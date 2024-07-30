@@ -449,7 +449,7 @@ export const products = [
 				<iframe
 					width={560}
 					height={315}
-					className="tw-w-full tw-min-h-[450px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 					src="https://www.youtube.com/embed/xU7DgFURYDA?si=6FpCHr2OEzrKyYSj"
 					title="YouTube video player"
 					frameBorder={0}
@@ -627,7 +627,87 @@ export const products = [
 				title: 'Ford Ranger XLS 4×2 AT',
 				price: '707000000',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917056/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-bac-300x200_g9nenb.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/3_f3b6h5.webp',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế đầu xe cứng cáp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/7_ffxgwj.webp',
+						desc: 'Lưới tản nhiệt màu đen mới kết hợp với đèn halogen dạng hình chữ C đặc trưng và đèn sương mù phía trước đậm chất Built Ford Tough.',
+					},
+					{
+						id: '2',
+						title: 'La zăng hợp kim',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/8_ovhmuo.webp',
+						desc: 'Phiên bản Ranger XLS được trang bị mâm xe hợp kim nhôm 16 inch màu xám bạc có độ hoàn thiện cao.',
+					},
+					{
+						id: '3',
+						title: 'Bảng điều khiển công nghệ liền mạch',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/9_dikcyz.webp',
+						desc: 'Thiết kế bảng điều khiển cùng màn hình giải trí trung tâm liền mạch giúp khoang xe trở nên rộng hơn, tạo cảm giác thoải mái và tiện nghi. Màn hình giải trí trung tâm công nghệ cao LED 10 inch được thiết kế hiện đại và mạnh mẽ.',
+					},
+					{
+						id: '4',
+						title: 'Nội thất màu đen hoàn thiện',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/10_ll52u0.webp',
+						desc: 'Được thiết kế sử dụng các vật liệu tối màu có độ bền cao nhưng vẫn mang lại cảm giác thoải mái, phiên bản Ranger XLS mang lại phong cách thiết kế nội thất cứng cáp khỏe khoắn.',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/3_f3b6h5.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/1_ajadqr.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/2_hlq05h.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '4',
+						title: 'Đỏ Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/6_w9cp2j.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/4_tg1rbl.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+					{
+						id: '6',
+						title: 'Ghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/5_sbor8l.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722357327/tran-xuan-hieu/ford-ranger/xls/11_uhifqg.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-ranger-XLS-4×4-AT',
@@ -635,7 +715,87 @@ export const products = [
 				price: '776000000',
 				slug: 'ford-ranger-xls-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917032/tran-xuan-hieu/ford-ranger/Ford-ranger-xls-2024-mau-den-300x200_lyxmrn.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/1_ajadqr.webp',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế đầu xe cứng cáp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/7_ffxgwj.webp',
+						desc: 'Lưới tản nhiệt màu đen mới kết hợp với đèn halogen dạng hình chữ C đặc trưng và đèn sương mù phía trước đậm chất Built Ford Tough.',
+					},
+					{
+						id: '2',
+						title: 'La zăng hợp kim',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/8_ovhmuo.webp',
+						desc: 'Phiên bản Ranger XLS được trang bị mâm xe hợp kim nhôm 16 inch màu xám bạc có độ hoàn thiện cao.',
+					},
+					{
+						id: '3',
+						title: 'Bảng điều khiển công nghệ liền mạch',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/9_dikcyz.webp',
+						desc: 'Thiết kế bảng điều khiển cùng màn hình giải trí trung tâm liền mạch giúp khoang xe trở nên rộng hơn, tạo cảm giác thoải mái và tiện nghi. Màn hình giải trí trung tâm công nghệ cao LED 10 inch được thiết kế hiện đại và mạnh mẽ.',
+					},
+					{
+						id: '4',
+						title: 'Nội thất màu đen hoàn thiện',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/10_ll52u0.webp',
+						desc: 'Được thiết kế sử dụng các vật liệu tối màu có độ bền cao nhưng vẫn mang lại cảm giác thoải mái, phiên bản Ranger XLS mang lại phong cách thiết kế nội thất cứng cáp khỏe khoắn.',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/3_f3b6h5.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/1_ajadqr.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356417/tran-xuan-hieu/ford-ranger/xls/2_hlq05h.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '4',
+						title: 'Đỏ Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/6_w9cp2j.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/4_tg1rbl.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+					{
+						id: '6',
+						title: 'Ghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722356418/tran-xuan-hieu/ford-ranger/xls/5_sbor8l.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722357327/tran-xuan-hieu/ford-ranger/xls/11_uhifqg.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-ranger-sport-4×4-AT',
@@ -643,7 +803,87 @@ export const products = [
 				price: '864000000',
 				slug: 'ford-ranger-sport-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917007/tran-xuan-hieu/ford-ranger/Ford-ranger-Sport-2024-mau-nau-300x200_gboa8a.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359222/tran-xuan-hieu/ford-ranger/sport/P703_VN_SPORT_DBL_PantherJ_4x2_HiRide_BlueLightning_PN4E3_VN_Showroom_0-1-e1683970046221_oogqqv.png',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Lưới tản nhiệt màu đen cá tính',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359047/tran-xuan-hieu/ford-ranger/sport/7_apo1ze.webp',
+						desc: 'Các điểm nhấn tối màu hiện đại kết hợp với lưới tản nhiệt phía trước tối màu tạo nên vẻ ngoài thể thao hơn. Đèn pha LED dạng hình chữ C đậm chất Built Ford',
+					},
+					{
+						id: '2',
+						title: 'Vành hợp kim 18’’',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359047/tran-xuan-hieu/ford-ranger/sport/8_ezivul.webp',
+						desc: 'Mâm xe hợp kim 18 inch màu Đen Asphalt cùng lớp sơn hoàn thiện phủ mờ giúp tăng phần cá tính & thể thao.',
+					},
+					{
+						id: '3',
+						title: 'Bảng điều khiển trải rộng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359047/tran-xuan-hieu/ford-ranger/sport/9_jwwtyw.webp',
+						desc: 'Bảng điều khiển trải rộng thiết kế kết nối với hệ thống cửa hai bên, tạo một không gian vô cùng rộng rãi cho khoang lái. Màn hình LCD giải trí trung tâm hiện đại với kích thước 10.1 inch.',
+					},
+					{
+						id: '4',
+						title: 'Nội thất hoàn thiện tối màu',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359047/tran-xuan-hieu/ford-ranger/sport/10_m9s5rt.webp',
+						desc: 'Nội thất sang trọng với các chi tiết hoàn thiện tối màu tạo nên sự vững chắc trong khoang lái.',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/3_edlmzo.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/1_eydiqj.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/2_tmldik.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '4',
+						title: 'Đỏ Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/6_fi47ad.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/4_zlpmfj.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+					{
+						id: '6',
+						title: 'Ghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359046/tran-xuan-hieu/ford-ranger/sport/5_e1vxz3.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722357327/tran-xuan-hieu/ford-ranger/xls/11_uhifqg.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-ranger-wildtrak-2-0l-4x4-at',
@@ -651,7 +891,95 @@ export const products = [
 				price: '979000000',
 				slug: 'ford-ranger-wildtrak-2-0l-4x4-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916985/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-vang-luxe-icon-fordlongbien-300x200_cly3bf.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/7_joktdi.webp',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Lưới tản nhiệt độc đáo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/8_kq0ou2.webp',
+						desc: 'Lưới tản nhiệt của Ranger có thiết kế độc đáo và cứng cáp, được bao quanh bởi đèn LED matrix phía trước dạng hình chữ C. Miệng dưới rộng hơn tạo một diện mạo táo bạo hơn và đặc sắc hơn.',
+					},
+					{
+						id: '2',
+						title: 'Mâm xe nổi bật',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/9_muiood.webp',
+						desc: 'Lốp bánh xe lớn của Wiltrak ôm trọn mâm xe hợp kim nhôm 18 inch màu Xám Boulder đầy ấn tượng.',
+					},
+					{
+						id: '3',
+						title: 'Bảng điều khiển công nghệ cao cấp',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/10_t1acam.webp',
+						desc: 'Màn hình trung tâm hiện đại nhất trong phân khúc với kích thước 12 inch được bọc mềm và được thiết kế tinh gọn, chừa chỗ cho ngăn chứa đồ phía trước hành khách. Cùng với SYNC®4, màn hình giải trí LED cảm ứng 12 inch được tích hợp với mục đích mang đến trải nghiệm tiện nghi.',
+					},
+					{
+						id: '4',
+						title: 'Nội thất hoàn thiện đặc trưng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/11_mexi1l.webp',
+						desc: 'Với nội thất màu gỗ mun tuyệt đẹp, Wildtrak gợi lên nét độc đáo với đường chỉ màu cam Cyber, các điểm nhấn màu xám Boulder và các điểm tiếp xúc màu nhôm Satin cao cấp. Và không thể thiếu logo ‘Wildtrak’ đặc trưng màu cam Cyber trên ghế.',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/3_imcsjo.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/1_jfvuq6.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/2_skdlkk.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '4',
+						title: 'Đỏ Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358342/tran-xuan-hieu/ford-ranger/Wildtrak/7_joktdi.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+					{
+						id: '5',
+						title: 'Bạc',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/4_gbkfup.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160410/tran-xuan-hieu/ford-everest/sport/14_jncxo3.jpg',
+					},
+					{
+						id: '6',
+						title: 'Ghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/6_or2dxv.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722357327/tran-xuan-hieu/ford-ranger/xls/11_uhifqg.webp',
+					},
+					{
+						id: '7',
+						title: 'Vàng Luxe',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358341/tran-xuan-hieu/ford-ranger/Wildtrak/5_y1vb20.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722358632/tran-xuan-hieu/ford-ranger/Wildtrak/btn-v%C3%A0ng-luxe_pohegk.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-ranger-stormtrak-2-0l-4x4-at',
@@ -660,6 +988,84 @@ export const products = [
 				slug: 'ford-ranger-stormtrak-2-0l-4x4-at',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717916957/tran-xuan-hieu/ford-ranger/ford-ranger-stormtrak-mau-trang-icon300x200-300x200_xorb01.jpg',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Lưới tản nhiệt thiết kế độc đáo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359519/tran-xuan-hieu/ford-ranger/stormtrak/5_ljwcdc.webp',
+						desc: 'Kết hợp cùng hệ thống đèn pha LED Matrix và dải đèn trợ sáng hai bên, lưới tản nhiệt thiết kế mới tăng thêm sự mạnh mẽ và cá tính cho Ford Ranger Stormtrak.',
+					},
+					{
+						id: '2',
+						title: 'Vành thể thao ấn tượng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359519/tran-xuan-hieu/ford-ranger/stormtrak/6_ffgpjn.webp',
+						desc: 'Bộ vành hợp kim 20 inch đen tuyền cùng điểm nhấn kết hợp màu đỏ và đen đặc trưng cho dáng vẻ thể thao hơn.',
+					},
+					{
+						id: '3',
+						title: 'Hệ thống giá đỡ đa năng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359519/tran-xuan-hieu/ford-ranger/stormtrak/7_lgzomo.webp',
+						desc: 'Chở hàng hóa trên thùng xe phía sau sẽ dễ dàng và chắc chắn hơn rất nhiều nhờ hệ thống giá nóc và thanh thể thao đa năng và di chuyển linh hoạt, phù hợp với nhiều kích cỡ chở đồ.',
+					},
+					{
+						id: '4',
+						title: 'Camera 360°',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359520/tran-xuan-hieu/ford-ranger/stormtrak/8_pi1e68.webp',
+						desc: 'Cho phép bạn dễ dàng quan sát xung quanh xe, bao gồm chế độ xem 360° từ trên xuống hay 180° từ trước ra sau. Tính năng này rất hữu dụng khi bạn đi vào con đường hẹp hay lái xe trong điều kiện off-road',
+					},
+					{
+						id: '5',
+						title: 'Thiết kế nội thất riêng biệt',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359521/tran-xuan-hieu/ford-ranger/stormtrak/9_u9ifxv.webp',
+						desc: 'Nội thất Ranger Stormtrak mang thiết kế đặc trưng với tông màu đen kết hợp với đường chỉ đỏ tương phản, đặc biệt ghế da được thêu chữ “Stormtrak” màu đỏ cùng những công nghệ hiện đại trang bị trên xe giúp đáp ứng mọi nhu cầu của người lái.',
+					},
+					{
+						id: '6',
+						title: 'Cần số Điện tử',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359521/tran-xuan-hieu/ford-ranger/stormtrak/10_oul4dg.webp',
+						desc: 'Công nghệ lái Thế Hệ Mới được ứng dụng trên Ranger Stormtrak giúp bạn lái xe an toàn hơn và luôn tự tin kiểm soát chiếc xe của mình với tính năng Cần số Điện tử.',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359518/tran-xuan-hieu/ford-ranger/stormtrak/3_zwzgd3.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359516/tran-xuan-hieu/ford-ranger/stormtrak/1_nu0jjv.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '5',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359518/tran-xuan-hieu/ford-ranger/stormtrak/4_k7zm1d.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '6',
+						title: 'Ghi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722359517/tran-xuan-hieu/ford-ranger/stormtrak/2_vjlzic.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722357327/tran-xuan-hieu/ford-ranger/xls/11_uhifqg.webp',
+					},
+				],
 			},
 			{
 				id: 'ford-ranger-raptor-2-0l',
@@ -668,6 +1074,93 @@ export const products = [
 				slug: 'ford-ranger-raptor-2-0l',
 				image:
 					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917141/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien-300x200_xbmpmd.jpg',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Thiết kế đầu xe đặc trưng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/1_a5cyze.webp',
+						desc: 'Điểm nhấn then chốt phần đầu xe là chữ Ford được thiết kế dạng khối nổi cỡ lớn. Đèn LED ma trận nổi bật trong đêm, cản trước bắt thẳng vào khung xe và tấm hợp kim chắn gầm siêu cứng, tất cả đều như đang sẵn sàng mở đường dẫn lối.',
+					},
+					{
+						id: '2',
+						title: 'La-zăng hợp kim địa hình',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/2_hfwc5p.webp',
+						desc: 'Bộ la-zăng hợp kim 17 inch hầm hố dành cho đường địa hình lắp với lốp xe BF GoodRich All-Terrain K02 hiệu năng cao danh tiếng (kích thước 285/70 R17). Dù vượt núi đồi hay chạy tốc độ cao, đều đáp ứng trong mọi điều kiện.',
+					},
+					{
+						id: '3',
+						title: 'Bảng đồng hồ điều khiển độc đáo',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/3_bwdftt.webp',
+						desc: 'Cụm màn hình kỹ thuật số 12,4 inch hiển thị đầy đủ cấu hình xe, nằm trên bảng táp lô thiết kế liền mạch trải rộng, cùng với màn hình giải trí cảm ứng trung tâm 12 inch',
+					},
+
+					{
+						id: '4',
+						title: 'Ghế ngồi theo phong cách thiết kế Ford Performance',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264520/tran-xuan-hieu/ford-ranger-raptor/4_vrwvod.webp',
+						desc: 'Lấy cảm hứng từ máy bay chiến đấu phản lực, ghế ngồi xe Raptor có thiết kế ôm trọn người lái, giúp lái xe có tư thế chắc chắn khi ôm cua hoặc tiếp đất. Các đường chỉ khâu độc đáo và kết hợp với da lộn giúp tối ưu sự thoải mái và tăng tính thẩm mỹ.',
+					},
+					{
+						id: '5',
+						title: 'Rèm chắn nắng cửa sổ tự cuộn',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263563/tran-xuan-hieu/ford-explorer/5_z6oeso.avif',
+						desc: 'Rèm chắn nắng cửa sổ tự cuộn được trang bị trên cửa kính xe giúp khách hàng cảm thấy dễ chịu hơn trong những chuyến đi xa.',
+					},
+					{
+						id: '6',
+						title: 'Gương chiếu hậu ngoài',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263562/tran-xuan-hieu/ford-explorer/6_jr8pga.avif',
+						desc: 'Gập điện tự động với chức năng nhớ vị trí',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264853/tran-xuan-hieu/ford-ranger-raptor/7_qqebxv.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/6_gcpwlb.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/8_qqk9k2.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '5',
+						title: 'Xám',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264853/tran-xuan-hieu/ford-ranger-raptor/10_uci4tf.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156265/tran-xuan-hieu/ford-everest/4.1_ct0lrs.jpg',
+					},
+					{
+						id: '6',
+						title: 'Cam',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264852/tran-xuan-hieu/ford-ranger-raptor/9_xrp6ts.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+				],
 			},
 		],
 		gioithieu: {
@@ -681,7 +1174,7 @@ export const products = [
 					allowFullScreen
 					width={560}
 					height={315}
-					className="w-full min-h-[400px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 				></iframe>
 			),
 			heading1: 'Bảng giá xe bán tải Ford Ranger 2024 tại Ford Hà Thành',
@@ -1066,7 +1559,7 @@ export const products = [
 					allowFullScreen
 					width={560}
 					height={315}
-					className="w-full min-h-[400px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 				></iframe>
 			),
 			heading1: 'Bảng giá xe bán tải Ford Ranger Raptor 2024 tại Ford Hà Thành',
@@ -1293,7 +1786,6 @@ export const products = [
 						desc: 'Cửa sổ trời toàn cảnh có thể mở rộng tới 50%, điều này có nghĩa là bạn có thể mở ra cả thế giới và trải nghiệm cuộc sống xung quanh chỉ với một nút bấm.',
 					},
 				],
-
 				tieuThuNhienLieu: [
 					{
 						id: '1',
@@ -1360,7 +1852,7 @@ export const products = [
 				<iframe
 					width={560}
 					height={315}
-					className="w-full min-h-[400px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 					src="https://www.youtube.com/embed/rHtfoeZnosc?si=8maxVEsdyzOKKfSg"
 					title="YouTube video player"
 					frameBorder={0}
@@ -1559,7 +2051,7 @@ export const products = [
 				<iframe
 					width={560}
 					height={315}
-					className="w-full min-h-[400px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 					src="https://www.youtube.com/embed/-navcjKuORo?si=Lno-10IPrWAnGnSU"
 					title="YouTube video player"
 					frameBorder={0}
@@ -2017,7 +2509,6 @@ export const products = [
 							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263561/tran-xuan-hieu/ford-explorer/3_iwvqoc.avif',
 						desc: 'Bậc lên xuống hàng ghế thứ 2 giúp việc lên và xuống xe trở nên thật dễ dàng.',
 					},
-
 					{
 						id: '4',
 						title: 'Sạc không dây',
@@ -2040,7 +2531,6 @@ export const products = [
 						desc: 'Gập điện tự động với chức năng nhớ vị trí',
 					},
 				],
-
 				tieuThuNhienLieu: [
 					{
 						id: '1',
@@ -2091,7 +2581,7 @@ export const products = [
 				<iframe
 					width={560}
 					height={315}
-					className="w-full min-h-[400px]"
+					className="tw-w-full md:tw-min-h-[450px] tw-min-h-[250px]"
 					src="https://www.youtube.com/embed/LnsZsXbq89E?si=Cxb92nBZad8ZnFOm"
 					title="YouTube video player"
 					frameBorder={0}

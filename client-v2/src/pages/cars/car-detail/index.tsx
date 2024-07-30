@@ -65,8 +65,10 @@ const CarDetail = () => {
 											className="tw-w-full"
 										/>
 									</div>
-									<div className="car-content">
-										<h3>{xeCanTim?.title}</h3>
+									<div className="car-content !tw-p-2 md:!tw-p-7">
+										<h3 className="!tw-text-xl md:tw-text-[26px]">
+											{xeCanTim?.title}
+										</h3>
 										<h6>
 											<span>Giá chỉ từ</span>{' '}
 											{formatCurrency(Number(xeCanTim?.price))}
@@ -75,46 +77,13 @@ const CarDetail = () => {
 										{thongTinXe?.desc && (
 											<p className="">{parse(thongTinXe?.desc)}</p>
 										)}
-										{/* {thongTinXe &&
+										{thongTinXe &&
 											thongTinXe?.gioithieu &&
 											thongTinXe.gioithieu.video && (
 												<div className="tw-w-full tw-flex tw-items-center tw-justify-center tw-py-4">
 													{thongTinXe.gioithieu.video}
 												</div>
-											)} */}
-										{/* <div className="price-table-area">
-											<h6>
-												Table Price <span>( by day of the week )</span>
-											</h6>
-											<div className="price-table-items section-bg">
-												<p>Monday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items">
-												<p>Tuesday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items section-bg">
-												<p>Wednesday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items">
-												<p>Thursday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items section-bg">
-												<p>Friday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items">
-												<p>Saturday</p>
-												<p>$70.00</p>
-											</div>
-											<div className="price-table-items section-bg">
-												<p>Sunday</p>
-												<p>$70.00</p>
-											</div>
-										</div> */}
+											)}
 
 										{(xeCanTim as any)?.moTaXe && (
 											<section className="tw-mt-10 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-4 md:tw-gap-10">

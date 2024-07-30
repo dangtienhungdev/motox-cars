@@ -1,5 +1,4 @@
 import BannerPage from '@/components/banner';
-import BaoGiaXe from '@/components/bao-gia-xe/bao-gia-xe';
 import priceList from '@/data/price-list';
 import TabContent from '@/features/price-list/tab-content';
 import { Tabs } from 'antd';
@@ -10,7 +9,6 @@ const CarPage = () => {
 
 	const [params] = useSearchParams();
 	const id = params.get('id');
-	console.log('🚀 ~ CarPage ~ id:', id);
 
 	const items = tabs.map((tab) => {
 		return {
@@ -40,13 +38,13 @@ const CarPage = () => {
 				<div className="container xl:!tw-w-[1300px] tw-mx-auto">
 					<div className="car-list-wrapper">
 						<div className="row g-4">
-							<div className="col-lg-8">
+							<div className="col-lg-12">
 								<div className="row g-4">
 									<Tabs defaultActiveKey={id} items={items} />
 								</div>
 							</div>
 
-							<BaoGiaXe />
+							{/* <BaoGiaXe /> */}
 						</div>
 					</div>
 				</div>

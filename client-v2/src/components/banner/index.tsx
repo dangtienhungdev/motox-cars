@@ -15,16 +15,24 @@ const BannerPage = ({ title }: BannerPageProps) => {
 		>
 			<div className="container">
 				<div className="page-heading">
-					<ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".3s">
+					<ul
+						className="breadcrumb-items wow fadeInUp md:!tw-flex !tw-hidden"
+						data-wow-delay=".3s"
+					>
 						<li>
-							<Link to="/">Trang chủ</Link>
+							<Link to="/" className="">
+								Trang chủ
+							</Link>
 						</li>
 						<li>
 							<i className="fas fa-chevron-right" />
 						</li>
 						<li>{title}</li>
 					</ul>
-					<h1 className="wow fadeInUp" data-wow-delay=".5s">
+					<h1
+						className="wow fadeInUp md:text !tw-text-lg md:tw-text-[50px] tw-leading-[112%]"
+						data-wow-delay=".5s"
+					>
 						{title}
 					</h1>
 				</div>

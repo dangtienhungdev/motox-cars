@@ -5,8 +5,6 @@ import {
 } from '@/configs';
 import {
 	Button,
-	Cascader,
-	CascaderProps,
 	Col,
 	Form,
 	FormInstance,
@@ -15,9 +13,10 @@ import {
 	Radio,
 	RadioChangeEvent,
 	Row,
+	Select,
 	message,
 } from 'antd';
-import { Option, options } from './init';
+import { options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import { FieldType } from '@/types/data.type';
@@ -39,7 +38,7 @@ const Content = ({
 		setIsLoading && setIsLoading(true);
 		const data = {
 			...values,
-			chonXe: `${values.chonXe[0]}/ ${values.chonXe[1]}/ ${values.chonXe[2]}`,
+			chonXe: `${values.chonXe}`,
 			hinhThucMua:
 				value === 1 || values.hinhThucMua === undefined ? 'Trả hết' : 'Trả góp',
 			message: values.message || 'Không có lời nhắn',
@@ -82,9 +81,9 @@ const Content = ({
 		setValue(e.target.value);
 	};
 
-	const onChangeCascader: CascaderProps<Option>['onChange'] = (value) => {
-		console.log(value);
-	};
+	// const onChangeCascader: CascaderProps<Option>['onChange'] = (value) => {
+	// 	console.log(value);
+	// };
 
 	return (
 		<section className="mt-10">
@@ -96,7 +95,7 @@ const Content = ({
 				form={form}
 			>
 				<Row gutter={24}>
-					<Col span={12}>
+					<Col span={24}>
 						<Form.Item<FieldType>
 							label={baoGiaXeData.form.username.title}
 							name="username"
@@ -114,19 +113,7 @@ const Content = ({
 						</Form.Item>
 					</Col>
 
-					<Col span={12}>
-						<Form.Item<FieldType>
-							label={baoGiaXeData.form.email.title}
-							name="email"
-						>
-							<Input
-								size="large"
-								placeholder={baoGiaXeData.form.email.placeholder}
-							/>
-						</Form.Item>
-					</Col>
-
-					<Col span={12}>
+					<Col span={24}>
 						<Form.Item<FieldType>
 							label={baoGiaXeData.form.phone.title}
 							name="phone"
@@ -143,7 +130,7 @@ const Content = ({
 						</Form.Item>
 					</Col>
 
-					<Col span={12}>
+					<Col span={24}>
 						<Form.Item<FieldType>
 							label={baoGiaXeData.form.hinhThucMua.title}
 							name="hinhThucMua"
@@ -171,23 +158,17 @@ const Content = ({
 								},
 							]}
 						>
-							<Cascader
+							{/* <Cascader
 								options={options}
 								onChange={onChangeCascader}
 								size="large"
 								placeholder="Please select"
-							/>
-						</Form.Item>
-					</Col>
-
-					<Col span={24}>
-						<Form.Item<FieldType>
-							label={baoGiaXeData.form.message.title}
-							name="message"
-						>
-							<Input.TextArea
+							/> */}
+							<Select
+								defaultValue="ford-everest"
+								allowClear
 								size="large"
-								placeholder={baoGiaXeData.form.message.placeholder}
+								options={options}
 							/>
 						</Form.Item>
 					</Col>

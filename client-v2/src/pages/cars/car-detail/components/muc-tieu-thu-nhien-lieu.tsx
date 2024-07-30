@@ -10,21 +10,21 @@ const MucTieuThuNhienLieu = ({ title, data }: MucTieuThuNhienLieuProps) => {
 	const columns = [
 		{
 			title: (
-				<p className="tw-text-primary tw-text-xl tw-text-center tw-font-semibold">
+				<p className="tw-text-primary md:tw-text-xl tw-text-sm tw-text-center tw-font-semibold">
 					Loại xe
 				</p>
 			),
 			dataIndex: 'loaiXe',
 			key: 'loaiXe',
 			render: (text: string) => (
-				<p className="tw-text-primary tw-text-center tw-font-semibold">
+				<p className="tw-text-primary tw-text-center tw-font-semibold tw-text-sm md:tw-text-base">
 					{text}
 				</p>
 			),
 		},
 		{
 			title: (
-				<p className="tw-text-primary tw-text-xl tw-text-center tw-font-semibold">
+				<p className="tw-text-primary md:tw-text-xl tw-text-sm tw-text-center tw-font-semibold">
 					Chu trình tổ hợp
 				</p>
 			),
@@ -34,7 +34,7 @@ const MucTieuThuNhienLieu = ({ title, data }: MucTieuThuNhienLieuProps) => {
 		},
 		{
 			title: (
-				<p className="tw-text-primary tw-text-xl tw-text-center tw-font-semibold">
+				<p className="tw-text-primary md:tw-text-xl tw-text-sm tw-text-center tw-font-semibold">
 					Chu trình đô thị cơ bản
 				</p>
 			),
@@ -44,7 +44,7 @@ const MucTieuThuNhienLieu = ({ title, data }: MucTieuThuNhienLieuProps) => {
 		},
 		{
 			title: (
-				<p className="tw-text-primary tw-text-xl tw-text-center tw-font-semibold">
+				<p className="tw-text-primary md:tw-text-xl tw-text-sm tw-text-center tw-font-semibold">
 					Chu trình đô thị phụ
 				</p>
 			),
@@ -64,10 +64,15 @@ const MucTieuThuNhienLieu = ({ title, data }: MucTieuThuNhienLieuProps) => {
 
 	return (
 		<div className="tw-my-10 tw-flex tw-flex-col tw-gap-5">
-			<p className="text-center tw-text-primary tw-font-semibold tw-text-3xl">
+			<p className="text-center tw-text-primary tw-font-semibold lg:tw-text-3xl md:tw-text-xl tw-text-lg">
 				Mức tiêu thụ nhiên liệu của {title}
 			</p>
-			<Table dataSource={dataSource} columns={columns} pagination={false} />
+			<Table
+				dataSource={dataSource}
+				columns={columns}
+				pagination={false}
+				scroll={{ x: 768 }}
+			/>
 		</div>
 	);
 };
