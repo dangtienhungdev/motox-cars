@@ -109,6 +109,7 @@ const Content = ({
 							<Input
 								size="large"
 								placeholder={baoGiaXeData.form.username.placeholder}
+								className="!tw-text-base"
 							/>
 						</Form.Item>
 					</Col>
@@ -126,7 +127,11 @@ const Content = ({
 								},
 							]}
 						>
-							<Input size="large" placeholder={'Nhập số điện thoại của bạn'} />
+							<Input
+								size="large"
+								placeholder={'Nhập số điện thoại của bạn'}
+								className="!tw-text-base"
+							/>
 						</Form.Item>
 					</Col>
 

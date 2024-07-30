@@ -16,12 +16,12 @@ import {
 	Select,
 	message,
 } from 'antd';
-import { options } from './init';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import { FieldType } from '@/types/data.type';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import { options } from './init';
 
 const Content = ({
 	setIsLoading,
@@ -109,6 +109,7 @@ const Content = ({
 							<Input
 								size="large"
 								placeholder={baoGiaXeData.form.username.placeholder}
+								className="!tw-text-base"
 							/>
 						</Form.Item>
 					</Col>
@@ -126,7 +127,11 @@ const Content = ({
 								},
 							]}
 						>
-							<Input size="large" placeholder={'Nhập số điện thoại của bạn'} />
+							<Input
+								size="large"
+								placeholder={'Nhập số điện thoại của bạn'}
+								className="!tw-text-base"
+							/>
 						</Form.Item>
 					</Col>
 
