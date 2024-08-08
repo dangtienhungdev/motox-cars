@@ -16,11 +16,11 @@ import {
 	Select,
 	message,
 } from 'antd';
+import { useEffect, useState } from 'react';
 
 import baoGiaXeData from '@/data/bao-gia-xe';
 import { FieldType } from '@/types/data.type';
 import emailjs from '@emailjs/browser';
-import { useState } from 'react';
 import { options } from './init';
 
 const Content = ({
@@ -34,6 +34,12 @@ const Content = ({
 	form: FormInstance<FieldType>;
 	onCancel?: () => void;
 }) => {
+	useEffect(() => {
+		form.setFieldsValue({
+			chonXe: 'ford-everest',
+		});
+	}, []);
+
 	const onFinish: FormProps<FieldType>['onFinish'] = async (values) => {
 		setIsLoading && setIsLoading(true);
 		const data = {
@@ -109,7 +115,7 @@ const Content = ({
 							<Input
 								size="large"
 								placeholder={baoGiaXeData.form.username.placeholder}
-								className="!tw-text-base"
+								className="!tw-text-base !tw-text-black !tw-h-[42px]"
 							/>
 						</Form.Item>
 					</Col>
@@ -130,7 +136,7 @@ const Content = ({
 							<Input
 								size="large"
 								placeholder={'Nhập số điện thoại của bạn'}
-								className="!tw-text-base"
+								className="!tw-text-base !tw-text-black !tw-h-[42px]"
 							/>
 						</Form.Item>
 					</Col>
@@ -172,6 +178,7 @@ const Content = ({
 							<Select
 								defaultValue="ford-everest"
 								allowClear
+								className="!tw-h-[42px]"
 								size="large"
 								options={options}
 							/>

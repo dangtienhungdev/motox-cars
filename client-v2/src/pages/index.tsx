@@ -78,7 +78,9 @@ const HomePage = () => {
 						className="tw-bg-primary tw-text-white !tw-py-2 tw-px-5 tw-rounded-lg tw-cursor-pointer tw-h-[50px] tw-min-w-[180px] tw-flex tw-items-center tw-justify-center"
 					>
 						{isLoading ? (
-							<section className="tw-w-5 tw-h-5 tw-border-2 tw-border-t-2 !tw-border-white tw-rounded-full tw-animate-spin tw-border-t-primary"></section>
+							<section className="tw-w-5 tw-flex tw-items-center tw-justify-center tw-h-5 tw-border-2 tw-border-t-2 !tw-border-white tw-rounded-full tw-border-t-primary">
+								Loading...
+							</section>
 						) : (
 							baoGiaXeData.sendButton
 						)}
