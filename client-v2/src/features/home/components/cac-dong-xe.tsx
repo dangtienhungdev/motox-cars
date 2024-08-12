@@ -23,18 +23,23 @@ const CacDongXe = () => {
 						return (
 							<Link
 								to={`/cars?id=${item.id}`}
-								className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp tw-block"
+								className="col-xl-4 col-lg-6 col-md-6 col-6 wow fadeInUp tw-block"
 								data-wow-delay=".3s"
 								key={item.id}
 							>
-								<div className="popular-card-items">
-									<div className="content">
+								<div className="tw-flex-col-reverse popular-card-items md:tw-flex-row">
+									<div className="content !tw-pl-0 md:!tw-pl-7">
 										<h4>
-											<Link to={`/cars?id=${item.id}`}>{item.title}</Link>
+											<Link
+												to={`/cars?id=${item.id}`}
+												className="tw-text-sm md:tw-text-lg"
+											>
+												{item.title}
+											</Link>
 										</h4>
 										{/* <p>Available for Rent</p> */}
 									</div>
-									<div className="car-image">
+									<div className="car-image before:!tw-hidden md:before:!tw-block !tw-h-[120px] md:!tw-h-[180px]">
 										<img src={item.image} alt="img" />
 									</div>
 								</div>
@@ -44,7 +49,7 @@ const CacDongXe = () => {
 				</div>
 				{/* <div className="popular-car-text wow fadeInUp" data-wow-delay=".4s">
 					<h6>Car rental services specifically for our customers.</h6>
-					<a href="car-details.html" className="theme-btn">
+					<a href="/contact" className="theme-btn">
 						Find a car
 					</a>
 				</div> */}

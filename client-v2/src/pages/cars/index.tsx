@@ -2,6 +2,7 @@ import BannerPage from '@/components/banner';
 import priceList from '@/data/price-list';
 import TabContent from '@/features/price-list/tab-content';
 import { Tabs } from 'antd';
+import { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 const CarPage = () => {
@@ -17,6 +18,11 @@ const CarPage = () => {
 			children: <TabContent data={tab} id={tab.id} />,
 		};
 	});
+
+	// lần đầu vào trang sẽ kéo lên đầu trang
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	if (!id) {
 		return (

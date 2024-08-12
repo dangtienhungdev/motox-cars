@@ -152,7 +152,7 @@ const HeaderSectionStart = () => {
 									</button>
 								</Tooltip>
 								<div className="header-button">
-									<a href="car-details.html" className="header-btn">
+									<a href="/contact" className="header-btn">
 										Tìm xe bạn muốn báo giá
 									</a>
 								</div>

@@ -68,7 +68,7 @@ const ContactPage = () => {
 													</span>{' '}
 													xe tận nhà | Tư vấn vay{' '}
 													<span className="font-medium text-primary-l10">
-														trả góp
+														trả góp{' '}
 													</span>
 													trả đến 70 - 80%, lãi thấp.{' '}
 												</li>

@@ -44,7 +44,7 @@ const Footer = () => {
 										<a href="/">Trang chủ</a>
 									</li>
 									<li>
-										<a href="car-details.html">Giới thiệu</a>
+										<a href="/contact">Giới thiệu</a>
 									</li>
 									<li>
 										<a href="news-details.html">Bảng giá xe</a>

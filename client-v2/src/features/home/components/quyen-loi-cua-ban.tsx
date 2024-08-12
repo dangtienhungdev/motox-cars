@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const QuyenLoiCuaBan = () => {
 	const data = [
 		{
@@ -68,9 +70,8 @@ const QuyenLoiCuaBan = () => {
 									</div>
 									<div className="feature-content">
 										<h4>
-											<a href="car-details.html">{item.title1}</a>
-											<br />
-											<a href="car-details.html">{item.title2}</a>
+											<Link to="/contact">{item.title1}</Link>
+											<br /> <Link to="/contact">{item.title2}</Link>
 										</h4>
 										<p>{item.content}</p>
 										<div className="icon">
@@ -78,9 +79,9 @@ const QuyenLoiCuaBan = () => {
 										</div>
 									</div>
 									<div className="feature-button">
-										<a href="car-details.html" className="link-btn">
+										<Link to="/contact" className="link-btn">
 											Xem thêm <i className="fa-solid fa-arrow-right ps-1" />
-										</a>
+										</Link>
 									</div>
 								</div>
 							</div>
@@ -106,7 +107,7 @@ const QuyenLoiCuaBan = () => {
 							</div>
 							<div className="feature-content">
 								<h4>
-									<a href="car-details.html">
+									<a href="/contact">
 										Too Many <br />
 										Pickup Locations
 									</a>
@@ -122,7 +123,7 @@ const QuyenLoiCuaBan = () => {
 								</div>
 							</div>
 							<div className="feature-button">
-								<a href="car-details.html" className="link-btn">
+								<a href="/contact" className="link-btn">
 									View More <i className="fa-solid fa-arrow-right ps-1" />
 								</a>
 							</div>
@@ -147,7 +148,7 @@ const QuyenLoiCuaBan = () => {
 							</div>
 							<div className="feature-content">
 								<h4>
-									<a href="car-details.html">
+									<a href="/contact">
 										Customers <br />
 										100% Satisfied
 									</a>
@@ -163,7 +164,7 @@ const QuyenLoiCuaBan = () => {
 								</div>
 							</div>
 							<div className="feature-button">
-								<a href="car-details.html" className="link-btn">
+								<a href="/contact" className="link-btn">
 									View More <i className="fa-solid fa-arrow-right ps-1" />
 								</a>
 							</div>
