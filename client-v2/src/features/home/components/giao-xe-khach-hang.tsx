@@ -2,7 +2,7 @@ const GiaoXeKhachHang = () => {
 	return (
 		<div className="gallery-section fix">
 			<div className="gallery-wrapper">
-				<div className="gap-4 tw-grid tw-grid-cols-4 md:!tw-grid-cols-3 !tw-grid-cols-2">
+				<div className="gap-4 tw-grid lg:!tw-grid-cols-4 md:!tw-grid-cols-3 !tw-grid-cols-2">
 					<div className="gallery-image">
 						<img
 							src="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1727704088/tran-xuan-hieu/giao-xe/z5882358545554_b9e917a98f7abbe477f7e2229da8c50b_y42a6b.jpg"
