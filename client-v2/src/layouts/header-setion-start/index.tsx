@@ -1,4 +1,3 @@
-import BaoGiaXeModal from '@/components/bao-gia';
 import { Tooltip } from 'antd';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -68,7 +67,6 @@ const HeaderSectionStart = () => {
 	];
 
 	const [openSidebar, setOpenSidebar] = useState(false);
-	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
 	return (
 		<>
@@ -140,10 +138,7 @@ const HeaderSectionStart = () => {
 									</div>
 								</div>
 								<Tooltip title="Nhận báo giá xe">
-									<button
-										className="search-trigger search-icon tw-bg-primary tw-h-[33px] tw-relative tw-w-[33px] tw-rounded-full tw-flex tw-items-center tw-justify-center"
-										onClick={() => setIsModalOpen(true)}
-									>
+									<button className="search-trigger !tw-hidden search-icon tw-bg-primary tw-h-[33px] tw-relative tw-w-[33px] tw-rounded-full tw-items-center tw-justify-center">
 										<img
 											src="https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722261400/tran-xuan-hieu/banner/toolmenu6_agkdeg.png"
 											alt="logo"
@@ -156,6 +151,11 @@ const HeaderSectionStart = () => {
 										Tìm xe bạn muốn báo giá
 									</a>
 								</div>
+								{/* <div className="">
+									<button className="text-center tw-h-[36px] tw-px-4 !tw-rounded tw-bg-primary tw-text-white">
+										Báo giá
+									</button>
+								</div> */}
 								<button
 									onClick={() => setOpenSidebar(!openSidebar)}
 									className="my-auto header__hamburger d-xl-none tw-cursor-pointer"
@@ -171,12 +171,6 @@ const HeaderSectionStart = () => {
 			</header>
 
 			<SearchInput />
-
-			<BaoGiaXeModal
-				isModalOpen={isModalOpen}
-				handleOk={() => setIsModalOpen(false)}
-				handleCancel={() => setIsModalOpen(false)}
-			/>
 		</>
 	);
 };

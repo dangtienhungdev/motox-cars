@@ -1722,6 +1722,101 @@ export const products = [
 		],
 		xe: [
 			{
+				id: 'ford-territory-sport-1-5-ecoboot',
+				title: 'Ford Territory Sport',
+				price: '909000000',
+				slug: 'ford-territory-sport-1-5-ecoboot',
+				image:
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310062/tran-xuan-hieu/ford-terri/TerritorySport2024VnE1jpg-1725432092_klpnfi.jpg',
+				moTaXe: [
+					{
+						id: '1',
+						title: 'Lưới tản nhiệt sơn đen thể thao',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310469/tran-xuan-hieu/ford-terri/territory-sport-card-1_f0mx28.webp',
+						desc: 'Những điểm nhấn màu đen hiện đại kết hợp với lưới tản nhiệt phía trước màu đen tạo nên vẻ ngoài thể thao ấn tượng.',
+					},
+					{
+						id: '2',
+						title: 'La-zăng hợp kim sơn đen 18',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310469/tran-xuan-hieu/ford-terri/territory-sport-card-2_yctddj.webp',
+						desc: 'La-zăng hợp kim 18 màu đen bật lên vẻ cá tính và sang trọng của Territory Sport.',
+					},
+					{
+						id: '3',
+						title: 'Nội thất mới với nhiều điểm nhấn cá tính​',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310470/tran-xuan-hieu/ford-terri/territory-sport-card-3_x3i2jt.webp',
+						desc: 'Ghế bọc da sang trọng với điểm nhấn là những chi tiết màu trắng và cam trẻ trung, cá tính, tạo nên phong cách ấn tượng cho chủ sở hữu của chiếc xe.',
+					},
+					{
+						id: '4',
+						title: 'Công nghệ tiên tiến',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310470/tran-xuan-hieu/ford-terri/territory-sport-card-4_p9alyl.webp',
+						desc: 'Ford Territory Sport được trang bị cụm đồng hồ kỹ thuật số 7 inch tích hợp cùng màn hình cảm ứng 12 inch, và một loạt các tính năng hỗ trợ người lái như Kiểm soát hành trình thích ứng1, Hệ thống cảnh báo điểm mù kết hợp Cảnh báo xe cắt ngang, Hệ thống Cảnh báo lệch làn đường¹ và Camera 360 độ.',
+					},
+					{
+						id: '6',
+						title: 'Cần số điện tử với tấm ốp họa tiết carbon',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310471/tran-xuan-hieu/ford-terri/territory-sport-card-5_jtizgq.webp',
+						desc: 'Trải nghiệm sự sang trọng và tinh tế với nội thất sợi carbon độc đáo trên phiên bản Sport, nâng tầm thiết kế giúp chiếc xe thêm phần hiện đại.',
+					},
+					{
+						id: '7',
+						title: 'Hàng ghế thứ hai rộng rãi',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310491/tran-xuan-hieu/ford-terri/territory-sport-card-6_fbdpg6.webp',
+						desc: 'Thiết kế không gian hàng ghế thứ hai rộng rãi tinh tế, tập trung vào sự thoải mái, mang đến cho bạn khoảng để chân lý tưởng, biến mọi chuyến đi thành một trải nghiệm thú vị.',
+					},
+				],
+				tieuThuNhienLieu: [
+					{
+						id: '1',
+						loaiXe: 'FORD EXPLORER LIMITED 2.3L ECOBOOST I4',
+						chuTrinhToHop: '11.24 (lít/100km)',
+						chuTrinhDoThiCoBan: '13.42 (lít/100km)',
+						chuTrinhDoThiPhu: '9.96 (lít/100km)',
+					},
+				],
+				mauSac: [
+					{
+						id: '1',
+						title: 'Trắng',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263882/tran-xuan-hieu/ford-explorer/7_s4fmt7.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156268/tran-xuan-hieu/ford-everest/7.1_fspamg.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đen',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263884/tran-xuan-hieu/ford-explorer/10_mlh1pr.webp',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722156267/tran-xuan-hieu/ford-everest/6.1_uxl9lo.png',
+					},
+					{
+						id: '3',
+						title: 'Xanh',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/9_xobq2b.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722160411/tran-xuan-hieu/ford-everest/sport/15_fskkde.jpg',
+					},
+					{
+						id: '2',
+						title: 'Đỏ',
+						image:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722263883/tran-xuan-hieu/ford-explorer/8_b79uxh.avif',
+						color:
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722264069/tran-xuan-hieu/ford-explorer/11_qx5k9l.webp',
+					},
+				],
+			},
+			{
 				id: 'ford-territory-titanium-x-1-5l-at',
 				title: 'Ford Territory Titanium X 1.5L AT',
 				price: '929000000',

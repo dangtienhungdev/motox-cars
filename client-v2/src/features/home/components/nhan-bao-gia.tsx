@@ -95,7 +95,7 @@ const NhanBaoGiaXe = () => {
 			<div className="container">
 				<Form
 					layout="vertical"
-					className="pickup-wrapper wow fadeInUp !tw-gap-5"
+					className="pickup-wrapper wow fadeInUp !tw-gap-5 lg:!tw-flex md:!tw-hidden"
 					data-wow-delay=".4s"
 					form={form}
 					onFinish={onFinish}

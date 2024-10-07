@@ -24,17 +24,14 @@ const CarDetail = () => {
 
 	// lấy dữ liệu từ tabs
 	const carDetail = tabs.find((tab) => tab.id === Number(idHangXe));
-	// console.log('🚀 ~ CarDetail ~ carDetail:', carDetail);
 
 	// lấy ra xe chi tiết dựa vào id
 	const thongTinXe = products.find(
 		(product) => product.id === Number(idHangXe)
 	);
-	console.log('🚀 ~ CarDetail ~ thongTinXe:', thongTinXe);
 
 	// lấy ra xe chi tiết dựa vào id
 	const xeCanTim: any = thongTinXe?.xe.find((x) => x.id === id);
-	console.log('🚀 ~ CarDetail ~ xeCanTim:', xeCanTim);
 
 	if (!id || !carDetail || !idHangXe || !ford || !xeCanTim) {
 		return (

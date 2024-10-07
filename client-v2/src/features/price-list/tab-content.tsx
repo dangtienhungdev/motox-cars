@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { TPriceList } from '@/types/price-list';
 import { formatCurrency } from '@/utils/format-currency';
+import { Link } from 'react-router-dom';
 
 interface TabContentProps {
 	data: TPriceList;
@@ -34,11 +34,11 @@ const TabContent = ({ data, id }: TabContentProps) => {
 										{formatCurrency(Number(item.price))}
 									</span>
 								</div>
-								{/* <p>
-									To deliver on the promise of technology and human ingenuity We
-									help our clients become the next and best versions of
-									themselves.
-								</p> */}
+								<p>
+									Chúng tôi luôn cam kết mang lại mức giá ưu đãi nhất cho quý
+									khách với thời gian giao xe sớm. Luôn ưu đãi tặng kèm phụ kiện
+									chính hãng và nhiều ưu đãi khác.
+								</p>
 							</div>
 						</div>
 					</div>

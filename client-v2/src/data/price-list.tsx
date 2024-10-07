@@ -14,6 +14,7 @@ const priceList: { fords: TPriceList[] } = {
 					title: 'Ford Everest Platinum 4×4 AT',
 					price: '1545000000',
 					slug: 'ford-everest-platinum-4x4-at',
+
 					image:
 						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-platinum-mau-xam-icon-300x200-1-300x200_cv5n7b.jpg',
 				},
@@ -23,7 +24,7 @@ const priceList: { fords: TPriceList[] } = {
 					price: '1468000000',
 					slug: 'ford-everest-titanium-4x4-at',
 					image:
-						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/Ford-Everest-2023-fordlongbien_com-14-300x200_lqcv0f.jpg',
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-nau-icon-300x200_lz3fjc.jpg',
 				},
 				{
 					id: 'ford-everest-titanium-at-4x2-at',
@@ -47,7 +48,7 @@ const priceList: { fords: TPriceList[] } = {
 					price: '1099000000',
 					slug: 'ford-everest-ambient-4x2-at',
 					image:
-						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/ford-everest-titanium-2022-mau-nau-icon-300x200_lz3fjc.jpg',
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717864980/tran-xuan-hieu/ford-everest/Ford-Everest-2023-fordlongbien_com-14-300x200_lqcv0f.jpg',
 				},
 			],
 		},
@@ -104,7 +105,7 @@ const priceList: { fords: TPriceList[] } = {
 					price: '1299000000',
 					slug: 'ford-ranger-raptor-2-0l',
 					image:
-						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717917141/tran-xuan-hieu/ford-ranger/ford-ranger-wildtrak-mau-do-cam-icon-fordlongbien-300x200_xbmpmd.jpg',
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-ranger-raptor-2023-mau-do-icon-fordlongbien_com_uuafxd.jpg',
 				},
 			],
 		},
@@ -115,6 +116,14 @@ const priceList: { fords: TPriceList[] } = {
 			thumnail:
 				'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1717819145/tran-xuan-hieu/ford-territory-2023-icon-fordlongbien_com_cynra9.jpg',
 			children: [
+				{
+					id: 'ford-territory-sport-1-5-ecoboot',
+					title: 'Ford Territory Sport',
+					price: '909000000',
+					slug: 'ford-territory-sport-1-5-ecoboot',
+					image:
+						'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310216/tran-xuan-hieu/ford-terri/3_pqti43.webp',
+				},
 				{
 					id: 'ford-territory-titanium-x-1-5l-at',
 					title: 'Ford Territory Titanium X 1.5L AT',
