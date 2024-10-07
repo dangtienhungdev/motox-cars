@@ -1768,7 +1768,7 @@ export const products = [
 						id: '7',
 						title: 'Hàng ghế thứ hai rộng rãi',
 						image:
-							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310491/tran-xuan-hieu/ford-terri/territory-sport-card-6_fbdpg6.webp',
+							'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728310491/tran-xuan-hieu/ford-terri/territory-sport-card-6_fbdpg6.webp`',
 						desc: 'Thiết kế không gian hàng ghế thứ hai rộng rãi tinh tế, tập trung vào sự thoải mái, mang đến cho bạn khoảng để chân lý tưởng, biến mọi chuyến đi thành một trải nghiệm thú vị.',
 					},
 				],
