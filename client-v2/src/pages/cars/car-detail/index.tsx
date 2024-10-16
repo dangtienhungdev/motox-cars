@@ -1,16 +1,25 @@
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 
 import BannerPage from '@/components/banner';
+import Content from '@/components/modal-bao-gia';
+import baoGiaXeData from '@/data/bao-gia-xe';
 import priceList from '@/data/price-list';
 import { products } from '@/data/product';
+import { FieldType } from '@/types/data.type';
 import { TMoTaXe } from '@/types/price-list';
 import { formatCurrency } from '@/utils/format-currency';
-import { Image } from 'antd';
+import { Image, Modal } from 'antd';
+import { useForm } from 'antd/es/form/Form';
 import parse from 'html-react-parser';
+import { useEffect, useState } from 'react';
 import CacMauSac from './components/cac-mau-sac';
 import MucTieuThuNhienLieu from './components/muc-tieu-thu-nhien-lieu';
 
 const CarDetail = () => {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [form] = useForm<FieldType>();
+
 	const tabs = priceList.fords;
 
 	// lấy id từ url
@@ -33,6 +42,28 @@ const CarDetail = () => {
 	// lấy ra xe chi tiết dựa vào id
 	const xeCanTim: any = thongTinXe?.xe.find((x) => x.id === id);
 
+	const showModal = () => {
+		setIsModalOpen(true);
+	};
+
+	const handleOk = () => {
+		setIsModalOpen(false);
+	};
+
+	const handleCancel = () => {
+		setIsModalOpen(false);
+	};
+
+	useEffect(() => {
+		// showModal();
+		// tôi muốn sau 3s mới hiện modal và chỉ hiện 1 lần duy nhất
+		setTimeout(() => {
+			showModal();
+		}, 3000);
+
+		return () => setIsModalOpen(false);
+	}, []);
+
 	if (!id || !carDetail || !idHangXe || !ford || !xeCanTim) {
 		return (
 			<div>
@@ -48,6 +79,34 @@ const CarDetail = () => {
 	return (
 		<div>
 			<BannerPage title={`Thông tin của xe ${xeCanTim.title}`} />
+
+			<Modal
+				title="ĐĂNG KÝ NHẬN BÁO GIÁ"
+				open={isModalOpen}
+				onOk={handleOk}
+				width={800}
+				className="tw-w-full tw-max-w-[800px]"
+				onCancel={handleCancel}
+				footer={[
+					<label
+						key={'ahihi'}
+						htmlFor="submit-form"
+						className="tw-bg-primary tw-text-white !tw-py-2 tw-px-5 tw-rounded-lg tw-cursor-pointer tw-h-[50px] tw-min-w-[180px] tw-flex tw-items-center tw-justify-center"
+					>
+						{isLoading ? (
+							<section className="tw-w-5 tw-flex tw-items-center tw-justify-center tw-h-5 tw-border-2 tw-border-t-2 !tw-border-white tw-rounded-full tw-border-t-primary">
+								Loading...
+							</section>
+						) : (
+							baoGiaXeData.sendButton
+						)}
+					</label>,
+				]}
+			>
+				<p className="">{parse(baoGiaXeData.desc)}</p>
+
+				<Content form={form} setIsLoading={setIsLoading} />
+			</Modal>
 
 			<section className="car-details fix section-padding">
 				<div className="container">

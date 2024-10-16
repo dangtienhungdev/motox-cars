@@ -95,7 +95,7 @@ const NhanBaoGiaXe = () => {
 			<div className="container">
 				<Form
 					layout="vertical"
-					className="pickup-wrapper wow fadeInUp !tw-gap-5 lg:!tw-flex md:!tw-hidden"
+					className="pickup-wrapper wow fadeInUp !tw-gap-5 lg:!tw-flex !tw-hidden "
 					data-wow-delay=".4s"
 					form={form}
 					onFinish={onFinish}
@@ -207,7 +207,7 @@ const NhanBaoGiaXe = () => {
 						</button>
 					</div>
 				</Form>
-				<div className="brand-wrapper pt-80 pb-80"></div>
+				<div className="brand-wrapper pt-80 pb-80 lg:!tw-block !tw-hidden"></div>
 			</div>
 		</div>
 	);

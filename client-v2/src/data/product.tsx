@@ -368,7 +368,8 @@ export const products = [
 				price: '1099000000',
 				slug: 'ford-everest-ambient-4x2-at',
 				image:
-					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/4_pufusf.jpg',
+					// 'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1722161137/tran-xuan-hieu/ford-everest/AMBIENTE/4_pufusf.jpg',
+					'https://res.cloudinary.com/dcwdrvxdg/image/upload/v1728318445/tran-xuan-hieu/ford-terri/ambiente-billboard-carousel-1.jpg.renditions.original_wezlbl.avif',
 				moTaXe: [
 					{
 						id: '1',
