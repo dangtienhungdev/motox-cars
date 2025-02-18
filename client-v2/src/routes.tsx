@@ -1,16 +1,17 @@
-import { createBrowserRouter } from 'react-router-dom';
-import LayoutCars from './layouts';
-import HomePage from './pages';
-import CarPage from './pages/cars';
-import CarDetail from './pages/cars/car-detail';
-import ContactPage from './pages/contact';
-import Introduce from './pages/introduce';
-import NotFound from './pages/not-found';
-import PriceList from './pages/price-list';
+import { createBrowserRouter } from "react-router-dom";
+import AdsComponent from "./components/add-component";
+import LayoutCars from "./layouts";
+import HomePage from "./pages";
+import CarPage from "./pages/cars";
+import CarDetail from "./pages/cars/car-detail";
+import ContactPage from "./pages/contact";
+import Introduce from "./pages/introduce";
+import NotFound from "./pages/not-found";
+import PriceList from "./pages/price-list";
 
 export const routes = createBrowserRouter([
 	{
-		path: '/',
+		path: "/",
 		element: <LayoutCars />,
 		children: [
 			{
@@ -18,29 +19,38 @@ export const routes = createBrowserRouter([
 				element: <HomePage />,
 			},
 			{
-				path: '/introduce',
+				path: "/introduce",
 				element: <Introduce />,
 			},
 			{
-				path: '/price-list',
+				path: "/price-list",
 				element: <PriceList />,
 			},
 			{
-				path: '/contact',
+				path: "/contact",
 				element: <ContactPage />,
 			},
 			{
-				path: '/cars',
+				path: "/cars",
 				element: <CarPage />,
 			},
 			{
-				path: '/car/:id',
+				path: "/car/:id",
 				element: <CarDetail />,
+			},
+			{
+				path: "/ads",
+				element: (
+					<div>
+						test ads
+						<AdsComponent dataAdSlot="2596231998" />
+					</div>
+				),
 			},
 		],
 	},
 	{
-		path: '*',
+		path: "*",
 		element: <NotFound />,
 	},
 ]);
